@@ -1,16 +1,10 @@
-<!doctype html>
-<html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
-    <script src="bower_components/modernizr/modernizr.js"></script>
-  </head>
+<?php include("includes/head.html");?>
+
   <body>
     <div class="row">
       <div class="large-12 columns">
         <h1>Welcome to Foundation</h1>
+        <p><a href="beers/" class="small button">Beers Page</a><br/>
     </div>
     
     <div class="row">
