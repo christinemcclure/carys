@@ -2,5 +2,6 @@
 /.sass-cache/*
 *.DS_Store
 /nbproject/*
-/includes/GoogleAPIkey.txt
+*API*.txt
+
 
