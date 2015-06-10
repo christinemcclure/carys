@@ -19,7 +19,7 @@ function format_iit_time ($time){
 
 //load developer key
 function get_googleAPI_key(){
-  $file='/Users/christine/Sites/Carys/includes/GoogleAPIkey.txt';
+  $file='../includes/GoogleAPIkey.txt';
   $key = file_get_contents($file); 
   if(($key== NULL)||($key=="")){
     trigger_error('Google API key not found', E_USER_NOTICE);
