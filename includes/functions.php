@@ -19,11 +19,7 @@ function format_iit_time ($time){
 
 //load developer key
 function get_googleAPI_key(){
-  $file='GoogleAPIkey.txt';
-  $drupalDir='sites/all/modules/custom/display_hours/';
-  if (file_exists($drupalDir) == true){
-    $file = $drupalDir . $file; 
-  }
+  $file='/Users/christine/Sites/Carys/includes/GoogleAPIkey.txt';
   $key = file_get_contents($file); 
   if(($key== NULL)||($key=="")){
     trigger_error('Google API key not found', E_USER_NOTICE);
@@ -39,8 +35,8 @@ function get_calendar_data($calendar, $dateToGet=0){
   $debug=true;
   $key = get_googleAPI_key();
   $APIformat="Y-m-d";
-  $timeMin = date($APIformat,time()+$dateToGet) . 'T00:00:00.000Z';
-  $timeMax = date($APIformat,time()+$dateToGet) . 'T23:59:00.000Z';
+  $timeMin = date($APIformat,time()+$dateToGet) . 'T12:00:00.000Z';
+  $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
     //this works more reliably than only getting one event
