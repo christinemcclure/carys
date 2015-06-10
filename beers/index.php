@@ -3,6 +3,7 @@
     <div class="row">
       <div class="large-12 columns">
         <h1>Beer Menu</h1>
+        <?php include("../includes/nav.html"); ?>
       <div id="menu_widget">
         <div id="menu_widget_2827">
           <a href="https://www.beermenus.com/?ref=widget">Powered by BeerMenus</a>

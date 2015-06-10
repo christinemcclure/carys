@@ -4,6 +4,7 @@
     <div class="row">
       <div class="large-12 columns">
         <h1>Welcome to Foundation</h1>
+        <?php include("includes/nav.html"); ?>
     </div>
     
     <div class="row">
