@@ -2,6 +2,4 @@
 /.sass-cache/*
 *.DS_Store
 /nbproject/*
-includes/*API*.txt
-
-
+*API*.txt
