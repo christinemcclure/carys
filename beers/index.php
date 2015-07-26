@@ -5,8 +5,7 @@
         <h1>Beer Menu</h1>
         <?php include("../includes/nav.html"); ?>
       <div id="menu_widget">
-        <div id="menu_widget_2827">
-          <a href="https://www.beermenus.com/?ref=widget">Powered by BeerMenus</a>
+        <div id="onTap">
         </div>
       </div>
       <script src="https://www.beermenus.com/menu_widgets/2827" type="text/javascript" charset="utf-8"></script>        

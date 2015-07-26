@@ -19,7 +19,9 @@ function format_iit_time ($time){
 
 //load developer key
 function get_googleAPI_key(){
-  $file='../includes/GoogleAPIkey.txt';
+$dir = dirname(__FILE__);
+echo "<p>Full path to this dir: " . $dir . "</p>";
+  $file=$dir . '/GoogleAPIkey.txt';
   $key = file_get_contents($file); 
   if(($key== NULL)||($key=="")){
     trigger_error('Google API key not found', E_USER_NOTICE);
@@ -40,7 +42,9 @@ function get_calendar_data($calendar, $dateToGet=0){
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
     //this works more reliably than only getting one event
-  
+  if ($debug){
+    echo $url;
+  }
   $jsonFile = file_get_contents($url);
   if (!$jsonFile) {
       trigger_error('NO DATA returned from url.', E_USER_NOTICE);
