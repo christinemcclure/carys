@@ -19,16 +19,14 @@ function format_iit_time ($time){
 
 //load developer key
 function get_googleAPI_key(){
-$dir = dirname(__FILE__);
-echo "<p>Full path to this dir: " . $dir . "</p>";
-  $file=$dir . '/GoogleAPIkey.txt';
-  $key = file_get_contents($file); 
-  if(($key== NULL)||($key=="")){
-    trigger_error('Google API key not found', E_USER_NOTICE);
-  }
-  else {
-    return $key;
-  }
+  echo $GOOGLE_API;
+  $key= $_ENV["GOOGLE_API"];// duritalservices@iit.edu Google API key
+    if(($key==NULL)||($key=="")){
+      trigger_error('Google API key not found', E_USER_NOTICE);
+    }
+    else{
+      return $key;
+    }
 }
 
 
