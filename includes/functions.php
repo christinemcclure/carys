@@ -5,16 +5,8 @@ date_default_timezone_set('America/Chicago');
 function get_and_format_todays_date_time(){
   $dateFormat="l, F j";
   $timeFormat="g:ia";
-  $today = date($dateFormat).", " . format_iit_time(date($timeFormat));
+  $today = date($dateFormat).", " . date($timeFormat);
   return $today;
-}
-
-//Communications & Marketing format for times
-function format_iit_time ($time){ 
-	$time = str_replace(':00','',$time);
-	$time = str_replace('am','a.m.',$time);
-	$time = str_replace('pm','p.m.',$time);
-	return $time;
 }
 
 //load developer key
@@ -37,6 +29,10 @@ function get_calendar_data($calendar, $dateToGet=0){
   $APIformat="Y-m-d";
   $timeMin = date($APIformat,time()+$dateToGet) . 'T12:00:00.000Z';
   $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';
+  if ($debug){
+    $timeMin="2015-08-02T04:00:00.000Z";
+    $timeMax="2015-08-02T23:00:00.000Z";
+  }
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
     //this works more reliably than only getting one event
@@ -56,111 +52,68 @@ function get_calendar_data($calendar, $dateToGet=0){
 }
 
 
-function check_if_open($item){   
-  
-  $now=time();
-  
-  if (isset($item->start->dateTime)){ // non 24-hour event
-      $unixStart=strtotime(substr($item->start->dateTime, 0,16));
-      $unixEnd=strtotime(substr($item->end->dateTime, 0,16));
-  }
-
-  else{ // all day event
-    $unixStart=strtotime(substr($item->start->date, 0,16));
-    $unixEnd=strtotime(substr($item->end->date, 0,16));
-  }
-
-  if ( ($now < $unixStart) || ($now > $unixEnd) ){
-    $isOpen = 0;
-  }
-  else {
-    $isOpen = 1;
-  }      
-  
-  return $isOpen;
-}
-
-function format_open_msg($isOpen){
-  if ($isOpen<=0){
-    $openMsg="<span class=\"closed\">CLOSED</span>";   
-  }          
-  else {
-    $openMsg="<span class=\"open\">OPEN</span>";
-  }
-  return $openMsg;
-}
 
 
-function format_hours_message($startTime,$endTime){
-  
-  if ($endTime=="12a.m."){ // don't use 12am time to avoid confusion
-    if ($startTime=="12a.m."){ // eg: Tuesday 12am-12am
-      $msg="Open 24 hours";
-    }
-    else{
-      $msg="Open from $startTime - overnight"; // eg: Sunday 12pm-12am
-    }
-  }
-  else { // normal 
-    $msg="Today's hours: $startTime - $endTime"; // eg: Saturday 8:30am-5pm
-  }
-  
-  return $msg;
-  
-}
 
-function format_hours_data($dateData){// default is to use Galvin and today's Unix date
-  $msg="no data available";
-  $timeFormat="g:ia";
-  
-// error gracefully if no data
+function get_event_data($dateData, $itemToGet){
+    $timeFormat="g:ia";
+    $dateFormat="l, F jS";
+    $eventDateType="";
     if (count($dateData)<=0){
-      return $msg;
+      return "no start date available";
     }
     else{
-      $item = $dateData[0]; // no need to loop. just get first object
-    }     
-    $title = $item->summary;
-
-    if (stripos($title,"closed")===false) { // library open (verify identical FALSE to avoid "false false")
-
-        // Google Calendar API v3 uses the date field if event is a full day long, or the dateTime field if it is less than 24 hours  
-      if (isset($item->start->dateTime)){ // non 24-hour event
-          $tmpStart=strtotime(substr($item->start->dateTime, 0,16));
-          $tmpEnd=strtotime(substr($item->end->dateTime, 0,16));
-      }
-
-      else{ // all day event
-        $tmpStart=strtotime(substr($item->start->date, 0,16));
-        $tmpEnd=strtotime(substr($item->end->date, 0,16));
-      }
-      
-      $startTime = format_iit_time(date($timeFormat,$tmpStart));
-      $endTime = format_iit_time(date($timeFormat,$tmpEnd));
-      
-      $msg=format_hours_message($startTime, $endTime);
-
-      return $msg; // return hours info
-    } // end library open
-
-    // library is closed
-    else {
-      return $title;
+      $event = $dateData[0]; // no need to loop. just get first object
     }
-        
-}// end function
+    
+    if (isset($event->start->dateTime)){ // non 24-hour event
+      $eventDateType = 'dateTime';
+      //return date($timeFormat,strtotime(substr($event->start->dateTime, 0,16)));
+    }
 
-function galvin_hours_block($calendar){
-  $dataObj=get_calendar_data($calendar);
+    else{ // all day event
+      $eventDateType = 'date';
+      //return strtotime(substr($event->start->date, 0,16));
+    }
+    
+    switch ($itemToGet){
+      case "date":
+        return date($dateFormat,strtotime(substr($event->start->$eventDateType, 0,16)));
+        
+      case "start":
+        return date($timeFormat,strtotime(substr($event->start->$eventDateType, 0,16)));  
+        
+      case "end":
+        return date($timeFormat,strtotime(substr($event->end->$eventDateType, 0,16)));  
+        
+      case "summary":
+        return $event->summary;  
+
+      case "title": //because I'll probably forget 'summary'
+        return $event->summary;  
+      
+      case "description":
+        return $event->description;
+      default:
+        return "wrong input for calendar event";
+        
+    }// end switch
+      
+ }
+ 
+function retrieve_calendar_event($calendar,$dateToGet=0){
+  $dataObj=get_calendar_data($calendar,$dateToGet);
 
   if (count($dataObj)>0){
-    $hours = format_hours_data($dataObj);
-    $isOpen = check_if_open($dataObj[0]);
-    $openMsg = format_open_msg($isOpen);
-    $message = "Currently: $openMsg</p><p>$hours</p>";
+    $message .=  get_event_data($dataObj, "title") . "<br/>";
+    $message .=  get_event_data($dataObj, "description") . "<br/>";
+    $message .=  get_event_data($dataObj, "date") . "<br/>";
+    $message .=  get_event_data($dataObj, "start") . " - ";
+    $message .=  get_event_data($dataObj, "end");
+    
   }
   else{
-    $message = "<p>Library hours cannot be displayed at this time.</p>";
+    $message = "No data retrieved.";
   }
   return $message;
 }
