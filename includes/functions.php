@@ -1,6 +1,6 @@
 <?php
 date_default_timezone_set('America/Chicago');
-
+$debugGlobal=false;
 
 function get_and_format_todays_date_time(){
   $dateFormat="l, F j";
@@ -30,19 +30,20 @@ function get_googleAPI_key(){
 
 //retrieve JSON data from a Google Calendar (public)
 function get_calendar_data($calendar, $dateToGet=0){
-  $debug=true;
+  global $debugGlobal;  
+  $debugLocal=true;
   $key = get_googleAPI_key();
   $APIformat="Y-m-d";
   $timeMin = date($APIformat,time()+$dateToGet) . 'T12:00:00.000Z';
   $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';
-  if ($debug){
+  if ($debugLocal){
     $timeMin="2015-08-02T04:00:00.000Z";
     $timeMax="2015-08-02T23:00:00.000Z";
   }
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
     //this works more reliably than only getting one event
-  if ($debug){
+  if ($debugGlobal){
     echo $url;
   }
   $jsonFile = file_get_contents($url);
@@ -56,8 +57,6 @@ function get_calendar_data($calendar, $dateToGet=0){
     return $dateData;
   }
 }
-
-
 
 
 
@@ -112,11 +111,11 @@ function retrieve_calendar_event($calendar,$dateToGet=0){
   $dataObj=get_calendar_data($calendar,$dateToGet);
 
   if (count($dataObj)>0){
-    $message .=  get_event_data($dataObj, "title") . "<br/>";
-    $message .=  get_event_data($dataObj, "description") . "<br/>";
-    $message .=  get_event_data($dataObj, "date") . "<br/>";
-    $message .=  get_event_data($dataObj, "start") . " - ";
-    $message .=  get_event_data($dataObj, "end");
+    $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
+    $message .=  "<p>" . get_event_data($dataObj, "description") . "</p>";
+    $message .=  "<h3>" . get_event_data($dataObj, "date") . "</h3>";
+    $message .=  "<h4>" . get_event_data($dataObj, "start") . " - ";
+    $message .=  get_event_data($dataObj, "end") . "</h4>";
     
   }
   else{
