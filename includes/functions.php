@@ -11,8 +11,14 @@ function get_and_format_todays_date_time(){
 
 //load developer key
 function get_googleAPI_key(){
-  echo $GOOGLE_API;
-  $key= $_ENV["GOOGLE_API"];// duritalservices@iit.edu Google API key
+  $key="";
+  $file="C:\Users\christine\Documents\GoogleAPIkey.txt"; //can't access registry on RHO computer
+  if (file_exists($file)){
+   $key = file_get_contents($file);  
+  }
+  else{
+    $key=$_ENV["GOOGLE_API"];
+  }
     if(($key==NULL)||($key=="")){
       trigger_error('Google API key not found', E_USER_NOTICE);
     }
@@ -102,6 +108,7 @@ function get_event_data($dateData, $itemToGet){
  }
  
 function retrieve_calendar_event($calendar,$dateToGet=0){
+  $message="";
   $dataObj=get_calendar_data($calendar,$dateToGet);
 
   if (count($dataObj)>0){
