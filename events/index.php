@@ -1,7 +1,7 @@
 <?php include("../includes/head.html"); ?>
-  <body>
-    <div class="row">
-      <div class="large-12 columns">
+<title>Cary's Lounge - Events</title>
+</head>  
+<body>
         <h1>Upcoming Events</h1>
         <?php include("../includes/nav.html"); 
  include("../includes/functions.php");
@@ -18,8 +18,5 @@
  
   ?>
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/app.js"></script>
   </body>
 </html>
