@@ -4,20 +4,21 @@
 }
 
 /* line 3, ../scss/main.scss */
-#beer_menu, #beer_menu a:last-child {
-  color: grey;
-}
-/* line 5, ../scss/main.scss */
-#beer_menu span, #beer_menu a:last-child span {
-  color: green;
-}
-
-/* line 10, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
 }
 
+/* line 7, ../scss/main.scss */
+#beer_menu, #beer_menu a:last-child {
+  font-size: .8em;
+  color: grey;
+}
+/* line 10, ../scss/main.scss */
+#beer_menu span, #beer_menu a:last-child span {
+  font-size: 1em;
+  color: green;
+}
 /* line 14, ../scss/main.scss */
-#wine th.serving, #wine td.serving {
+#beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }

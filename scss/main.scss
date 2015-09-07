@@ -1,16 +1,17 @@
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
 
-#beer_menu, #beer_menu a:last-child {
-  color:grey; // diminish beermenus link text
-  span{
-    color:green;
-  }
-}
-
 #beer-sub-nav li{
   cursor:pointer;
 }
 
-#wine th.serving, #wine td.serving { // hide vessel for wine
-    display: none;
+#beer_menu, #beer_menu a:last-child {
+  font-size: .8em;
+  color:grey; // diminish beermenus link text
+  span{
+    font-size: 1em; 
+    color:green; // regular color text
+  }
+  #wine th.serving, #wine td.serving { // hide vessel for wine
+      display: none;
+  }
 }
