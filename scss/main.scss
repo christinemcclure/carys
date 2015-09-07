@@ -11,3 +11,6 @@
   cursor:pointer;
 }
 
+#wine th.serving, #wine td.serving { // hide vessel for wine
+    display: none;
+}

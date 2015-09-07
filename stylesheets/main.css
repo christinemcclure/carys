@@ -16,3 +16,8 @@
 #beer-sub-nav li {
   cursor: pointer;
 }
+
+/* line 14, ../scss/main.scss */
+#wine th.serving, #wine td.serving {
+  display: none;
+}
