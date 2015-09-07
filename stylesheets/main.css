@@ -1,1 +1,13 @@
-.hide{display:none;}
+/* line 1, ../scss/main.scss */
+.hide, .updated-at, .serving-types, #feedly-mini {
+  display: none;
+}
+
+/* line 3, ../scss/main.scss */
+#beer_menu, #beer_menu a:last-child {
+  color: grey;
+}
+/* line 5, ../scss/main.scss */
+#beer_menu span, #beer_menu a:last-child span {
+  color: green;
+}
