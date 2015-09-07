@@ -5,8 +5,10 @@ $(document).ready(function() {
       for (var i in items) {
         if (items[i].indexOf(showType) > -1){
            $("#beer_menu > #"+items[i]).addClass('active');
+           $("#beer_menu > #"+items[i]).removeClass('hide');
         }
         else{
+           $("#beer_menu > #"+items[i]).removeClass('active');
           $("#beer_menu > #"+items[i]).addClass('hide');
         }
       }
