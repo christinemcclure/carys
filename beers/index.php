@@ -7,10 +7,10 @@
     <ul id="beer-sub-nav">
       <li id="sub_featured">Featured Items</li>
       <li id="sub_on_tap">Beers On Tap</li>
-      <li id="sub_bottles">Beers Bottled</li>
-      <li id="sub_cans">Beers Canned</li>
+      <li id="sub_bottles">Bottled Beers</li>
+      <li id="sub_cans">Canned Beers</li>
       <li id="sub_cider">Cider</li>
-      <li id="sub_wine">Wine on Tap</li>
+      <li id="sub_wine">Wines on Tap</li>
     </ul>
     <div id="menu_widget">
       <div id="onTap">
