@@ -11,3 +11,8 @@
 #beer_menu span, #beer_menu a:last-child span {
   color: green;
 }
+
+/* line 10, ../scss/main.scss */
+#beer-sub-nav li {
+  cursor: pointer;
+}
