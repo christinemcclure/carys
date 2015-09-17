@@ -10,21 +10,32 @@ function get_and_format_todays_date_time(){
 }
 
 //load developer key
-function get_googleAPI_key(){
+function get_googleAPI_key(){ 
+// can't set environment variable on live site, so get working directory and figure it out
+// add windows computers later
+  $cwd= getcwd();
+    
+  $debug=false;if($debug) echo $cwd;
+  if (strpos($cwd,"Carys")!==false) //my Macbook
+    $path="/Users/christine/Sites/Carys/";
+  elseif (strpos($cwd,"caryslng")!==false) { //online
+    if (strpos($cwd,"dev")!==false)
+     $path="/home/caryslng/public_html/dev/";
+    else
+     $path="/home/caryslng/public_html/"; // live site
+  }
+  
   $key="";
-  $file="C:\Users\christine\Documents\GoogleAPIkey.txt"; //can't access registry on RHO computer
+  $file=$path."includes/GoogleAPIkey.txt"; //can't access registry on RHO computer
   if (file_exists($file)){
    $key = file_get_contents($file);  
   }
-  else{
-    $key=$_ENV["GOOGLE_API"];
+  if(($key==NULL)||($key=="")){
+    trigger_error('Google API key not found', E_USER_NOTICE);
   }
-    if(($key==NULL)||($key=="")){
-      trigger_error('Google API key not found', E_USER_NOTICE);
-    }
-    else{
-      return $key;
-    }
+  else{
+    return $key;
+  }
 }
 
 
