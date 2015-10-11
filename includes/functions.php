@@ -45,7 +45,7 @@ function get_googleAPI_key(){
 
 
 //retrieve JSON data from a Google Calendar (public)
-function get_calendar_data($calendar, $daysAhead=0){//assume today if no date specified
+function get_single_day_calendar_data($calendar, $daysAhead=0){//assume today if no date specified
   global $debugGlobal, $APIformat;  
   $debugLocal=true;
   $daysAhead = $daysAhead * 86400;
@@ -120,7 +120,7 @@ function get_event_data($dateData, $itemToGet){
  
 function retrieve_calendar_event($calendar,$dateToGet=0){
   $message="";
-  $dataObj=get_calendar_data($calendar,$dateToGet);
+  $dataObj=get_single_day_calendar_data($calendar,$dateToGet);
 
   if (count($dataObj)>0){
     $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
