@@ -20,6 +20,7 @@
           </div>
         </div>
       </div>
+      <?php include("../includes/footer.html"); ?>
     </div>
    <script src="https://www.beermenus.com/menu_widgets/2827?no_links=1&beer_descriptions=1" type="text/javascript" charset="utf-8"></script>
    <script>

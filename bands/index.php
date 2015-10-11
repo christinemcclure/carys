@@ -9,6 +9,7 @@ include("../includes/functions.php"); ?>
       <div id="main">
         <?php include("../includes/nav.html"); ?>
         <h1>Bands & Live Events</h1>
+        <?php include("../includes/footer.html"); ?>
       </div>
     </div>
 

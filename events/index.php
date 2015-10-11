@@ -21,7 +21,7 @@ include("../includes/functions.php"); ?>
           echo $msg;
           ?>
       </div>
+      <?php include("../includes/footer.html"); ?>
     </div>
-
   </body>
 </html>

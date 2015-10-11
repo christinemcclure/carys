@@ -10,7 +10,7 @@ include("../includes/functions.php"); ?>
         <?php include("../includes/nav.html"); ?>
         <h1>About Cary's Lounge</h1>
       </div>
+      <?php include("../includes/footer.html"); ?>
     </div>
-
   </body>
 </html>
