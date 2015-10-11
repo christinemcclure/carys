@@ -131,7 +131,7 @@ function retrieve_calendar_event($calendar,$dateToGet=0){
     
   }
   else{
-    $message = "No data retrieved.";
+    $message = "No calendar data available.";
   }
   return $message;
 }
