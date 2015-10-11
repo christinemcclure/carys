@@ -7,7 +7,8 @@
       <div id="main">
         <?php include("includes/nav.html"); ?>
         <div class="col1">
-          Cary's Lounge is a comfortable and friendly neighborhood tavern with a great, reasonably priced drinks and free pool on the best table in town.
+          <p>Home page text. Here is <a target="_blank" href="images/sample-layout.png">the layout</a> the site will use. 
+          </p>
         </div>
         <div class="col2">
           Weekly specials
