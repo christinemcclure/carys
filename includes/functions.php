@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('America/Chicago');
 $debugGlobal=false;
+$APIformat="Y-m-d";
 
 function get_and_format_todays_date_time(){
   $dateFormat="l, F j";
@@ -45,10 +46,9 @@ function get_googleAPI_key(){
 
 //retrieve JSON data from a Google Calendar (public)
 function get_calendar_data($calendar, $dateToGet=0){
-  global $debugGlobal;  
+  global $debugGlobal, $APIformat;  
   $debugLocal=true;
   $key = get_googleAPI_key();
-  $APIformat="Y-m-d";
   $timeMin = date($APIformat,time()+$dateToGet) . 'T12:00:00.000Z';
   $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';
   if ($debugLocal){
@@ -137,6 +137,12 @@ function retrieve_calendar_event($calendar,$dateToGet=0){
     $message = "No data retrieved.";
   }
   return $message;
+}
+
+function get_multiple_calendar_events($calendar, $numEvents){
+  $message="";
+  $timeMin = date($APIformat,time()) . 'T12:00:00.000Z';
+  $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';  
 }
 
 ?>
