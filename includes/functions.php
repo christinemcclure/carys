@@ -11,11 +11,12 @@ function get_and_format_todays_date_time(){
 
 //load developer key
 function get_googleAPI_key(){ 
+  $debug=true;
 // can't set environment variable on live site, so get working directory and figure it out
 // add windows computers later
   $cwd= getcwd();
-    
-  $debug=false;if($debug) echo $cwd;
+  if($debug) echo getcwd();
+  
   if (strpos($cwd,"Carys")!==false) //my Macbook
     $path="/Users/christine/Sites/Carys/";
   elseif (strpos($cwd,"caryslng")!==false) { //online
@@ -23,6 +24,9 @@ function get_googleAPI_key(){
      $path="/home/caryslng/public_html/dev/";
     else
      $path="/home/caryslng/public_html/"; // live site
+  }
+  else{
+    $path="C:\\Users\\christine\\Desktop\\carys\\"; // RHO 
   }
   
   $key="";
