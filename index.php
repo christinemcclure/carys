@@ -7,7 +7,7 @@
       <div id="main">
         <?php include("includes/nav.html"); ?>
         <div class="col1">
-          <p>Home page text. Here is <a target="_blank" href="images/sample-layout.png">the layout</a> the site will use. 
+          <p>Home page text. Here is <a target="_blank" href="images/sample-layout.png">the layout</a> the site will use (Except there will be "weekly specials" instead of where the "Coming Up at Cary's" is listed.). 
           </p>
         </div>
         <div class="col2">
