@@ -12,7 +12,7 @@ function get_and_format_todays_date_time(){
 
 //load developer key
 function get_googleAPI_key(){ 
-  $debug=true;
+  $debug=false;
 // can't set environment variable on live site, so get working directory and figure it out
 // add windows computers later
   $cwd= getcwd();
@@ -45,20 +45,17 @@ function get_googleAPI_key(){
 
 
 //retrieve JSON data from a Google Calendar (public)
-function get_calendar_data($calendar, $dateToGet=0){
+function get_calendar_data($calendar, $daysAhead=0){//assume today if no date specified
   global $debugGlobal, $APIformat;  
   $debugLocal=true;
+  $daysAhead = $daysAhead * 86400;
   $key = get_googleAPI_key();
-  $timeMin = date($APIformat,time()+$dateToGet) . 'T12:00:00.000Z';
-  $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';
-  if ($debugLocal){
-    $timeMin="2015-08-02T04:00:00.000Z";
-    $timeMax="2015-08-02T23:00:00.000Z";
-  }
+  $timeMin = date($APIformat,time()+$daysAhead) . 'T12:00:00.000Z';
+  $timeMax = date($APIformat,time()+$daysAhead) . 'T23:45:00.000Z';
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
     //this works more reliably than only getting one event
-  if ($debugGlobal){
+  if ($debugLocal){
     echo $url;
   }
   $jsonFile = file_get_contents($url);
@@ -140,6 +137,7 @@ function retrieve_calendar_event($calendar,$dateToGet=0){
 }
 
 function get_multiple_calendar_events($calendar, $numEvents){
+  global $APIformat;
   $message="";
   $timeMin = date($APIformat,time()) . 'T12:00:00.000Z';
   $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';  
