@@ -12,6 +12,8 @@ $(document).ready(function() {
           $("#beer_menu > #"+items[i]).addClass('hide');
         }
       }
+      $("#beer-sub-nav").children().removeClass("active");//don't need to cycle through. just for highlighting menu item
+      $("#sub_"+showType).addClass("active");
     }
    })($);
   
