@@ -75,6 +75,24 @@ function get_single_day_calendar_event($calendar, $daysAhead=0){//assume today i
   return $msg;
 }
 
+//retrieve JSON data from a Google Calendar (public)
+function get_multiple_calendar_events($calendar, $numEvents){//assume today if no date specified
+  global $debugGlobal, $APIformat;  
+  $debugLocal=true;
+  $key = get_googleAPI_key();
+  $timeMin = date($APIformat,time()) . 'T12:00:00.000Z';// just get a month of entries starting from today
+  $timeMax = date($APIformat,time()+2592000) . 'T23:45:00.000Z';
+  $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
+      $timeMin . '&timeMax=' . $timeMax . '&key=' . $key;
+    //this works more reliably than only getting one event
+  $event=retrieve_calendar_data($url);
+  if ($debugLocal){
+    print_r($event);
+  }  
+  $msg=format_calendar_event($event);
+  return $msg;
+}
+
 
 
 function get_event_data($dateData, $itemToGet){
@@ -138,15 +156,6 @@ function format_calendar_event($dataObj){
     $message = "No calendar data available.";
   }
   return $message;
-}
-
-function get_multiple_calendar_events($calendar, $numEvents){
-  global $APIformat;
-  $message="";
-  $dateToGet=0;
-  $timeMin = date($APIformat,time()) . 'T12:00:00.000Z';
-  $timeMax = date($APIformat,time()+2592000) . 'T13:00:00.000Z';  //just get a month's worth of events, then parse
-  
 }
 
 ?>
