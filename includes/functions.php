@@ -57,7 +57,7 @@ function retrieve_calendar_data($url){
 }
 
 //retrieve JSON data from a Google Calendar (public)
-function get_single_day_calendar_data($calendar, $daysAhead=0){//assume today if no date specified
+function get_single_day_calendar_event($calendar, $daysAhead=0){//assume today if no date specified
   global $debugGlobal, $APIformat;  
   $debugLocal=false;
   $daysAhead = $daysAhead * 86400;
