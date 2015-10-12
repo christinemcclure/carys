@@ -43,11 +43,23 @@ function get_googleAPI_key(){
   }
 }
 
+function retrieve_calendar_data($url){
+  $jsonFile = file_get_contents($url);
+  if (!$jsonFile) {
+      trigger_error('NO DATA returned from url.', E_USER_NOTICE);
+  }
+  else {
+    // convert the string to a json object
+    $jsonObj = json_decode($jsonFile);
+    $dateData = $jsonObj->items;
+    return $dateData;
+  }  
+}
 
 //retrieve JSON data from a Google Calendar (public)
 function get_single_day_calendar_data($calendar, $daysAhead=0){//assume today if no date specified
   global $debugGlobal, $APIformat;  
-  $debugLocal=true;
+  $debugLocal=false;
   $daysAhead = $daysAhead * 86400;
   $key = get_googleAPI_key();
   $timeMin = date($APIformat,time()+$daysAhead) . 'T12:00:00.000Z';
@@ -58,16 +70,9 @@ function get_single_day_calendar_data($calendar, $daysAhead=0){//assume today if
   if ($debugLocal){
     echo $url;
   }
-  $jsonFile = file_get_contents($url);
-  if (!$jsonFile) {
-      trigger_error('NO DATA returned from url.', E_USER_NOTICE);
-  }
-  else {
-    // convert the string to a json object
-    $jsonObj = json_decode($jsonFile);
-    $dateData = $jsonObj->items;
-    return $dateData;
-  }
+  $event=retrieve_calendar_data($url);
+  $msg=format_calendar_event($event);
+  return $msg;
 }
 
 
@@ -118,9 +123,8 @@ function get_event_data($dateData, $itemToGet){
       
  }
  
-function retrieve_calendar_event($calendar,$dateToGet=0){
+function format_calendar_event($dataObj){
   $message="";
-  $dataObj=get_single_day_calendar_data($calendar,$dateToGet);
 
   if (count($dataObj)>0){
     $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
@@ -139,8 +143,10 @@ function retrieve_calendar_event($calendar,$dateToGet=0){
 function get_multiple_calendar_events($calendar, $numEvents){
   global $APIformat;
   $message="";
+  $dateToGet=0;
   $timeMin = date($APIformat,time()) . 'T12:00:00.000Z';
-  $timeMax = date($APIformat,time()+$dateToGet) . 'T13:00:00.000Z';  
+  $timeMax = date($APIformat,time()+2592000) . 'T13:00:00.000Z';  //just get a month's worth of events, then parse
+  
 }
 
 ?>
