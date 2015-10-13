@@ -1,7 +1,13 @@
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
 
-#beer-sub-nav li{
+#beer-sub-nav {
+  li{
   cursor:pointer;
+  }
+  li.active{
+    font-size: 1.3em;
+  }
+ 
 }
 
 #beer_menu, #beer_menu a:last-child {
