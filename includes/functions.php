@@ -44,6 +44,7 @@ function get_googleAPI_key(){
 }
 
 function retrieve_calendar_data($url){
+  $debugLocal=true;
   $jsonFile = file_get_contents($url);
   if (!$jsonFile) {
       trigger_error('NO DATA returned from url.', E_USER_NOTICE);
@@ -51,6 +52,9 @@ function retrieve_calendar_data($url){
   else {
     // convert the string to a json object
     $jsonObj = json_decode($jsonFile);
+    if ($debugLocal){
+      echo "<p>JSON: <br>$jsonFile</p>"; // view T http://jsonviewer.stack.hu/
+    }      
     $dateData = $jsonObj->items;
     return $dateData;
   }  
@@ -87,7 +91,7 @@ function get_multiple_calendar_events($calendar, $numEvents){//assume today if n
     //this works more reliably than only getting one event
   $event=retrieve_calendar_data($url);
   if ($debugLocal){
-    print_r($event);
+    echo "<p>*******</p>";
   }  
   $msg=format_calendar_event($event);
   return $msg;
