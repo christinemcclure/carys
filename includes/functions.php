@@ -44,7 +44,7 @@ function get_googleAPI_key(){
 }
 
 function retrieve_calendar_data($url){
-  $debugLocal=true;
+  $debugLocal=false;
   $jsonFile = file_get_contents($url);
   if (!$jsonFile) {
       trigger_error('NO DATA returned from url.', E_USER_NOTICE);
@@ -89,11 +89,16 @@ function get_multiple_calendar_events($calendar, $numEvents){//assume today if n
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&key=' . $key;
     //this works more reliably than only getting one event
-  $event=retrieve_calendar_data($url);
-  if ($debugLocal){
-    echo "<p>*******</p>";
+  $events=retrieve_calendar_data($url);
+  $items=count($events);
+  for($i=0; $i<$items; $i++){
+    if ($debugLocal){
+      echo "<p>";
+      print_r($events[$i]);
+      echo "</p>";
+    }
   }  
-  $msg=format_calendar_event($event);
+  $msg=format_calendar_event($events);
   return $msg;
 }
 
