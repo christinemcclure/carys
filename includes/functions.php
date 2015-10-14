@@ -59,6 +59,13 @@ function retrieve_calendar_data($url){
     return $dateData;
   }  
 }
+function format_calendarAPI_time($time){
+  
+}
+
+function format_full_calendarAPI_date_string($date, $time){
+  $daysAhead = $daysAhead * 86400;
+}
 
 //retrieve JSON data from a Google Calendar (public)
 function get_single_day_calendar_event($calendar, $daysAhead=0){//assume today if no date specified
