@@ -109,28 +109,24 @@ function format_calendar_event($dataObj){
   return $message;
 }
 
-
-
-function get_event_data($eventObj, $itemToGet){
-    $timeFormat="g:ia";
-    $dateFormat="l, F jS";
-    $eventDateType="";
-//    if (count($dateData)<=0){
-//      return "no start date available";
-//    }
-//    else{
-//      $event = $eventObj; // no need to loop. just get first object
-//    }
-    
-    if (isset($eventObj->start->dateTime)){ // non 24-hour event
-      $eventDateType = 'dateTime';
+function get_event_date_type($dateObj){
+    if (isset($dateObj->start->dateTime)){ // non 24-hour event
+      return 'dateTime';
       //return date($timeFormat,strtotime(substr($event->start->dateTime, 0,16)));
     }
 
     else{ // all day event
-      $eventDateType = 'date';
+      return 'date';
       //return strtotime(substr($event->start->date, 0,16));
     }
+    
+  }
+
+function get_event_data($eventObj, $itemToGet){
+    $timeFormat="g:ia";
+    $dateFormat="l, F jS";
+    
+    $eventDateType=get_event_date_type($eventObj);
     
     switch ($itemToGet){
       case "date":
