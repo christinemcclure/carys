@@ -95,7 +95,7 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
       echo "<p>$url</p>";
       var_dump($event);
     }
-    $msg=format_calendar_event($event[2]);
+    $msg=format_calendar_event($event[0]);
     return $msg;
   }
 }
@@ -146,6 +146,7 @@ function get_event_data($eventObj, $itemToGet){
       
       case "description":
         return $eventObj->description;
+        
       default:
         return "wrong input for calendar event";
         
