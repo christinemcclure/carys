@@ -91,9 +91,26 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
     echo "<p>$url</p>";
     var_dump($event);
   }
-  $msg=format_calendar_event($event);
+  $msg=format_calendar_event($event[0]);
   return $msg;
   
+}
+
+function format_calendar_event($dataObj){
+  $message="";
+
+//  if (count($dataObj)>0){
+    $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
+    $message .=  "<p>" . get_event_data($dataObj, "description") . "</p>";
+    $message .=  "<h3>" . get_event_data($dataObj, "date") . "</h3>";
+    $message .=  "<h4>" . get_event_data($dataObj, "start") . " - ";
+    $message .=  get_event_data($dataObj, "end") . "</h4>";
+    
+//  }
+//  else{
+//    $message = "No calendar data available.";
+//  }
+  return $message;
 }
 
 
@@ -144,21 +161,5 @@ function get_event_data($eventObj, $itemToGet){
       
  }
  
-function format_calendar_event($dataObj){
-  $message="";
-
-  if (count($dataObj)>0){
-    $message .=  "<h2>" . get_event_data($dataObj[0], "title") . "</h2>";
-    $message .=  "<p>" . get_event_data($dataObj[0], "description") . "</p>";
-    $message .=  "<h3>" . get_event_data($dataObj[0], "date") . "</h3>";
-    $message .=  "<h4>" . get_event_data($dataObj[0], "start") . " - ";
-    $message .=  get_event_data($dataObj[0], "end") . "</h4>";
-    
-  }
-  else{
-    $message = "No calendar data available.";
-  }
-  return $message;
-}
 
 ?>
