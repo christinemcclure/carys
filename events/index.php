@@ -17,7 +17,7 @@ include("../includes/functions.php"); ?>
 
           $msg=get_single_day_calendar_event($calendar,7);
 //          $msg=get_multiple_calendar_events($calendar, 2);
-//          $time= format_calendarAPI_date("today");
+          $time= format_full_calendarAPI_date_snippet("tomorrow","8am");
           echo "<p>$time</p>";
 
           echo "<br/>";

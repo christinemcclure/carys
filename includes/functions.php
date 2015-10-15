@@ -2,8 +2,7 @@
 date_default_timezone_set('America/Chicago');
 $debugGlobal=false;
 $APIformat="Y-m-d";
-$APIdateFormat="Y-m-d";
-$APItimeFormat="H:i";
+
 
 function get_and_format_todays_date_time(){
   $dateFormat="l, F j";
@@ -62,29 +61,29 @@ function retrieve_calendar_data($url){
   }  
 }
 
-// format for Google calendar API: 2015-10-21T12:00:00.000Z
+// format date and time for Google calendar API: 2015-10-21T12:00:00.000Z
 function format_calendarAPI_time($time){
-  global $APItimeFormat;
+  $APItimeFormat="H:i";
   $unixTime=strtotime($time);
   return date($APItimeFormat,$unixTime); 
 }
 
 function format_calendarAPI_date($date){
-  global $APIdateFormat;
+  $APIdateFormat="Y-m-d";
   $unixTime=strtotime($date);
   return date($APIdateFormat,$unixTime); 
 }
 
-function format_full_calendarAPI_date_snippet($date, $time){
-  global $APItimeFormat, $APIdateFormat;
-  $unixTime=strtotime($time);
-  return date($APItimeFormat,$unixTime) . ":00.000Z"; 
+function format_full_calendarAPI_date_snippet($dateIn, $timeIn){
+  $dateOut=format_calendarAPI_date($dateIn);
+  $timeOut=format_calendarAPI_time($timeIn);
+  return $dateOut . "T" . $timeOut . ":00.000Z"; 
 }
 
 //retrieve JSON data from a Google Calendar (public)
 function get_single_day_calendar_event($calendar, $daysAhead=0){//assume today if no date specified
   global $debugGlobal, $APIformat;  
-  $debugLocal=false;
+  $debugLocal=true;
   $daysAhead = $daysAhead * 86400;
   $key = get_googleAPI_key();
   $timeMin = date($APIformat,time()+$daysAhead) . 'T12:00:00.000Z';
