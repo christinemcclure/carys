@@ -96,48 +96,6 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
   
 }
 
-//retrieve JSON data from a Google Calendar (public)
-function get_single_day_calendar_event($calendar, $daysAhead=0){//assume today if no date specified
-  global $debugGlobal, $APIformat;  
-  $debugLocal=true;
-  $daysAhead = $daysAhead * 86400;
-  $key = get_googleAPI_key();
-  $timeMin = date($APIformat,time()+$daysAhead) . 'T12:00:00.000Z';
-  $timeMax = date($APIformat,time()+$daysAhead) . 'T23:45:00.000Z';
-  $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
-      $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
-    //this works more reliably than only getting one event
-  if ($debugLocal){
-    echo $url;
-  }
-  $event=retrieve_calendar_data($url);
-  $msg=format_calendar_event($event);
-  return $msg;
-}
-
-//retrieve JSON data from a Google Calendar (public)
-function get_multiple_calendar_events($calendar, $numEvents){//assume today if no date specified
-  global $debugGlobal, $APIformat;  
-  $debugLocal=true;
-  $key = get_googleAPI_key();
-  $timeMin = date($APIformat,time()) . 'T12:00:00.000Z';// just get a month of entries starting from today
-  $timeMax = date($APIformat,time()+2592000) . 'T23:45:00.000Z';
-  $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
-      $timeMin . '&timeMax=' . $timeMax . '&key=' . $key;
-    //this works more reliably than only getting one event
-  $events=retrieve_calendar_data($url);
-  $items=count($events);
-  for($i=0; $i<$items; $i++){
-    if ($debugLocal){
-      echo "<p>";
-      print_r($events[$i]);
-      echo "</p>";
-    }
-  }  
-  $msg=format_calendar_event($events);
-  return $msg;
-}
-
 
 
 function get_event_data($eventObj, $itemToGet){
