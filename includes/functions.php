@@ -2,6 +2,7 @@
 date_default_timezone_set('America/Chicago');
 $debugGlobal=false;
 $APIformat="Y-m-d";
+$APItimeFormat="H:i";
 
 function get_and_format_todays_date_time(){
   $dateFormat="l, F j";
@@ -60,6 +61,11 @@ function retrieve_calendar_data($url){
   }  
 }
 function format_calendarAPI_time($time){
+  global $APItimeFormat;
+  $unixTime=strtotime($time);
+  $rc=date($APItimeFormat,$unixTime); 
+ //  $rc=$rc . ":00.000Z"
+  return $rc . ":00.000Z";
   
 }
 

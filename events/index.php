@@ -15,8 +15,10 @@ include("../includes/functions.php"); ?>
           echo "today: " . $today;
           echo "<br/>";
 
-          $msg=get_single_day_calendar_event($calendar,1);
+//          $msg=get_single_day_calendar_event($calendar,1);
 //          $msg=get_multiple_calendar_events($calendar, 2);
+          $time= format_calendarAPI_time("1pm");
+          echo "<p>$time</p>";
 
           echo "<br/>";
           echo $msg;
