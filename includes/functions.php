@@ -2,6 +2,7 @@
 date_default_timezone_set('America/Chicago');
 $debugGlobal=false;
 $APIformat="Y-m-d";
+$APIdateFormat="Y-m-d";
 $APItimeFormat="H:i";
 
 function get_and_format_todays_date_time(){
@@ -60,14 +61,24 @@ function retrieve_calendar_data($url){
     return $dateData;
   }  
 }
+
+// format for Google calendar API: 2015-10-21T12:00:00.000Z
 function format_calendarAPI_time($time){
   global $APItimeFormat;
   $unixTime=strtotime($time);
-  return date($APItimeFormat,$unixTime) . ":00.000Z"; 
+  return date($APItimeFormat,$unixTime); 
 }
 
-function format_full_calendarAPI_date_string($date, $time){
-  $daysAhead = $daysAhead * 86400;
+function format_calendarAPI_date($date){
+  global $APIdateFormat;
+  $unixTime=strtotime($date);
+  return date($APIdateFormat,$unixTime); 
+}
+
+function format_full_calendarAPI_date_snippet($date, $time){
+  global $APItimeFormat, $APIdateFormat;
+  $unixTime=strtotime($time);
+  return date($APItimeFormat,$unixTime) . ":00.000Z"; 
 }
 
 //retrieve JSON data from a Google Calendar (public)
