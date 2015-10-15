@@ -14,13 +14,14 @@ include("../includes/functions.php"); ?>
           $today=get_and_format_todays_date_time();
           echo "today: " . $today;
           echo "<br/>";
+          
+          $timeStart=format_full_calendarAPI_date_snippet("today","8am");
+          $timeEnd=format_full_calendarAPI_date_snippet("October 30 2015","11pm");
 
-          $msg=get_single_day_calendar_event($calendar,7);
+          $msg=get_calendar_event($calendar,$timeStart,$timeEnd);
 //          $msg=get_multiple_calendar_events($calendar, 2);
-          $time= format_full_calendarAPI_date_snippet("tomorrow","8am");
-          echo "<p>$time</p>";
+//          $time= format_full_calendarAPI_date_snippet("tomorrow","8am");
 
-          echo "<br/>";
           echo $msg;
           ?>
       </div>

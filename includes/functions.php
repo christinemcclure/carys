@@ -80,6 +80,21 @@ function format_full_calendarAPI_date_snippet($dateIn, $timeIn){
   return $dateOut . "T" . $timeOut . ":00.000Z"; 
 }
 
+function get_calendar_event($calendar, $timeMin, $timeMax){
+  $debugLocal=true;
+  $key = get_googleAPI_key();
+  $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
+      $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
+    //this works more reliably than only getting one event
+  if ($debugLocal){
+    echo $url;
+  }
+  $event=retrieve_calendar_data($url);
+  $msg=format_calendar_event($event);
+  return $msg;
+  
+}
+
 //retrieve JSON data from a Google Calendar (public)
 function get_single_day_calendar_event($calendar, $daysAhead=0){//assume today if no date specified
   global $debugGlobal, $APIformat;  
