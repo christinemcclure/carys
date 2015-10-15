@@ -81,7 +81,7 @@ function format_full_calendarAPI_date_snippet($dateIn, $timeIn){
 }
 
 function get_single_calendar_event($calendar, $timeMin, $timeMax){
-  $debugLocal=true;
+  $debugLocal=false;
   $key = get_googleAPI_key();
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
@@ -140,18 +140,18 @@ function get_multiple_calendar_events($calendar, $numEvents){//assume today if n
 
 
 
-function get_event_data($dateData, $itemToGet){
+function get_event_data($eventObj, $itemToGet){
     $timeFormat="g:ia";
     $dateFormat="l, F jS";
     $eventDateType="";
-    if (count($dateData)<=0){
-      return "no start date available";
-    }
-    else{
-      $event = $dateData[0]; // no need to loop. just get first object
-    }
+//    if (count($dateData)<=0){
+//      return "no start date available";
+//    }
+//    else{
+//      $event = $eventObj; // no need to loop. just get first object
+//    }
     
-    if (isset($event->start->dateTime)){ // non 24-hour event
+    if (isset($eventObj->start->dateTime)){ // non 24-hour event
       $eventDateType = 'dateTime';
       //return date($timeFormat,strtotime(substr($event->start->dateTime, 0,16)));
     }
@@ -163,22 +163,22 @@ function get_event_data($dateData, $itemToGet){
     
     switch ($itemToGet){
       case "date":
-        return date($dateFormat,strtotime(substr($event->start->$eventDateType, 0,16)));
+        return date($dateFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));
         
       case "start":
-        return date($timeFormat,strtotime(substr($event->start->$eventDateType, 0,16)));  
+        return date($timeFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));  
         
       case "end":
-        return date($timeFormat,strtotime(substr($event->end->$eventDateType, 0,16)));  
+        return date($timeFormat,strtotime(substr($eventObj->end->$eventDateType, 0,16)));  
         
       case "summary":
-        return $event->summary;  
+        return $eventObj->summary;  
 
       case "title": //because I'll probably forget 'summary'
-        return $event->summary;  
+        return $eventObj->summary;  
       
       case "description":
-        return $event->description;
+        return $eventObj->description;
       default:
         return "wrong input for calendar event";
         
@@ -190,11 +190,11 @@ function format_calendar_event($dataObj){
   $message="";
 
   if (count($dataObj)>0){
-    $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
-    $message .=  "<p>" . get_event_data($dataObj, "description") . "</p>";
-    $message .=  "<h3>" . get_event_data($dataObj, "date") . "</h3>";
-    $message .=  "<h4>" . get_event_data($dataObj, "start") . " - ";
-    $message .=  get_event_data($dataObj, "end") . "</h4>";
+    $message .=  "<h2>" . get_event_data($dataObj[0], "title") . "</h2>";
+    $message .=  "<p>" . get_event_data($dataObj[0], "description") . "</p>";
+    $message .=  "<h3>" . get_event_data($dataObj[0], "date") . "</h3>";
+    $message .=  "<h4>" . get_event_data($dataObj[0], "start") . " - ";
+    $message .=  get_event_data($dataObj[0], "end") . "</h4>";
     
   }
   else{
