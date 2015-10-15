@@ -86,10 +86,11 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&maxResults=1&key=' . $key;
     //this works more reliably than only getting one event
-  if ($debugLocal){
-    echo $url;
-  }
   $event=retrieve_calendar_data($url);
+  if ($debugLocal){
+    echo "<p>$url</p>";
+    var_dump($event);
+  }
   $msg=format_calendar_event($event);
   return $msg;
   
