@@ -80,7 +80,7 @@ function format_full_calendarAPI_date_snippet($dateIn, $timeIn){
   return $dateOut . "T" . $timeOut . ":00.000Z"; 
 }
 
-function get_calendar_event($calendar, $timeMin, $timeMax){
+function get_single_calendar_event($calendar, $timeMin, $timeMax){
   $debugLocal=true;
   $key = get_googleAPI_key();
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 

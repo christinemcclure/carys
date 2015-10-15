@@ -18,7 +18,7 @@ include("../includes/functions.php"); ?>
           $timeStart=format_full_calendarAPI_date_snippet("today","8am");
           $timeEnd=format_full_calendarAPI_date_snippet("October 30 2015","11pm");
 
-          $msg=get_calendar_event($calendar,$timeStart,$timeEnd);
+          $msg=get_single_calendar_event($calendar,$timeStart,$timeEnd);
 //          $msg=get_multiple_calendar_events($calendar, 2);
 //          $time= format_full_calendarAPI_date_snippet("tomorrow","8am");
 
