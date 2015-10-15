@@ -63,10 +63,7 @@ function retrieve_calendar_data($url){
 function format_calendarAPI_time($time){
   global $APItimeFormat;
   $unixTime=strtotime($time);
-  $rc=date($APItimeFormat,$unixTime); 
- //  $rc=$rc . ":00.000Z"
-  return $rc . ":00.000Z";
-  
+  return date($APItimeFormat,$unixTime) . ":00.000Z"; 
 }
 
 function format_full_calendarAPI_date_string($date, $time){
