@@ -93,18 +93,31 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
   else{
     if ($debugLocal){
       echo "<p>$url</p>";
-      var_dump($event);
+      var_dump($events);
     }
-    
-   order_events_by_datetime($events);
-   
-    $msg=format_calendar_event($events[1]);
+   if (count($events)>1) { 
+    $event=order_events_by_datetime($events);
+   }
+    $msg=format_calendar_event($event);
     return $msg;
   }
 }
 
 function order_events_by_datetime($arrIn){
-  return 0;
+  $localDebug=false;
+  $check = 9999999999999;
+  for ($i=0; $i<count($arrIn); $i++){
+    $tmpDate=strtotime(get_event_data($arrIn[$i],"date"));
+    if ($tmpDate < $check){
+      $check=$tmpDate;
+      $earliest=$arrIn[$i];
+    }
+    if ($localDebug){
+      echo "<p>i=$i date=$tmpDate</p>";
+      var_dump($arrIn[$i]);
+    }
+  }
+  return $earliest;
 }
 
 function format_calendar_event($dataObj){
@@ -126,7 +139,7 @@ function get_event_date_type($dateObj){
       return 'date';
       //return strtotime(substr($event->start->date, 0,16));
     }
-    
+
   }
 
 function get_event_data($eventObj, $itemToGet){
