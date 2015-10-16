@@ -104,16 +104,17 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
 }
 
 function order_events_by_datetime($arrIn){
-  $localDebug=false;
+  $localDebug=true;
   $check = 9999999999999;
   for ($i=0; $i<count($arrIn); $i++){
-    $tmpDate=strtotime(get_event_data($arrIn[$i],"date"));
+    $tmpDate=get_event_data($arrIn[$i],"dateTime");
     if ($tmpDate < $check){
       $check=$tmpDate;
       $earliest=$arrIn[$i];
     }
     if ($localDebug){
-      echo "<p>i=$i date=$tmpDate</p>";
+      echo "<p>" . get_event_data($arrIn[$i],"dateTime") . "</p>";
+      echo "<p>i=$i date=$tmpDate check=$check</p>";
       var_dump($arrIn[$i]);
     }
   }
@@ -149,6 +150,10 @@ function get_event_data($eventObj, $itemToGet){
     $eventDateType=get_event_date_type($eventObj);
     
     switch ($itemToGet){
+      
+      case "dateTime":
+        return strtotime(substr($eventObj->start->$eventDateType, 0,16));
+        
       case "date":
         return date($dateFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));
         
