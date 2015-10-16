@@ -68,18 +68,25 @@ function format_calendarAPI_date_snippet($dateIn){
   return date($APIdateFormat,$dateIn) . "T" . date($APItimeFormat,$dateIn) . ":00.000Z"; 
 }
 
-function get_single_calendar_event($calendar, $timeMin, $timeMax){
-  $debugLocal=true;
+function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
   $key = get_googleAPI_key();
-  $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
-      $timeMin . '&timeMax=' . $timeMax . '&key=' . $key;
-    //this works more reliably than only getting one event
+  $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . 
+     '/events?singleEvents=true&orderby=startTime&timeMin=' . $timeMin . 
+     '&timeMax=' . $timeMax . '&key=' . $key;  
+  //this works more reliably than only getting one event
+  return $url;
+}
+
+function get_single_calendar_event($calendar, $timeMin, $timeMax){
+  $debugLocal=false;
+  $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
+
   $events=retrieve_calendar_data($url);
   if (count($events)<=0) {
     return "no data retrieved";
   }
   else{
-    if ($debugLocal){
+   if ($debugLocal){
       echo "<p>$url</p>";
       var_dump($events);
     }

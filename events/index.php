@@ -14,8 +14,10 @@ include("../includes/functions.php"); ?>
           $testCal="jsbqkranc44jmm1fqan0o7gmc4@group.calendar.google.com";
           $today=get_and_format_todays_date_time();
           echo "<p>today: $today</p>";
-
-          $msg=get_multiple_calendar_events($calendar,3);
+          $timeMin=format_calendarAPI_date_snippet(time()-7200); 
+          $timeMax=format_calendarAPI_date_snippet(time()+5184000);    
+          $msg=get_single_calendar_event($calendar,$timeMin, $timeMax);
+          //$msg=get_multiple_calendar_events($calendar,3);
 
           echo $msg;
           ?>
