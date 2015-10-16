@@ -104,22 +104,22 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
 }
 
 function order_events_by_datetime($arrIn){
-  $localDebug=false;
+  $localDebug=true;
   $check = 9999999999999;
   for ($i=0; $i<count($arrIn); $i++){
-    $tmpDate=get_event_data($arrIn[$i],"unixTime");
-    if ($tmpDate < time()){
-      echo "<p>$tmpDate  now=" . time() . "</p>";
-      continue;
+    $start=get_event_data($arrIn[$i],"unixStartTime");
+    
+    if (time()>get_event_data($arrIn[$i],"unixEndTime")){// skip events that have ended
+      continue; 
     }  
-    if ($tmpDate < $check){
-      $check=$tmpDate;
+    if ($start < $check){
+      $check=$start;
       $earliest=$arrIn[$i];
     }
     if ($localDebug){
-      echo "<p>" . get_event_data($arrIn[$i],"unixTime") . "</p>";
-      echo "<p>i=$i date=$tmpDate check=$check</p>";
-      var_dump($arrIn[$i]);
+      echo "<p>" . get_event_data($arrIn[$i],"unixStartTime") . "</p>";
+      echo "<p>i=$i date=$start check=$check</p>";
+      //var_dump($arrIn[$i]);
     }
   }
   return $earliest;
@@ -155,10 +155,13 @@ function get_event_data($eventObj, $itemToGet){
     
     switch ($itemToGet){
       
-      case "unixTime": 
+      case "unixStartTime": 
         return strtotime(substr($eventObj->start->$eventDateType, 0,16));
         
-      case "date":
+      case "unixEndTime": 
+        return strtotime(substr($eventObj->end->$eventDateType, 0,16));
+
+        case "date":
         return date($dateFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));
         
       case "start":

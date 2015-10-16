@@ -16,7 +16,7 @@ include("../includes/functions.php"); ?>
           echo "today: " . $today;
           echo "<br/>";
           
-          $timeStart=format_full_calendarAPI_date_snippet("tomorrow","3am");
+          $timeStart=format_full_calendarAPI_date_snippet("today","3am");
           $timeEnd=format_full_calendarAPI_date_snippet("October 30 2015","11pm");
 
           $msg=get_single_calendar_event($testCal,$timeStart,$timeEnd);
