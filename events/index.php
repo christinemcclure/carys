@@ -16,10 +16,11 @@ include("../includes/functions.php"); ?>
           echo "today: " . $today;
           echo "<br/>";
           
-          $timeStart=format_full_calendarAPI_date_snippet("today","3am");
-          $timeEnd=format_full_calendarAPI_date_snippet("October 30 2015","11pm");
+         $timeStart=format_calendarAPI_date_snippet(time()+9999999);
+         echo "<p>$timeStart</p>";
+//          $timeEnd=format_full_calendarAPI_date_snippet("October 30 2015","10pm");
 
-          $msg=get_single_calendar_event($testCal,$timeStart,$timeEnd);
+//          $msg=get_single_calendar_event($calendar,$timeStart,$timeEnd);
 //          $msg=get_multiple_calendar_events($calendar, 2);
 //          $time= format_full_calendarAPI_date_snippet("tomorrow","8am");
 

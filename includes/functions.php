@@ -62,26 +62,14 @@ function retrieve_calendar_data($url){
 }
 
 // format date and time for Google calendar API: 2015-10-21T12:00:00.000Z
-function format_calendarAPI_time($time){
-  $APItimeFormat="H:i";
-  $unixTime=strtotime($time);
-  return date($APItimeFormat,$unixTime); 
-}
-
-function format_calendarAPI_date($date){
+function format_calendarAPI_date_snippet($dateIn){
   $APIdateFormat="Y-m-d";
-  $unixTime=strtotime($date);
-  return date($APIdateFormat,$unixTime); 
-}
-
-function format_full_calendarAPI_date_snippet($dateIn, $timeIn){
-  $dateOut=format_calendarAPI_date($dateIn);
-  $timeOut=format_calendarAPI_time($timeIn);
-  return $dateOut . "T" . $timeOut . ":00.000Z"; 
+  $APItimeFormat="H:i";
+  return date($APIdateFormat,$dateIn) . "T" . date($APItimeFormat,$dateIn) . ":00.000Z"; 
 }
 
 function get_single_calendar_event($calendar, $timeMin, $timeMax){
-  $debugLocal=false;
+  $debugLocal=true;
   $key = get_googleAPI_key();
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . '/events?singleEvents=true&orderby=startTime&timeMin=' . 
       $timeMin . '&timeMax=' . $timeMax . '&key=' . $key;
