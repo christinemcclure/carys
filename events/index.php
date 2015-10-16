@@ -16,8 +16,8 @@ include("../includes/functions.php"); ?>
           echo "<p>today: $today</p>";
           $timeMin=format_calendarAPI_date_snippet(time()-7200); 
           $timeMax=format_calendarAPI_date_snippet(time()+5184000);    
-          $msg=get_single_calendar_event($calendar,$timeMin, $timeMax);
-          //$msg=get_multiple_calendar_events($calendar,3);
+          //$msg=get_single_calendar_event($calendar,$timeMin, $timeMax);
+          $msg=get_multiple_calendar_events($calendar,3,"","");
 
           echo $msg;
           ?>

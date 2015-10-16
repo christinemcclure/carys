@@ -91,7 +91,7 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
       var_dump($events);
     }
    if (count($events)>1) { 
-    $event=order_events_by_datetime($events);
+    $event=get_earliest_event($events);
    }
     $msg=format_calendar_event($event);
     return $msg;
@@ -99,14 +99,32 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
 }
 
 function get_multiple_calendar_events($calendar, $numEntries, $timeMin, $timeMax){
+  $debugLocal=true;
   if ( (!$timeMin)| (!$timeMax) ){ //get events 60 days out if blank
     $timeMin=format_calendarAPI_date_snippet(time()-7200); 
     $timeMax=format_calendarAPI_date_snippet(time()+5184000);    
   }
+  
+  $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
 
+  $events=retrieve_calendar_data($url);
+  if (count($events)<=0) {
+    return "no data retrieved";
+  }
+  else{
+   if ($debugLocal){
+      echo "<p>$url " . count($events) . "</p>";
+      
+    }
+
+    $event=get_earliest_event($events);
+
+    $msg=format_calendar_event($event);
+    return $msg;
+  }
 }
 
-function order_events_by_datetime($arrIn){
+function get_earliest_event($arrIn){
   $localDebug=false;
   $check = 9999999999;
   for ($i=0; $i<count($arrIn); $i++){
