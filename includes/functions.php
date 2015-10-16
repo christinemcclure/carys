@@ -104,16 +104,20 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
 }
 
 function order_events_by_datetime($arrIn){
-  $localDebug=true;
+  $localDebug=false;
   $check = 9999999999999;
   for ($i=0; $i<count($arrIn); $i++){
-    $tmpDate=get_event_data($arrIn[$i],"dateTime");
+    $tmpDate=get_event_data($arrIn[$i],"unixTime");
+    if ($tmpDate < time()){
+      echo "<p>$tmpDate  now=" . time() . "</p>";
+      continue;
+    }  
     if ($tmpDate < $check){
       $check=$tmpDate;
       $earliest=$arrIn[$i];
     }
     if ($localDebug){
-      echo "<p>" . get_event_data($arrIn[$i],"dateTime") . "</p>";
+      echo "<p>" . get_event_data($arrIn[$i],"unixTime") . "</p>";
       echo "<p>i=$i date=$tmpDate check=$check</p>";
       var_dump($arrIn[$i]);
     }
@@ -151,7 +155,7 @@ function get_event_data($eventObj, $itemToGet){
     
     switch ($itemToGet){
       
-      case "dateTime":
+      case "unixTime": 
         return strtotime(substr($eventObj->start->$eventDateType, 0,16));
         
       case "date":
