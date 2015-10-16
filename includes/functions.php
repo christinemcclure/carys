@@ -91,6 +91,14 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
   }
 }
 
+function get_multiple_calendar_events($calendar, $numEntries, $timeMin, $timeMax){
+  if ( (!$timeMin)| (!$timeMax) ){ //get events 60 days out if blank
+    $timeMin=format_calendarAPI_date_snippet(time()-7200); 
+    $timeMax=format_calendarAPI_date_snippet(time()+5184000);    
+  }
+
+}
+
 function order_events_by_datetime($arrIn){
   $localDebug=false;
   $check = 9999999999;
