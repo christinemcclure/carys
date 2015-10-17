@@ -2,7 +2,7 @@
 date_default_timezone_set('America/Chicago');
 $debugGlobal=false;
 $APIformat="Y-m-d";
-
+$earliestArrayElementNumber="";
 
 function get_and_format_todays_date_time(){
   $dateFormat="l, F j";
@@ -78,6 +78,7 @@ function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
 }
 
 function get_single_calendar_event($calendar, $timeMin, $timeMax){
+  global $earliestArrayElementNumber;
   $debugLocal=false;
   $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
 
@@ -86,13 +87,14 @@ function get_single_calendar_event($calendar, $timeMin, $timeMax){
     return "no data retrieved";
   }
   else{
-   if ($debugLocal){
-      echo "<p>$url</p>";
-      var_dump($events);
-    }
    if (count($events)>1) { 
     $event=get_earliest_event($events);
    }
+   if ($debugLocal){
+      echo "<p>$url</p>";
+      echo "<p>$earliestArrayElementNumber is the earliest of " . count($events) . " elements</p>";
+      var_dump($events);
+    }   
     $msg=format_calendar_event($event);
     return $msg;
   }
@@ -125,6 +127,7 @@ function get_multiple_calendar_events($calendar, $numEntries, $timeMin, $timeMax
 }
 
 function get_earliest_event($arrIn){
+  global $earliestArrayElementNumber;
   $localDebug=false;
   $check = 9999999999;
   for ($i=0; $i<count($arrIn); $i++){
@@ -136,6 +139,7 @@ function get_earliest_event($arrIn){
     if ($start < $check){
       $check=$start;
       $earliest=$arrIn[$i];
+      $earliestArrayElementNumber=$i;
     }
     if ($localDebug){
       echo "<p>" . get_event_data($arrIn[$i],"unixStartTime") . "</p>";
