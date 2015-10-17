@@ -117,9 +117,9 @@ function get_multiple_calendar_events($calendar, $numEntries, $timeMin=0, $timeM
       $event=get_earliest_event($events);
       unset($events[$earliestArrayElementNumber]);
       $msg.=format_calendar_event($event);
-      return $msg;
     }
   }
+  return $msg;
 }
 
 function get_earliest_event($arrIn){
