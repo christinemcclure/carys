@@ -115,8 +115,10 @@ function get_multiple_calendar_events($calendar, $numEntries, $timeMin=0, $timeM
   else{
     for ($i=0; $i<$numEntries; $i++){
       $event=get_earliest_event($events);
-      unset($events[$earliestArrayElementNumber]);
-      $msg.=format_calendar_event($event);
+      if ($event){
+        unset($events[$earliestArrayElementNumber]);
+        $msg.=format_calendar_event($event);
+      }
     }
   }
   return $msg;
