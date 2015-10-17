@@ -77,30 +77,8 @@ function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
   return $url;
 }
 
-function get_single_calendar_event($calendar, $timeMin, $timeMax){
-  global $earliestArrayElementNumber;
-  $debugLocal=false;
-  $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
 
-  $events=retrieve_calendar_data($url);
-  if (count($events)<=0) {
-    return "no data retrieved";
-  }
-  else{
-   if (count($events)>1) { 
-    $event=get_earliest_event($events);
-   }
-   if ($debugLocal){
-      echo "<p>$url</p>";
-      echo "<p>$earliestArrayElementNumber is the earliest of " . count($events) . " elements</p>";
-      var_dump($events);
-    }   
-    $msg=format_calendar_event($event);
-    return $msg;
-  }
-}
-
-function get_multiple_calendar_events($calendar, $numEntries, $timeMin=0, $timeMax=0){
+function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $timeMax=0){
   $debugLocal=true;
   global $earliestArrayElementNumber;
   if ( ($timeMin==0)| ($timeMax==0) ){ //get events 60 days out if blank

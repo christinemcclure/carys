@@ -17,7 +17,7 @@ include("../includes/functions.php"); ?>
           $timeMin=format_calendarAPI_date_snippet(time()-7200); 
           $timeMax=format_calendarAPI_date_snippet(time()+691200);    
           //$msg=get_single_calendar_event($calendar,$timeMin, $timeMax);
-          $msg=get_multiple_calendar_events($calendar,10);
+          $msg=get_and_format_calendar_events($calendar,4);
 
           echo $msg;
           ?>
