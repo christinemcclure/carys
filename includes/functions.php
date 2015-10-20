@@ -179,10 +179,7 @@ function get_event_date_type($dateObj){
 
   }
 
-function get_event_data($eventObj, $itemToGet){
-    $timeFormat="g:ia";
-    $dateFormat="l, F jS";
-    
+function get_event_data($eventObj, $itemToGet, $dateFormat="l, F jS", $timeFormat="g:ia"){    
     $eventDateType=get_event_date_type($eventObj);
     
     switch ($itemToGet){
