@@ -4,13 +4,6 @@ $debugGlobal=false;
 $APIformat="Y-m-d";
 $earliestArrayElementNumber="";
 
-function get_and_format_todays_date_time(){
-  $dateFormat="l, F j";
-  $timeFormat="g:ia";
-  $today = date($dateFormat).", " . date($timeFormat);
-  return $today;
-}
-
 //load developer key
 function get_googleAPI_key(){ 
   $debug=false;
@@ -77,9 +70,28 @@ function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
   return $url;
 }
 
+function get_and_format_calendar_specials($calendar){
+  $current=time();
+  $msg="<ul>";
+  for ($i=0;$i<7;$i++){
+    $timeMin=date("Y-m-d", $current) . "T13:00:00.000Z"; 
+    $timeMax=date("Y-m-d",$current). "T20:00:00.000Z";    
+    $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
+    $events=retrieve_calendar_data($url);
+    if (count($events)<=0) {
+      return "no data retrieved";
+    }
+    else{
+      $msg.=format_calendar_special($events[0]);
+      $current+=86400;
+    }
+  }
+  return $msg . "</ul>";
+}
+
 
 function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $timeMax=0){
-  $debugLocal=true;
+  $debugLocal=false;
   global $earliestArrayElementNumber;
   if ( ($timeMin==0)| ($timeMax==0) ){ //get events 60 days out if blank
     $timeMin=format_calendarAPI_date_snippet(time()-7200); 
@@ -99,7 +111,7 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
       }
     }
   }
-  return $msg;
+  return "<ul>" . $msg . "</ul>";
 }
 
 function get_earliest_event($arrIn){
@@ -127,11 +139,24 @@ function get_earliest_event($arrIn){
 }
 
 function format_calendar_event($dataObj){
-  $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
-  $message .=  "<p>" . get_event_data($dataObj, "description") . "</p>";
+  $message .=  "<li><h2>" . get_event_data($dataObj, "title") . "</h2>";
+  $desc = get_event_data($dataObj, "description");
+  if ($desc){
+    $message .=  "<p>" . $desc . "</p>";
+  }
   $message .=  "<h3>" . get_event_data($dataObj, "date") . "</h3>";
   $message .=  "<h4>" . get_event_data($dataObj, "start") . " - ";
-  $message .=  get_event_data($dataObj, "end") . "</h4>";
+  $message .=  get_event_data($dataObj, "end") . "</h4></li>";
+  return $message;
+}
+
+
+function format_calendar_special($dataObj){
+  $message .=  "<li><h3>" . get_event_data($dataObj, "date", "l") . "s: " . get_event_data($dataObj, "title") . "</h3>";
+  $desc = get_event_data($dataObj, "description");
+  if ($desc){
+    $message .=  "<p>" . $desc . "</p></li>";
+  }
   return $message;
 }
 
@@ -148,10 +173,7 @@ function get_event_date_type($dateObj){
 
   }
 
-function get_event_data($eventObj, $itemToGet){
-    $timeFormat="g:ia";
-    $dateFormat="l, F jS";
-    
+function get_event_data($eventObj, $itemToGet, $dateFormat="l, F jS", $timeFormat="g:ia"){    
     $eventDateType=get_event_date_type($eventObj);
     
     switch ($itemToGet){
@@ -162,7 +184,7 @@ function get_event_data($eventObj, $itemToGet){
       case "unixEndTime": 
         return strtotime(substr($eventObj->end->$eventDateType, 0,16));
 
-        case "date":
+      case "date":
         return date($dateFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));
         
       case "start":
