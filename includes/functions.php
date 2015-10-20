@@ -71,25 +71,22 @@ function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
 }
 
 function get_and_format_calendar_specials($calendar){
-  $debugLocal=true;
-  global $earliestArrayElementNumber;
-  $timeMin=date("Y-m-d") . "T13:00:00.000Z"; 
-  $timeMax=date("Y-m-d",time()+700000). "T18:00:00.000Z";    
-  $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
-  $events=retrieve_calendar_data($url);
-  if (count($events)<=0) {
-    return "no data retrieved";
-  }
-  else{
-    for ($i=0; $i<7; $i++){
-      $event=get_earliest_event($events);
-      if ($event){
-        unset($events[$earliestArrayElementNumber]);
-        $msg.=format_calendar_special($event);
-      }
+  $current=time();
+  $msg="<ul>";
+  for ($i=0;$i<7;$i++){
+    $timeMin=date("Y-m-d", $current) . "T13:00:00.000Z"; 
+    $timeMax=date("Y-m-d",$current). "T20:00:00.000Z";    
+    $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
+    $events=retrieve_calendar_data($url);
+    if (count($events)<=0) {
+      return "no data retrieved";
+    }
+    else{
+      $msg.=format_calendar_special($events[0]);
+      $current+=86400;
     }
   }
-  return $msg;
+  return $msg . "</ul>";
 }
 
 
@@ -155,14 +152,11 @@ function format_calendar_event($dataObj){
 
 
 function format_calendar_special($dataObj){
-  $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
+  $message .=  "<li><h3>" . get_event_data($dataObj, "date", "l") . "s: " . get_event_data($dataObj, "title") . "</h3>";
   $desc = get_event_data($dataObj, "description");
   if ($desc){
-    $message .=  "<p>" . $desc . "</p>";
+    $message .=  "<p>" . $desc . "</p></li>";
   }
-  $message .=  "<h3>" . get_event_data($dataObj, "date") . "</h3>";
-  $message .=  "<h4>" . get_event_data($dataObj, "start") . " - ";
-  $message .=  get_event_data($dataObj, "end") . "</h4>";
   return $message;
 }
 
@@ -190,7 +184,7 @@ function get_event_data($eventObj, $itemToGet, $dateFormat="l, F jS", $timeForma
       case "unixEndTime": 
         return strtotime(substr($eventObj->end->$eventDateType, 0,16));
 
-        case "date":
+      case "date":
         return date($dateFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));
         
       case "start":

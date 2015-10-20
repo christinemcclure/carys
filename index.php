@@ -14,7 +14,7 @@
           </p>
         </div>
         <div class="col2">
-          <h2>Weekly specials</h2>
+          <h2>Weekly Specials</h2>
           <?php
             $calendar="dnfn2uq4avupk716k95a5cvpdk@group.calendar.google.com";
             $timeMin=format_calendarAPI_date_snippet(time()-7200); 
