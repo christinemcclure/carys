@@ -70,9 +70,31 @@ function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
   return $url;
 }
 
+function get_and_format_calendar_specials($calendar){
+  $debugLocal=true;
+  global $earliestArrayElementNumber;
+  $timeMin=date("Y-m-d") . "T13:00:00.000Z"; 
+  $timeMax=date("Y-m-d",time()+700000). "T18:00:00.000Z";    
+  $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
+  $events=retrieve_calendar_data($url);
+  if (count($events)<=0) {
+    return "no data retrieved";
+  }
+  else{
+    for ($i=0; $i<7; $i++){
+      $event=get_earliest_event($events);
+      if ($event){
+        unset($events[$earliestArrayElementNumber]);
+        $msg.=format_calendar_special($event);
+      }
+    }
+  }
+  return $msg;
+}
+
 
 function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $timeMax=0){
-  $debugLocal=true;
+  $debugLocal=false;
   global $earliestArrayElementNumber;
   if ( ($timeMin==0)| ($timeMax==0) ){ //get events 60 days out if blank
     $timeMin=format_calendarAPI_date_snippet(time()-7200); 
@@ -120,6 +142,19 @@ function get_earliest_event($arrIn){
 }
 
 function format_calendar_event($dataObj){
+  $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
+  $desc = get_event_data($dataObj, "description");
+  if ($desc){
+    $message .=  "<p>" . $desc . "</p>";
+  }
+  $message .=  "<h3>" . get_event_data($dataObj, "date") . "</h3>";
+  $message .=  "<h4>" . get_event_data($dataObj, "start") . " - ";
+  $message .=  get_event_data($dataObj, "end") . "</h4>";
+  return $message;
+}
+
+
+function format_calendar_special($dataObj){
   $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
   $desc = get_event_data($dataObj, "description");
   if ($desc){
