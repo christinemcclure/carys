@@ -4,13 +4,6 @@ $debugGlobal=false;
 $APIformat="Y-m-d";
 $earliestArrayElementNumber="";
 
-function get_and_format_todays_date_time(){
-  $dateFormat="l, F j";
-  $timeFormat="g:ia";
-  $today = date($dateFormat).", " . date($timeFormat);
-  return $today;
-}
-
 //load developer key
 function get_googleAPI_key(){ 
   $debug=false;
