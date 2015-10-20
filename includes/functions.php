@@ -111,7 +111,7 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
       }
     }
   }
-  return $msg;
+  return "<ul>" . $msg . "</ul>";
 }
 
 function get_earliest_event($arrIn){
@@ -139,14 +139,14 @@ function get_earliest_event($arrIn){
 }
 
 function format_calendar_event($dataObj){
-  $message .=  "<h2>" . get_event_data($dataObj, "title") . "</h2>";
+  $message .=  "<li><h2>" . get_event_data($dataObj, "title") . "</h2>";
   $desc = get_event_data($dataObj, "description");
   if ($desc){
     $message .=  "<p>" . $desc . "</p>";
   }
   $message .=  "<h3>" . get_event_data($dataObj, "date") . "</h3>";
   $message .=  "<h4>" . get_event_data($dataObj, "start") . " - ";
-  $message .=  get_event_data($dataObj, "end") . "</h4>";
+  $message .=  get_event_data($dataObj, "end") . "</h4></li>";
   return $message;
 }
 
