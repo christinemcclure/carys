@@ -1,93 +1,108 @@
-/* line 8, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
 .container {
   background: pink;
 }
 
-/* line 9, ../scss/main.scss */
+/* line 10, ../scss/main.scss */
 header {
   background: lime;
 }
 
-/* line 10, ../scss/main.scss */
+/* line 11, ../scss/main.scss */
 #main {
   background: lightBlue;
 }
 
-/* line 11, ../scss/main.scss */
+/* line 12, ../scss/main.scss */
 .col1 {
   background: silver;
 }
 
-/* line 12, ../scss/main.scss */
+/* line 13, ../scss/main.scss */
 .col2 {
   background: orange;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 footer {
   background: yellow;
 }
 
-/* line 16, ../scss/main.scss */
+/*
+(element){  
+  background-color: white;  
+  background-image: url("example.png");  
+  background-repeat: no-repeat;  
+  background-attachment: scroll;  
+  background-position: 0% 0%;
+  background-size: contain;
+}
+
+*/
+/* line 48, ../scss/main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 html {
   padding: 2%;
   font-size: 1em;
-  font-family: "Aldrich", sans-serif;
+  font-family: "Varela", sans-serif;
 }
-/* line 19, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
 html a {
   text-decoration: none;
 }
-/* line 21, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 html ul {
   list-style: none;
 }
+/* line 55, ../scss/main.scss */
+html h1, html h2, html h3, html h4 {
+  font-family: "Righteous", sans-serif;
+}
 
-/* line 25, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 header h1 {
   text-align: center;
 }
-/* line 26, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 header p {
   text-align: center;
   margin: 0;
 }
 
-/* line 32, ../scss/main.scss */
+/* line 67, ../scss/main.scss */
 footer {
   text-align: center;
 }
 
-/* line 35, ../scss/main.scss */
+/* line 70, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 39, ../scss/main.scss */
+/* line 74, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
 }
-/* line 42, ../scss/main.scss */
+/* line 77, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 1.3em;
 }
 
-/* line 48, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 #beer_menu, #beer_menu a:last-child {
   font-size: .8em;
   color: grey;
 }
-/* line 51, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 #beer_menu span, #beer_menu a:last-child span {
   font-size: 1em;
   color: green;
 }
-/* line 55, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 #beer_menu #red_wine th.serving, #beer_menu #red_wine td.serving, #beer_menu #white_wine th.serving, #beer_menu #white_wine td.serving, #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #red_wine th.serving, #beer_menu a:last-child #red_wine td.serving, #beer_menu a:last-child #white_wine th.serving, #beer_menu a:last-child #white_wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }
