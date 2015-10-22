@@ -28,31 +28,36 @@ footer {
   background: yellow;
 }
 
-/* line 10, ../scss/main.scss */
+/* line 11, ../scss/main.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 14, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 13, ../scss/main.scss */
+/* line 18, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
 }
-/* line 16, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 1.3em;
 }
 
-/* line 22, ../scss/main.scss */
+/* line 27, ../scss/main.scss */
 #beer_menu, #beer_menu a:last-child {
   font-size: .8em;
   color: grey;
 }
-/* line 25, ../scss/main.scss */
+/* line 30, ../scss/main.scss */
 #beer_menu span, #beer_menu a:last-child span {
   font-size: 1em;
   color: green;
 }
-/* line 29, ../scss/main.scss */
+/* line 34, ../scss/main.scss */
 #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }

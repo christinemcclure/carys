@@ -6,8 +6,13 @@ header{background:lime;}
 .col1{background:silver;}
 .col2{background:orange;}
 footer{background:yellow;}
-/////
+
+//General settings
+img {max-width:100%;}
+
+///// Now Serving page
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
+
 
 #beer-sub-nav {
   li{
