@@ -19,5 +19,10 @@ $(document).ready(function() {
       $("#beer_menu table caption").html(captionText);
     }
    })($);
-  
+   
+  $("#beer_menu a:last-child").hide();
+  $( "#beer_menu" ).contents().filter(function() {
+      return this.nodeType === 3;
+    }).wrap( "<p></p>" ).end().filter( "br" ).remove();
+  $("#beer_menu p:last-child").hide();
 });
