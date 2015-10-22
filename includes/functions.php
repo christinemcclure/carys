@@ -181,20 +181,45 @@ function get_event_data($eventObj, $itemToGet, $dateFormat="l, F jS", $timeForma
     
     switch ($itemToGet){
       
-      case "unixStartTime": 
-        return strtotime(substr($eventObj->start->$eventDateType, 0,16));
+      case "unixStartTime":
+        if (isset($eventObj->start->$eventDateType)){
+           return strtotime(substr($eventObj->start->$eventDateType, 0,16));
+        }
+        else{
+          return "";
+        }
         
       case "unixEndTime": 
-        return strtotime(substr($eventObj->end->$eventDateType, 0,16));
+        if (isset($eventObj->end->$eventDateType)){
+           return strtotime(substr($eventObj->end->$eventDateType, 0,16));
+        }
+        else{
+          return "";
+        }
 
       case "date":
-        return date($dateFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));
+        if (isset($eventObj->start->$eventDateType)){
+          return date($dateFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));
+        }
+        else{
+          return "";
+        }
         
       case "start":
-        return date($timeFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16)));  
+        if (isset($eventObj->start->$eventDateType)){
+           return date($timeFormat,strtotime(substr($eventObj->start->$eventDateType, 0,16))); 
+        }
+        else{
+          return "";
+        }
         
       case "end":
-        return date($timeFormat,strtotime(substr($eventObj->end->$eventDateType, 0,16)));  
+        if (isset($eventObj->end->$eventDateType)){
+           return date($timeFormat,strtotime(substr($eventObj->end->$eventDateType, 0,16)));  
+        }
+        else{
+          return "";
+        }
         
       case "summary":
         return $eventObj->summary;  
