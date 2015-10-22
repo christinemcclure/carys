@@ -1,5 +1,7 @@
 //variables
 $fontSize:1em;
+$aldrich: 'Aldrich', sans-serif;
+$mainFont: $aldrich;
 
 
 // test colors
@@ -17,6 +19,7 @@ html{
   a{text-decoration:none;}
   font-size:$fontSize;
   ul{list-style: none;}
+  font-family: $mainFont;
 }
 header{
   h1{text-align:center;}
