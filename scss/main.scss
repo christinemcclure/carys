@@ -29,7 +29,20 @@ $red: #740F0F;
 $black: #0D0C10;
 // possibly this with purple instead of fuschia
 
+//background image ideas:
+// https://css-tricks.com/how-to-resizeable-background-image/
 
+/*
+(element){  
+  background-color: white;  
+  background-image: url("example.png");  
+  background-repeat: no-repeat;  
+  background-attachment: scroll;  
+  background-position: 0% 0%;
+  background-size: contain;
+}
+
+*/
 
 //General/mobile settings
 img {max-width:100%;}
