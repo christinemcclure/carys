@@ -92,6 +92,7 @@ function get_and_format_calendar_specials($calendar){
 
 function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $timeMax=0){
   $debugLocal=false;
+  $msg="";
   global $earliestArrayElementNumber;
   if ( ($timeMin==0)| ($timeMax==0) ){ //get events 60 days out if blank
     $timeMin=format_calendarAPI_date_snippet(time()-7200); 
@@ -139,6 +140,7 @@ function get_earliest_event($arrIn){
 }
 
 function format_calendar_event($dataObj){
+  $message="";
   $message .=  "<li><h2>" . get_event_data($dataObj, "title") . "</h2>";
   $desc = get_event_data($dataObj, "description");
   if ($desc){
@@ -152,6 +154,7 @@ function format_calendar_event($dataObj){
 
 
 function format_calendar_special($dataObj){
+  $message="";
   $message .=  "<li><h3>" . get_event_data($dataObj, "date", "l") . "s: " . get_event_data($dataObj, "title") . "</h3>";
   $desc = get_event_data($dataObj, "description");
   if ($desc){
