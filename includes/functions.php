@@ -203,7 +203,12 @@ function get_event_data($eventObj, $itemToGet, $dateFormat="l, F jS", $timeForma
         return $eventObj->summary;  
       
       case "description":
-        return $eventObj->description;
+        if (isset($eventObj->description)){
+          return $eventObj->description;
+        }
+        else{
+          return "";
+        }
         
       default:
         return "wrong input for calendar event";
