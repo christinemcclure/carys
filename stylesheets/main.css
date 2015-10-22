@@ -1,87 +1,88 @@
-/* line 3, ../scss/main.scss */
+/* line 6, ../scss/main.scss */
 .container {
   background: pink;
 }
 
-/* line 4, ../scss/main.scss */
+/* line 7, ../scss/main.scss */
 header {
   background: lime;
 }
 
-/* line 5, ../scss/main.scss */
+/* line 8, ../scss/main.scss */
 #main {
   background: lightBlue;
 }
 
-/* line 6, ../scss/main.scss */
+/* line 9, ../scss/main.scss */
 .col1 {
   background: silver;
 }
 
-/* line 7, ../scss/main.scss */
+/* line 10, ../scss/main.scss */
 .col2 {
   background: orange;
 }
 
-/* line 8, ../scss/main.scss */
+/* line 11, ../scss/main.scss */
 footer {
   background: yellow;
 }
 
-/* line 11, ../scss/main.scss */
+/* line 14, ../scss/main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 12, ../scss/main.scss */
+/* line 15, ../scss/main.scss */
 html {
   padding: 2%;
+  font-size: 1em;
 }
-/* line 14, ../scss/main.scss */
+/* line 17, ../scss/main.scss */
 html a {
   text-decoration: none;
 }
 
-/* line 17, ../scss/main.scss */
+/* line 21, ../scss/main.scss */
 header h1 {
   text-align: center;
 }
-/* line 18, ../scss/main.scss */
+/* line 22, ../scss/main.scss */
 header p {
   text-align: center;
   margin: 0;
 }
 
-/* line 24, ../scss/main.scss */
+/* line 28, ../scss/main.scss */
 footer {
   text-align: center;
 }
 
-/* line 27, ../scss/main.scss */
+/* line 31, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 31, ../scss/main.scss */
+/* line 35, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
 }
-/* line 34, ../scss/main.scss */
+/* line 38, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 1.3em;
 }
 
-/* line 40, ../scss/main.scss */
+/* line 44, ../scss/main.scss */
 #beer_menu, #beer_menu a:last-child {
   font-size: .8em;
   color: grey;
 }
-/* line 43, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 #beer_menu span, #beer_menu a:last-child span {
   font-size: 1em;
   color: green;
 }
-/* line 47, ../scss/main.scss */
+/* line 51, ../scss/main.scss */
 #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }
