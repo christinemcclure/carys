@@ -116,24 +116,26 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
 }
 
 function get_earliest_event($arrIn){
+  $earliest="";
   global $earliestArrayElementNumber;
   $localDebug=false;
   $check = 9999999999;
   for ($i=0; $i<count($arrIn); $i++){
-    $start=get_event_data($arrIn[$i],"unixStartTime");
-
-    if (time()>get_event_data($arrIn[$i],"unixEndTime")){// skip events that have ended
-      continue; 
-    }  
-    if ($start < $check){
-      $check=$start;
-      $earliest=$arrIn[$i];
-      $earliestArrayElementNumber=$i;
-    }
-    if ($localDebug){
-      echo "<p>" . get_event_data($arrIn[$i],"unixStartTime") . "</p>";
-      echo "<p>i=$i date=$start check=$check</p>";
-      //var_dump($arrIn[$i]);
+    if (isset($arrIn[$i])){ // avoid php notice error
+      $start=get_event_data($arrIn[$i],"unixStartTime");
+      if (time()>get_event_data($arrIn[$i],"unixEndTime")){// skip events that have ended
+        continue; 
+      }  
+      if ($start < $check){
+        $check=$start;
+        $earliest=$arrIn[$i];
+        $earliestArrayElementNumber=$i;
+      }
+      if ($localDebug){
+        echo "<p>" . get_event_data($arrIn[$i],"unixStartTime") . "</p>";
+        echo "<p>i=$i date=$start check=$check</p>";
+        //var_dump($arrIn[$i]);
+      }
     }
   }
   return $earliest;
