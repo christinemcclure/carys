@@ -52,7 +52,7 @@ footer{text-align:center;}
     font-size: 1em; 
     color:green; // regular color text
   }
-  #wine th.serving, #wine td.serving { // hide vessel for wine
+  #red_wine th.serving, #red_wine td.serving, #white_wine th.serving, #white_wine td.serving, #wine th.serving, #wine td.serving { // hide vessel for wine
       display: none;
   }
 }
