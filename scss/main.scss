@@ -1,8 +1,9 @@
 //variables
 $fontSize:1em;
-$aldrich: 'Aldrich', sans-serif;
-$mainFont: $aldrich;
-
+$varela: 'Varela', sans-serif;
+$righteous: 'Righteous', sans-serif;
+$mainFont: $varela;
+$headerFont: $righteous; 
 
 // test colors
 .container{background:pink;}
@@ -20,6 +21,9 @@ html{
   font-size:$fontSize;
   ul{list-style: none;}
   font-family: $mainFont;
+  h1, h2, h3, h4{
+    font-family: $headerFont;
+  }
 }
 header{
   h1{text-align:center;}
