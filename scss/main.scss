@@ -7,8 +7,21 @@ header{background:lime;}
 .col2{background:orange;}
 footer{background:yellow;}
 
-//General settings
+//General/mobile settings
 img {max-width:100%;}
+html{
+  padding:2% 1%;
+  a{text-decoration:none;}
+}
+header{
+  h1{text-align:center;}
+  p {
+    text-align:center;
+    margin:0;
+  }
+}
+
+footer{text-align:center;}
 
 ///// Now Serving page
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
