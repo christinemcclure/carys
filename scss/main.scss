@@ -46,6 +46,8 @@ $black: #0D0C10;
 
 //General/mobile settings
 img {max-width:100%;}
+.float-left{float:left;}
+.float-right{float:right;}
 html{
   padding:2%;
   a{text-decoration:none;}
@@ -73,6 +75,10 @@ header{
     font-size:1.2em;
     //margin:0 0 0 20%;
   }
+}
+
+#main{ // main container
+  clear:both;
 }
 
 footer{text-align:center;}
@@ -107,5 +113,12 @@ footer{text-align:center;}
 @media only screen and (min-device-width: 600px) {
   header{
     img{display:block;}
+  }
+}
+
+
+@media only screen and (min-device-width: 1024px) {
+  header{
+
   }
 }
