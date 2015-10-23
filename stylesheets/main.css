@@ -69,7 +69,7 @@ header {
 }
 /* line 61, ../scss/main.scss */
 header img {
-  display: block;
+  display: none;
   margin: 0 auto;
 }
 /* line 65, ../scss/main.scss */
