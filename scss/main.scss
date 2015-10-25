@@ -79,11 +79,14 @@ header{
 }
 
 nav{
-  li a {
+  li {
     font-size:1.4em;
     text-align: center;
     float:left;
-    margin: 14px 10px 14px 80px;
+    margin: 14px 10px 14px 70px;
+    a {
+      padding: 4px 10px;
+    }
   }
 }
 
