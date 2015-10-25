@@ -138,6 +138,19 @@ footer{text-align:center;}
       width: 34%;
     }
   }
+  
+  footer{
+    p:first-child{
+      width:70%;
+      float:left;
+      text-align:left;
+    }
+    p:last-child{
+      width: 20%;
+      text-align:right;
+      float:right;
+    }
+  }
 }
 
 

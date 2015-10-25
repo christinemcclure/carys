@@ -161,4 +161,17 @@ footer {
   #home .column + .column {
     width: 34%;
   }
+
+  /* line 143, ../scss/main.scss */
+  footer p:first-child {
+    width: 70%;
+    float: left;
+    text-align: left;
+  }
+  /* line 148, ../scss/main.scss */
+  footer p:last-child {
+    width: 20%;
+    text-align: right;
+    float: right;
+  }
 }
