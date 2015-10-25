@@ -12,8 +12,8 @@ function get_googleAPI_key(){
   $cwd= getcwd();
   if($debug) echo getcwd();
   
-  if (strpos($cwd,"Carys")!==false) //my Macbook
-    $path="/Users/christine/Sites/Carys/";
+  if (strpos($cwd,"carys")!==false) //my Macbook
+    $path="/Users/christine/Sites/carys/";
   elseif (strpos($cwd,"caryslng")!==false) { //online
     if (strpos($cwd,"dev")!==false)
      $path="/home/caryslng/public_html/dev/";
