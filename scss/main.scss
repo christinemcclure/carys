@@ -49,6 +49,7 @@ img {max-width:100%;}
 .clear {clear:both;}
 .column{
   padding: 1em 2em;
+  width: 80%;
 }
 
 html{
@@ -131,11 +132,14 @@ footer{text-align:center;}
   }
   #home{
     .column{
-      width: 56%;
+      width: 50%;
       float:left;
+      p:first-child{
+        padding-top:1em;
+      }
     }
     .column + .column{
-      width: 34%;
+      width: 40%;
     }
   }
   
