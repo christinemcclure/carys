@@ -125,6 +125,14 @@ footer{text-align:center;}
   }
 }
 
+#main{
+  height:400px;
+  background: red  url("../images/bar-top.jpg");  
+  background-repeat: no-repeat;  
+  background-attachment: scroll;  
+  background-position: 0% 0%;
+  background-size: contain;
+}
 
 @media only screen and (min-device-width: 600px) {
   header{

@@ -147,44 +147,54 @@ footer {
   display: none;
 }
 
+/* line 128, ../scss/main.scss */
+#main {
+  height: 400px;
+  background: red url("../images/bar-top.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: 0% 0%;
+  background-size: contain;
+}
+
 @media only screen and (min-device-width: 600px) {
-  /* line 131, ../scss/main.scss */
+  /* line 139, ../scss/main.scss */
   header img {
     display: block;
   }
 
-  /* line 133, ../scss/main.scss */
+  /* line 141, ../scss/main.scss */
   nav li {
     clear: none;
     float: left;
     margin: 14px 10px 14px 70px;
   }
-  /* line 137, ../scss/main.scss */
+  /* line 145, ../scss/main.scss */
   nav li a {
     padding: 4px 10px;
   }
 
-  /* line 140, ../scss/main.scss */
+  /* line 148, ../scss/main.scss */
   #home .column {
     width: 50%;
     float: left;
   }
-  /* line 143, ../scss/main.scss */
+  /* line 151, ../scss/main.scss */
   #home .column p:first-child {
     padding-top: 1em;
   }
-  /* line 147, ../scss/main.scss */
+  /* line 155, ../scss/main.scss */
   #home .column + .column {
     width: 30%;
   }
 
-  /* line 153, ../scss/main.scss */
+  /* line 161, ../scss/main.scss */
   footer p:first-child {
     width: 70%;
     float: left;
     text-align: left;
   }
-  /* line 158, ../scss/main.scss */
+  /* line 166, ../scss/main.scss */
   footer p:last-child {
     width: 20%;
     text-align: right;
