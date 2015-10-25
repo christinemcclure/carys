@@ -9,8 +9,6 @@ $headerFont: $righteous;
 .container{background:pink;}
 header{background:lime;}
 #main{background:lightBlue;}
-.col1{background:silver;}
-.col2{background:orange;}
 footer{background:yellow;}
 
 //Kuler photo colors
@@ -49,6 +47,10 @@ img {max-width:100%;}
 .float-left{float:left;}
 .float-right{float:right;}
 .clear {clear:both;}
+.column{
+  padding: 1em 2em;
+}
+
 html{
   padding:2%;
   a{text-decoration:none;}
@@ -126,6 +128,15 @@ footer{text-align:center;}
 @media only screen and (min-device-width: 600px) {
   header{
     img{display:block;}
+  }
+  #home{
+    .column{
+      width: 56%;
+      float:left;
+    }
+    .column + .column{
+      width: 34%;
+    }
   }
 }
 
