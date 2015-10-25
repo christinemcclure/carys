@@ -148,7 +148,7 @@ footer {
 }
 
 /* line 128, ../scss/main.scss */
-#main {
+.background {
   height: 400px;
   background: red url("../images/bar-top.jpg");
   background-repeat: no-repeat;
