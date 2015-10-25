@@ -48,6 +48,7 @@ $black: #0D0C10;
 img {max-width:100%;}
 .float-left{float:left;}
 .float-right{float:right;}
+.clear {clear:both;}
 html{
   padding:2%;
   a{text-decoration:none;}
@@ -74,6 +75,15 @@ header{
     width: 12em;
     font-size:1.2em;
     //margin:0 0 0 20%;
+  }
+}
+
+nav{
+  li a {
+    width: 20%;
+    text-align: center;
+    float:left;
+    margin: 10px 0;
   }
 }
 
