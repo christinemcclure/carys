@@ -8,7 +8,7 @@ include("../includes/functions.php"); ?>
       <?php include("../includes/header.html"); ?>
       <div id="main">
         <?php include("../includes/nav.html"); ?>
-        <h1>Upcoming Events</h1>
+        <h1 class="clear">Upcoming Events</h1>
         <?php 
           $calendar="caryslounge@gmail.com";
           echo "<p>". date("l, F j") . "</p>";

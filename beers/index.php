@@ -7,7 +7,7 @@
       <div id="main">
         <?php include("../includes/nav.html"); ?>
         
-        <ul id="beer-sub-nav">
+        <ul class="clear" id="beer-sub-nav">
           <li id="sub_featured">Featured Items</li>
           <li id="sub_on_tap">Beers On Tap</li>
           <li id="sub_bottles">Bottled Beers</li>

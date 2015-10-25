@@ -8,7 +8,7 @@ include("../includes/functions.php"); ?>
       <?php include("../includes/header.html"); ?>
       <div id="main">
         <?php include("../includes/nav.html"); ?>
-        <h1>Bands & Live Events</h1>
+        <h1 class="clear">Bands & Live Events</h1>
         <p>Book your band here. Typically, bands play three sets from 9pm-midnight, but we're open to ideas.</p>
         <p>Cary's has a decent, basic PA for pretty much any sort of performance for the space.</p>
         <h2>Stereo PA</h2>

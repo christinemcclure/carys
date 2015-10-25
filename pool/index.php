@@ -8,7 +8,7 @@ include("../includes/functions.php"); ?>
       <?php include("../includes/header.html"); ?>
       <div id="main">
         <?php include("../includes/nav.html"); ?>
-        <h1>Pool</h1>
+        <h1 class="clear">Pool</h1>
           <h2>Free Pool</h2>
           <p>Come try out your game on our <a href="http://www.diamondbilliards.com/">Diamond</a>&nbsp;9-foot Pro-Am pool table. It's the best damn table in the city.</p>
           <h2>Pool Leagues</h2>
