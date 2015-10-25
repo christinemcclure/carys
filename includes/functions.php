@@ -62,11 +62,13 @@ function format_calendarAPI_date_snippet($dateIn){
 }
 
 function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
+  $localDebug=false;
   $key = get_googleAPI_key();
   $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . 
      '/events?singleEvents=true&orderby=startTime&timeMin=' . $timeMin . 
      '&timeMax=' . $timeMax . '&key=' . $key;  
   //this works more reliably than only getting one event
+  if ($localDebug) {echo "<p>$url</p>";}
   return $url;
 }
 
