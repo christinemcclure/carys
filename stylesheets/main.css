@@ -138,7 +138,7 @@ footer {
   height: 0;
   padding-top: 28.57%;
   /* (img-height / img-width * container-width) */
-  /* (853 / 1280 * 100) */ }
+  /* (400 / 1400 * 100) */ }
 
 @media only screen and (min-device-width: 600px) {
   /* line 151, ../scss/main.scss */
@@ -175,3 +175,8 @@ footer {
     width: 20%;
     text-align: right;
     float: right; } }
+@media only screen and (min-device-width: 1400px) {
+  /* line 188, ../scss/main.scss */
+  .container {
+    width: 1200px;
+    margin: 0 auto; } }
