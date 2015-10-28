@@ -145,38 +145,44 @@ footer {
   header img {
     display: block; }
 
-  /* line 153, ../scss/main.scss */
-  nav li {
-    clear: none;
-    float: left;
-    margin: 14px 10px 14px 70px; }
-    /* line 157, ../scss/main.scss */
-    nav li a {
-      padding: 4px 10px; }
+  /* line 154, ../scss/main.scss */
+  nav
+  ul {
+    margin-top: -340px; }
+    /* line 156, ../scss/main.scss */
+    nav
+    ul li {
+      clear: none;
+      float: left;
+      margin: 0 10px 14px 70px; }
+      /* line 160, ../scss/main.scss */
+      nav
+      ul li a {
+        padding: 4px 10px; }
 
-  /* line 160, ../scss/main.scss */
+  /* line 164, ../scss/main.scss */
   #home .column {
     width: 50%;
     float: left; }
-    /* line 163, ../scss/main.scss */
+    /* line 167, ../scss/main.scss */
     #home .column p:first-child {
       padding-top: 1em; }
-  /* line 167, ../scss/main.scss */
+  /* line 171, ../scss/main.scss */
   #home .column + .column {
     width: 30%; }
 
-  /* line 173, ../scss/main.scss */
+  /* line 177, ../scss/main.scss */
   footer p:first-child {
     width: 70%;
     float: left;
     text-align: left; }
-  /* line 178, ../scss/main.scss */
+  /* line 182, ../scss/main.scss */
   footer p:last-child {
     width: 20%;
     text-align: right;
     float: right; } }
 @media only screen and (min-device-width: 1400px) {
-  /* line 188, ../scss/main.scss */
+  /* line 192, ../scss/main.scss */
   .container {
     width: 1200px;
     margin: 0 auto; } }

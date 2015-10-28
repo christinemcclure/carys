@@ -150,11 +150,15 @@ footer{text-align:center;}
   header{
     img{display:block;}
   }
-  nav li{
-    clear:none;
-    float:left;
-    margin: 14px 10px 14px 70px; 
-    a{padding: 4px 10px;}
+  nav 
+  ul {
+  margin-top: -340px; // for 400 px image  
+    li{
+      clear:none;
+      float:left;
+      margin: 0 10px 14px 70px; 
+      a{padding: 4px 10px;}
+    }
   }
   #home{
     .column{
