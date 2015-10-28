@@ -108,18 +108,23 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
     $timeMax=format_calendarAPI_date_snippet(time()+5184000);    
   }
   $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
-  $events=retrieve_calendar_data($url);
-  if (count($events)<=0) {
-    return "no data retrieved";
-  }
-  else{
-    for ($i=0; $i<$numEntries; $i++){
-      $event=get_earliest_event($events);
-      if ($event){
-        unset($events[$earliestArrayElementNumber]);
-        $msg.=format_calendar_event($event);
+  if ($url != -1){
+    $events=retrieve_calendar_data($url);
+    if (count($events)<=0) {
+      return "no data retrieved";
+    }
+    else{
+      for ($i=0; $i<$numEntries; $i++){
+        $event=get_earliest_event($events);
+        if ($event){
+          unset($events[$earliestArrayElementNumber]);
+          $msg.=format_calendar_event($event);
+        }
       }
     }
+  }
+  else {
+    $msg="Sorry. There was an error getting the calendar data. Stupid technology.";
   }
   return "<ul>" . $msg . "</ul>";
 }
