@@ -30,7 +30,8 @@ function get_googleAPI_key(){
    $key = file_get_contents($file);  
   }
   if(($key==NULL)||($key=="")){
-    trigger_error('Google API key not found', E_USER_NOTICE);
+    //trigger_error('Google API key not found', E_USER_NOTICE);
+    return -1;
   }
   else{
     return $key;
@@ -64,12 +65,15 @@ function format_calendarAPI_date_snippet($dateIn){
 function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
   $localDebug=false;
   $key = get_googleAPI_key();
-  $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . 
-     '/events?singleEvents=true&orderby=startTime&timeMin=' . $timeMin . 
-     '&timeMax=' . $timeMax . '&key=' . $key;  
-  //this works more reliably than only getting one event
-  if ($localDebug) {echo "<p>$url</p>";}
-  return $url;
+  if ($key!=-1){
+    $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . 
+       '/events?singleEvents=true&orderby=startTime&timeMin=' . $timeMin . 
+       '&timeMax=' . $timeMax . '&key=' . $key;  
+    //this works more reliably than only getting one event
+    if ($localDebug) {echo "<p>$url</p>";}
+    return $url;
+  }
+  return -1;
 }
 
 function get_and_format_calendar_specials($calendar){
@@ -79,6 +83,9 @@ function get_and_format_calendar_specials($calendar){
     $timeMin=date("Y-m-d", $current) . "T13:00:00.000Z"; 
     $timeMax=date("Y-m-d",$current). "T20:00:00.000Z";    
     $url=format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax);
+    if ($url==-1){
+      return $msg . "Sorry. There was an error getting the specials data. Stupid technology.</ul>";
+    }
     $events=retrieve_calendar_data($url);
     if (count($events)<=0) {
       return "no data retrieved";
