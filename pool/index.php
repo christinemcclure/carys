@@ -4,7 +4,7 @@ include("../includes/functions.php"); ?>
 <title>Cary's Lounge - Pool</title>
 </head>  
   <body id="pool">
-    <div class="grid grid-pad">
+    <div class="grid">
       <header>
         <div class="col-3-12">
            <div class="content">
@@ -26,6 +26,33 @@ include("../includes/functions.php"); ?>
           </div>   
         </div>      
       </header>
+      <nav>
+        <div class="col-1-5">
+           <div class="content">
+             <a href="../about/">About</a>
+           </div>
+        </div>  
+        <div class="col-1-5">
+           <div class="content">
+             <a href="../events/">Upcoming Events</a>
+           </div>
+        </div>  
+        <div class="col-1-5">
+           <div class="content">
+             <a href="../beers/">What's on Tap</a>
+           </div>
+        </div>  
+        <div class="col-1-5">
+           <div class="content">
+             <a href="../pool/">Pool</a>
+           </div>
+        </div>  
+        <div class="col-1-5">
+           <div class="content">
+             <a href="../bands/">Info for Bands</a>
+           </div>
+        </div>        
+      </nav>
     </div>
   </body>
 </html>
