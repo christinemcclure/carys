@@ -28,17 +28,7 @@ include("../includes/functions.php"); ?>
         </div>      
       </header>
       
-        <div class="col-1-1">
-           <div class="content">
-            <nav>
-              <a href="../about/">About</a>
-              <a href="../events/">Upcoming Events</a>
-              <a href="../beers/">What's on Tap</a>
-              <a href="../pool/">Pool</a>
-              <a href="../bands/">Info for Bands</a>
-            </nav>
-           </div>
-        </div>  
+      <?php include "../includes/nav.html"; ?>
 
       <div class="col-1-1">
         <h1>Pool</h1>
