@@ -5,11 +5,18 @@ include("../includes/functions.php"); ?>
 </head>  
   <body id="pool">
     <div class="grid grid-pad">
-      <div class="col-1-1">
-        <header>
-          <h1>Cary's Lounge</h1>
-        </header>
-      </div>
+      <header>
+        <div class="col-3-12">
+           <div class="content">
+            <img id="cary" alt="sketched image of Cary, the bar's founder" src="../images/logo.png">
+           </div>
+        </div>
+        <div class="col-9-12">
+           <div class="content">
+               <h1>Cary's Lounge</h1>
+           </div>
+        </div>      
+      </header>
     </div>
   </body>
 </html>
