@@ -69,7 +69,7 @@ include("../includes/functions.php"); ?>
       <footer>
         <div class="col-10-12">
            <div class="content">
-              <p>Hours: Monday-Friday: 12pm-2am | Saturday: 12pm-3am | Sunday: 11am-2am</p>
+              Hours: Monday-Friday: 12pm-2am | Saturday: 12pm-3am | Sunday: 11am-2am
            </div>
         </div>        
         <div class="col-2-12">
