@@ -44,3 +44,20 @@ img {
   padding-top: 35.08%;
   /* (img-height / img-width * container-width) */
 }
+
+/* line 57, ../scss/main.scss */
+nav {
+  margin-top: 0;
+}
+/* line 59, ../scss/main.scss */
+nav a {
+  margin: 0 0 0 7%;
+  padding: 10px 20px;
+}
+
+@media only screen and (min-width: 1140px) {
+  /* line 65, ../scss/main.scss */
+  nav {
+    margin-top: -380px;
+  }
+}
