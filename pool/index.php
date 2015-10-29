@@ -65,7 +65,26 @@ include("../includes/functions.php"); ?>
         <h3>Come out and play</h3>
         <p>Contact the Chicago divisions of the <a href="http://chicago.apaleagues.com/">APA</a> or <a href="http://www.chicagolandtapleague.com/">TAP</a>&nbsp;leagues to join or form a team.</p>          
       </div>
-      
+
+      <footer>
+        <div class="col-10-12">
+           <div class="content">
+              <p>Hours: Monday-Friday: 12pm-2am | Saturday: 12pm-3am | Sunday: 11am-2am</p>
+           </div>
+        </div>        
+        <div class="col-2-12">
+          <div class="col-1-2">
+            <div class="content">
+             <a href="https://www.facebook.com/CarysChicago">Facebook</a>
+            </div>            
+          </div>
+          <div class="col-1-2">
+           <div class="content">
+            <a href="https://twitter.com/CarysLounge">Twitter</a>
+           </div>
+          </div>
+        </div>  
+      </footer>
     </div>
   </body>
 </html>
