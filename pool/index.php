@@ -28,34 +28,18 @@ include("../includes/functions.php"); ?>
         </div>      
       </header>
       
-      <nav>
-        <div class="col-1-5">
+        <div class="col-1-1">
            <div class="content">
-             <a href="../about/">About</a>
+            <nav>
+              <a href="../about/">About</a>
+              <a href="../events/">Upcoming Events</a>
+              <a href="../beers/">What's on Tap</a>
+              <a href="../pool/">Pool</a>
+              <a href="../bands/">Info for Bands</a>
+            </nav>
            </div>
         </div>  
-        <div class="col-1-5">
-           <div class="content">
-             <a href="../events/">Upcoming Events</a>
-           </div>
-        </div>  
-        <div class="col-1-5">
-           <div class="content">
-             <a href="../beers/">What's on Tap</a>
-           </div>
-        </div>  
-        <div class="col-1-5">
-           <div class="content">
-             <a href="../pool/">Pool</a>
-           </div>
-        </div>  
-        <div class="col-1-5">
-           <div class="content">
-             <a href="../bands/">Info for Bands</a>
-           </div>
-        </div>        
-      </nav>
-      
+
       <div class="col-1-1">
         <h1>Pool</h1>
         <h2>Free Pool</h2>
