@@ -1,16 +1,12 @@
-/* line 9, ../scss/main.scss */
 .container {
   background: pink; }
 
-/* line 10, ../scss/main.scss */
 header {
   background: gray; }
 
-/* line 11, ../scss/main.scss */
 #main {
   background: lightBlue; }
 
-/* line 12, ../scss/main.scss */
 footer {
   background: yellow; }
 
@@ -25,147 +21,7 @@ footer {
 }
 
 */
-/* line 46, ../scss/main.scss */
 img {
   max-width: 100%; }
 
-/* line 47, ../scss/main.scss */
-.float-left {
-  float: left; }
-
-/* line 48, ../scss/main.scss */
-.float-right {
-  float: right; }
-
-/* line 49, ../scss/main.scss */
-.clear {
-  clear: both; }
-
-/* line 50, ../scss/main.scss */
-.column {
-  padding: 1em 2em;
-  width: 80%; }
-
-/* line 55, ../scss/main.scss */
-html {
-  padding: 2%;
-  font-size: 1em;
-  font-family: "Varela", sans-serif; }
-  /* line 57, ../scss/main.scss */
-  html a {
-    text-decoration: none; }
-  /* line 59, ../scss/main.scss */
-  html ul {
-    list-style: none; }
-  /* line 61, ../scss/main.scss */
-  html h1, html h2, html h3, html h4, html nav li {
-    font-family: "Righteous", sans-serif; }
-
-/* line 65, ../scss/main.scss */
-header {
-  padding: 2em 1em; }
-  /* line 67, ../scss/main.scss */
-  header img {
-    display: none;
-    margin: 0 auto; }
-  /* line 71, ../scss/main.scss */
-  header h1 {
-    text-align: center;
-    font-size: 4em;
-    line-height: 1em; }
-  /* line 76, ../scss/main.scss */
-  header p {
-    margin: .2em auto;
-    width: 12em;
-    font-size: 1.2em; }
-
-/* line 85, ../scss/main.scss */
-nav li {
-  clear: both;
-  font-size: 1.4em;
-  text-align: center;
-  margin: 20px auto; }
-  /* line 90, ../scss/main.scss */
-  nav li a {
-    padding: 6px 10px; }
-
-/* line 96, ../scss/main.scss */
-#main {
-  clear: both; }
-
-/* line 100, ../scss/main.scss */
-footer {
-  text-align: center; }
-
-/* line 103, ../scss/main.scss */
-.hide, .updated-at, .serving-types, #feedly-mini {
-  display: none; }
-
-/* line 107, ../scss/main.scss */
-#beer-sub-nav li {
-  cursor: pointer; }
-/* line 110, ../scss/main.scss */
-#beer-sub-nav li.active {
-  font-size: 1.3em; }
-
-/* line 116, ../scss/main.scss */
-#beer_menu, #beer_menu a:last-child {
-  font-size: .8em;
-  color: grey; }
-  /* line 119, ../scss/main.scss */
-  #beer_menu span, #beer_menu a:last-child span {
-    font-size: 1em;
-    color: green; }
-  /* line 123, ../scss/main.scss */
-  #beer_menu #red_wine th.serving, #beer_menu #red_wine td.serving, #beer_menu #white_wine th.serving, #beer_menu #white_wine td.serving, #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #red_wine th.serving, #beer_menu a:last-child #red_wine td.serving, #beer_menu a:last-child #white_wine th.serving, #beer_menu a:last-child #white_wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
-    display: none; }
-
-/* line 128, ../scss/main.scss */
-.background {
-  height: 400px;
-  background: red url("../images/bar-top.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: 0% 0%;
-  background-size: contain; }
-
-@media only screen and (min-device-width: 600px) {
-  /* line 139, ../scss/main.scss */
-  header img {
-    display: block; }
-
-  /* line 141, ../scss/main.scss */
-  nav li {
-    clear: none;
-    float: left;
-    margin: 14px 10px 14px 70px; }
-    /* line 145, ../scss/main.scss */
-    nav li a {
-      padding: 4px 10px; }
-
-  /* line 148, ../scss/main.scss */
-  #home .column {
-    width: 50%;
-    float: left; }
-    /* line 151, ../scss/main.scss */
-    #home .column p:first-child {
-      padding-top: 1em; }
-  /* line 155, ../scss/main.scss */
-  #home .column + .column {
-    width: 30%; }
-
-  /* line 161, ../scss/main.scss */
-  footer p:first-child {
-    width: 70%;
-    float: left;
-    text-align: left; }
-  /* line 166, ../scss/main.scss */
-  footer p:last-child {
-    width: 20%;
-    text-align: right;
-    float: right; } }
-@media only screen and (min-device-width: 1200px) {
-  /* line 175, ../scss/main.scss */
-  .container {
-    width: 1200px;
-    margin: 0 auto; } }
+/*# sourceMappingURL=main.css.map */
