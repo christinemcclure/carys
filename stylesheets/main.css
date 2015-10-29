@@ -34,9 +34,8 @@ img {
   max-width: 100%;
 }
 
-/* line 48, ../scss/main.scss */
+/* line 47, ../scss/main.scss */
 .nav {
-  background-image: url("../images/bar-top.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -45,21 +44,26 @@ img {
   /* (img-height / img-width * container-width) */
 }
 
-/* line 57, ../scss/main.scss */
+/* line 54, ../scss/main.scss */
+#home .nav {
+  background-image: url("../images/bar-top.jpg");
+}
+
+/* line 58, ../scss/main.scss */
 nav {
   margin-top: 0;
 }
-/* line 59, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 nav a {
   padding: 10px 20px;
 }
 
 @media only screen and (min-width: 1140px) {
-  /* line 64, ../scss/main.scss */
+  /* line 65, ../scss/main.scss */
   nav {
     margin-top: -380px;
   }
-  /* line 66, ../scss/main.scss */
+  /* line 67, ../scss/main.scss */
   nav a {
     margin: 0 0 0 7%;
   }
