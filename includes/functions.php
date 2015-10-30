@@ -12,14 +12,15 @@ function get_googleAPI_key(){
   $cwd= getcwd();
   if($debug) echo getcwd();
   
-  if (strpos($cwd,"carys")!==false) //my Macbook
-    $path="/Users/christine/Sites/carys/";
-  elseif (strpos($cwd,"caryslng")!==false) { //online
+  if (strpos($cwd,"caryslng")!==false) { //online
     if (strpos($cwd,"dev")!==false)
      $path="/home/caryslng/public_html/dev/";
     else
      $path="/home/caryslng/public_html/"; // live site
-  }
+  }  
+  elseif (strpos($cwd,"carys")!==false) //my Macbook
+    $path="/Users/christine/Sites/carys/";
+
   else{
     $path="C:\\Users\\christine\\Desktop\\carys\\"; // RHO 
   }
