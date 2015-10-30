@@ -52,10 +52,22 @@ img {max-width:100%;}
   padding-top: 28.58%; /* (img-height 1200 / img-width * 343 container-width) */   
 }
 #home .nav{
-    background-image: url('../images/bar-top.jpg');  
+    background-image: url('../images/home.jpg');  
+}
+#about .nav{
+    background-image: url('../images/about.jpg');  
+}
+#on-tap .nav{
+    background-image: url('../images/on-tap.jpg');  
+}
+#events .nav{
+    background-image: url('../images/events.jpg');  
 }
 #pool .nav{
     background-image: url('../images/pool-table.jpg');  
+}
+#bands .nav{
+    background-image: url('../images/bands.jpg');  
 }
 
 nav{ 

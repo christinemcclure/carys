@@ -46,59 +46,79 @@ img {
 
 /* line 54, ../scss/main.scss */
 #home .nav {
-  background-image: url("../images/bar-top.jpg");
+  background-image: url("../images/home.jpg");
 }
 
 /* line 57, ../scss/main.scss */
+#about .nav {
+  background-image: url("../images/about.jpg");
+}
+
+/* line 60, ../scss/main.scss */
+#on-tap .nav {
+  background-image: url("../images/on-tap.jpg");
+}
+
+/* line 63, ../scss/main.scss */
+#events .nav {
+  background-image: url("../images/events.jpg");
+}
+
+/* line 66, ../scss/main.scss */
 #pool .nav {
   background-image: url("../images/pool-table.jpg");
 }
 
-/* line 61, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
+#bands .nav {
+  background-image: url("../images/bands.jpg");
+}
+
+/* line 73, ../scss/main.scss */
 nav {
   margin-top: 0;
 }
-/* line 63, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 nav a {
   padding: 8px 14px;
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 70, ../scss/main.scss */
+/* line 82, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 74, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
 }
-/* line 77, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 1.3em;
 }
 
-/* line 83, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 #beer_menu, #beer_menu a:last-child {
   font-size: .8em;
   color: grey;
 }
-/* line 86, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 #beer_menu span, #beer_menu a:last-child span {
   font-size: 1em;
   color: green;
 }
-/* line 90, ../scss/main.scss */
+/* line 102, ../scss/main.scss */
 #beer_menu #red_wine th.serving, #beer_menu #red_wine td.serving, #beer_menu #white_wine th.serving, #beer_menu #white_wine td.serving, #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #red_wine th.serving, #beer_menu a:last-child #red_wine td.serving, #beer_menu a:last-child #white_wine th.serving, #beer_menu a:last-child #white_wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }
 
 @media only screen and (min-width: 1140px) {
-  /* line 97, ../scss/main.scss */
+  /* line 109, ../scss/main.scss */
   nav {
     margin-top: -310px;
   }
-  /* line 99, ../scss/main.scss */
+  /* line 111, ../scss/main.scss */
   nav a {
     margin: 0 0 0 7%;
   }
