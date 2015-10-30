@@ -127,7 +127,7 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
   else {
     $msg="Sorry. There was an error getting the calendar data. Stupid technology.";
   }
-  return "<ul>" . $msg . "</ul>";
+  return "<ul class=\"events\">" . $msg . "</ul>";
 }
 
 function get_earliest_event($arrIn){
