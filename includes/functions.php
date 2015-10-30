@@ -79,7 +79,7 @@ function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
 
 function get_and_format_calendar_specials($calendar){
   $current=time();
-  $msg="<ul>";
+  $msg="<ul class=\"specials\">";
   for ($i=0;$i<7;$i++){
     $timeMin=date("Y-m-d", $current) . "T13:00:00.000Z"; 
     $timeMax=date("Y-m-d",$current). "T20:00:00.000Z";    
@@ -92,7 +92,7 @@ function get_and_format_calendar_specials($calendar){
       return "no data retrieved";
     }
     else{
-      $msg.=format_calendar_special($events[0]);
+      $msg.=format_calendar_special($events[0], $i);
       $current+=86400;
     }
   }
@@ -172,10 +172,13 @@ function format_calendar_event($dataObj){
 
 function format_calendar_special($dataObj){
   $message="";
-  $message .=  "<li><h3>" . get_event_data($dataObj, "date", "l") . "s: " . get_event_data($dataObj, "title") . "</h3>";
+  $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date", "l") . "s:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
   $desc = get_event_data($dataObj, "description");
   if ($desc){
-    $message .=  "<p>" . $desc . "</p></li>";
+    $message .=  "<span class=\"calDesc\">" . $desc . "</span></li>";
+  }
+  else {
+    $message .= "</li>";
   }
   return $message;
 }
