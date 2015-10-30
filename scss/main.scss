@@ -45,12 +45,15 @@ $black: #0D0C10;
 //General/mobile settings
 html, body {
   font-family: $mainFont;
+  font-size: 1.1em;
+  line-height: 1.3em;
 }
 h1, h2, h1, h4 {
   font-family: $headingFont;
 }
 
 img {max-width:100%;}
+.col-right{text-align:right;}
 
 .nav{ // have background image resize with screen
   background-size: contain;
@@ -85,6 +88,14 @@ nav{
     background: rgba(255,255,255,.5);
   }
 }  
+
+//header
+header {
+  p {
+    line-height:1em;
+    margin:.4em;
+  }
+}
 
 ///// Now Serving page
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
