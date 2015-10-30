@@ -3,7 +3,7 @@ $fontSize:1em;
 $varela: 'Varela', sans-serif;
 $righteous: 'Righteous', sans-serif;
 $mainFont: $varela;
-$headerFont: $righteous; 
+$headingFont: $righteous; 
 
 // test colors
 .container{background:pink;}
@@ -43,8 +43,16 @@ $black: #0D0C10;
 */
 
 //General/mobile settings
+html, body {
+  font-family: $mainFont;
+}
+h1, h2, h1, h4 {
+  font-family: $headingFont;
+}
+
 img {max-width:100%;}
-.nav{
+
+.nav{ // have background image resize with screen
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
