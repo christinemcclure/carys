@@ -64,8 +64,15 @@ html, body {
   }
 }
 
-h1, h2, h1, h4 {
+h1, h2, h3, h4 {
   font-family: $headingFont;
+}
+h1{
+  font-size: $standardFontSize + 14px;
+}
+h2{
+  font-size: $standardFontSize + 10px;
+  line-height: $standardFontSize + 12px;
 }
 
 img {max-width:100%;}
