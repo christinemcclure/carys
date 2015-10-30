@@ -4,13 +4,20 @@ include("../includes/functions.php"); ?>
 <title>Cary's Lounge - About</title>
 </head>  
   <body id="pool">
-    <div class="container">
-      <?php include("../includes/header.html"); ?>
-      <div id="main">
-        <?php include("../includes/nav.html"); ?>
-        <h1 class="clear">About Cary's Lounge</h1>
+    <div class="grid">
+      
+      <?php include "../includes/header.html"; ?>
+      
+      <?php include "../includes/nav.html"; ?>
+
+      <div class="col-1-1">
+        <div class="content">
+          <p>Pete needs some text here.</p>
+        </div>
       </div>
-      <?php include("../includes/footer.html"); ?>
+
+      <?php include "../includes/footer.html"; ?>
+
     </div>
   </body>
 </html>
