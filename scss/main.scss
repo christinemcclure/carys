@@ -3,7 +3,8 @@ $fontSize:1em;
 $varela: 'Varela', sans-serif;
 $righteous: 'Righteous', sans-serif;
 $mainFont: $varela;
-$headingFont: $righteous; 
+$headingFont: $righteous;
+$standardFontSize: 18px;
 
 // test colors
 .container{background:pink;}
@@ -45,15 +46,24 @@ $black: #0D0C10;
 //General/mobile settings
 html, body {
   font-family: $mainFont;
-  font-size: 1.1em;
-  line-height: 1.3em;
+  font-size: $standardFontSize;
+  line-height: $standardFontSize + 4px;
+  
+  blockquote{
+    font-size: $standardFontSize + 2px;
+    line-height: $standardFontSize + 6px;
+    font-style: italic;
+  }
+  
   a {
     text-decoration: none;
   }
+  
   a:hover{
     text-decoration: underline;
   }
 }
+
 h1, h2, h1, h4 {
   font-family: $headingFont;
 }
