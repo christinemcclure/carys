@@ -61,6 +61,34 @@ nav{
     padding: 10px 20px;
   }
 }  
+
+///// Now Serving page
+.hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
+
+
+#beer-sub-nav {
+  li{
+  cursor:pointer;
+  }
+  li.active{
+    font-size: 1.3em;
+  }
+ 
+}
+
+#beer_menu, #beer_menu a:last-child {
+  font-size: .8em;
+  color:grey; // diminish beermenus link text
+  span{
+    font-size: 1em; 
+    color:green; // regular color text
+  }
+  #red_wine th.serving, #red_wine td.serving, #white_wine th.serving, #white_wine td.serving, #wine th.serving, #wine td.serving { // hide vessel for wine
+      display: none;
+  }
+}
+
+
 @media only screen and (min-width: 1140px) {  
   nav {
     margin-top: -380px;
