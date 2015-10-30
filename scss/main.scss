@@ -62,6 +62,12 @@ html, body {
   a:hover{
     text-decoration: underline;
   }
+  ul{ 
+    list-style: none;
+    li {
+      margin: 10px 0;
+    }
+  }
 }
 
 h1, h2, h3, h4 {
@@ -114,6 +120,10 @@ nav{
 
 //header
 header {
+  h1{
+    font-size: $standardFontSize + 60px;
+  }
+  a:hover{text-decoration:none;}
   p {
     line-height:1em;
     margin:.4em;
