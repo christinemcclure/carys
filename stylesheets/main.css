@@ -35,23 +35,31 @@ html, body {
   font-size: 1.1em;
   line-height: 1.3em;
 }
+/* line 50, ../scss/main.scss */
+html a, body a {
+  text-decoration: none;
+}
+/* line 53, ../scss/main.scss */
+html a:hover, body a:hover {
+  text-decoration: underline;
+}
 
-/* line 51, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 h1, h2, h1, h4 {
   font-family: "Righteous", sans-serif;
 }
 
-/* line 55, ../scss/main.scss */
+/* line 61, ../scss/main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 56, ../scss/main.scss */
+/* line 62, ../scss/main.scss */
 .col-right {
   text-align: right;
 }
 
-/* line 58, ../scss/main.scss */
+/* line 64, ../scss/main.scss */
 .nav {
   background-size: contain;
   background-repeat: no-repeat;
@@ -61,87 +69,87 @@ img {
   /* (img-height 1200 / img-width * 343 container-width) */
 }
 
-/* line 65, ../scss/main.scss */
+/* line 71, ../scss/main.scss */
 #home .nav {
   background-image: url("../images/home.jpg");
 }
 
-/* line 68, ../scss/main.scss */
+/* line 74, ../scss/main.scss */
 #about .nav {
   background-image: url("../images/about.jpg");
 }
 
-/* line 71, ../scss/main.scss */
+/* line 77, ../scss/main.scss */
 #on-tap .nav {
   background-image: url("../images/on-tap.jpg");
 }
 
-/* line 74, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 #events .nav {
   background-image: url("../images/events.jpg");
 }
 
-/* line 77, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 #pool .nav {
   background-image: url("../images/pool-table.jpg");
 }
 
-/* line 80, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 #bands .nav {
   background-image: url("../images/bands.jpg");
 }
 
-/* line 84, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 nav {
   margin-top: 0;
 }
-/* line 86, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 nav a {
   padding: 8px 14px;
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* line 94, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 header p {
   line-height: 1em;
   margin: .4em;
 }
 
-/* line 101, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 105, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
 }
-/* line 108, ../scss/main.scss */
+/* line 114, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 1.3em;
 }
 
-/* line 114, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 #beer_menu, #beer_menu a:last-child {
   font-size: .8em;
   color: grey;
 }
-/* line 117, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 #beer_menu span, #beer_menu a:last-child span {
   font-size: 1em;
   color: green;
 }
-/* line 121, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 #beer_menu #red_wine th.serving, #beer_menu #red_wine td.serving, #beer_menu #white_wine th.serving, #beer_menu #white_wine td.serving, #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #red_wine th.serving, #beer_menu a:last-child #red_wine td.serving, #beer_menu a:last-child #white_wine th.serving, #beer_menu a:last-child #white_wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }
 
 @media only screen and (min-width: 1140px) {
-  /* line 128, ../scss/main.scss */
+  /* line 134, ../scss/main.scss */
   nav {
     margin-top: -310px;
   }
-  /* line 130, ../scss/main.scss */
+  /* line 136, ../scss/main.scss */
   nav a {
     margin: 0 0 0 7%;
   }
