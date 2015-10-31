@@ -127,8 +127,8 @@ header {
   }
   a:hover{text-decoration:none;}
   p {
-    line-height:1em;
-    margin:.4em;
+    font-size: $standardFontSize + 2px;
+    margin:2px;
   }
 }
 

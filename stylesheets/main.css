@@ -149,8 +149,8 @@ header a:hover {
 }
 /* line 129, ../scss/main.scss */
 header p {
-  line-height: 1em;
-  margin: .4em;
+  font-size: 20px;
+  margin: 2px;
 }
 
 /* line 137, ../scss/main.scss */
