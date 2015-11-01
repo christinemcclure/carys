@@ -178,6 +178,30 @@ text-align:center;
     }
   }  
 }
+
+// events
+.events{
+  padding: 20px 0 0 0;
+  font-size: $standardFontSize + 2px;
+  line-height:$standardFontSize + 6px;
+  li {
+    margin: 20px 0 40px 0;
+    .calDate{
+      display:inline-block;
+      font-size: $standardFontSize + 6px;
+    }
+    .calTitle{
+      display: inline-block;
+      font-size: $standardFontSize + 4px;
+      margin-left: 10px;
+      
+    }
+    .calDesc{
+      display:block;
+    }
+  }
+}
+
 ///// Now Serving page
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
 
