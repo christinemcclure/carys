@@ -158,13 +158,10 @@ function get_earliest_event($arrIn){
 
 function format_calendar_event($dataObj){
   $message="";
-  $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date") . "</span>: ";
+  $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date") . ":</span> ";
   $message .= "<span class=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
   $desc = get_event_data($dataObj, "description");
-  if ($desc){
-    $message .=  "<span class=\"calDesc\">" . $desc . "</span>";
-  }
-  $message .=  "<span class=\"calTime\">" . get_event_data($dataObj, "start") . " - ";
+  $message .=  "<span class=\"calDesc\">" . $desc . "</span>" . "<span class=\"calTime\">" . get_event_data($dataObj, "start") . " - ";
   $message .=  get_event_data($dataObj, "end") . "</span></li>";
   return $message;
 }
