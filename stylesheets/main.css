@@ -249,56 +249,57 @@ footer .icons {
 /* line 213, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 22px;
+  list-style-type: square;
 }
 
-/* line 220, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 #beer_menu .active caption, #beer_menu a:last-child .active caption {
   font-family: "Righteous", sans-serif;
   font-size: 24px;
 }
-/* line 224, ../scss/main.scss */
+/* line 225, ../scss/main.scss */
 #beer_menu #red_wine th.serving, #beer_menu #red_wine td.serving, #beer_menu #white_wine th.serving, #beer_menu #white_wine td.serving, #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #red_wine th.serving, #beer_menu a:last-child #red_wine td.serving, #beer_menu a:last-child #white_wine th.serving, #beer_menu a:last-child #white_wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }
 
 @media only screen and (min-width: 1140px) {
-  /* line 231, ../scss/main.scss */
+  /* line 232, ../scss/main.scss */
   header {
     text-align: left;
   }
-  /* line 232, ../scss/main.scss */
+  /* line 233, ../scss/main.scss */
   header h1 {
     line-height: 18px;
   }
-  /* line 234, ../scss/main.scss */
+  /* line 235, ../scss/main.scss */
   header .col-right {
     text-align: right;
   }
 
-  /* line 236, ../scss/main.scss */
+  /* line 237, ../scss/main.scss */
   .nav {
     margin: 0;
   }
-  /* line 238, ../scss/main.scss */
+  /* line 239, ../scss/main.scss */
   .nav nav {
     margin-top: -310px;
   }
-  /* line 240, ../scss/main.scss */
+  /* line 241, ../scss/main.scss */
   .nav nav a {
     display: inline-block;
     margin: 0 0 0 7%;
   }
 
-  /* line 248, ../scss/main.scss */
+  /* line 249, ../scss/main.scss */
   footer .hours {
     padding: 20px 0;
   }
-  /* line 251, ../scss/main.scss */
+  /* line 252, ../scss/main.scss */
   footer .icons {
     float: right;
   }
 
-  /* line 256, ../scss/main.scss */
+  /* line 257, ../scss/main.scss */
   .events .calTitle {
     display: inline-block;
     margin-left: 10px;

@@ -212,6 +212,7 @@ text-align:center;
   }
   li.active{
     font-size:$standardFontSize + 4px;
+    list-style-type: square;
   }
  
 }
