@@ -163,40 +163,68 @@ footer .icons {
 }
 
 /* line 146, ../scss/main.scss */
+.specials {
+  font-size: 16px;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
+/* line 153, ../scss/main.scss */
+.specials li {
+  margin: 20px 0;
+}
+/* line 154, ../scss/main.scss */
+.specials li .calDate {
+  display: inline-block;
+  width: 160px;
+  font-weight: 800;
+}
+/* line 159, ../scss/main.scss */
+.specials li .calDesc {
+  display: block;
+}
+/* line 165, ../scss/main.scss */
+.specials li:first-child .calDate {
+  font-size: 22px;
+}
+
+/* line 172, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 150, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
 }
-/* line 153, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 1.3em;
 }
 
-/* line 159, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 #beer_menu, #beer_menu a:last-child {
   font-size: .8em;
   color: grey;
 }
-/* line 162, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 #beer_menu span, #beer_menu a:last-child span {
   font-size: 1em;
   color: green;
 }
-/* line 166, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 #beer_menu #red_wine th.serving, #beer_menu #red_wine td.serving, #beer_menu #white_wine th.serving, #beer_menu #white_wine td.serving, #beer_menu #wine th.serving, #beer_menu #wine td.serving, #beer_menu a:last-child #red_wine th.serving, #beer_menu a:last-child #red_wine td.serving, #beer_menu a:last-child #white_wine th.serving, #beer_menu a:last-child #white_wine td.serving, #beer_menu a:last-child #wine th.serving, #beer_menu a:last-child #wine td.serving {
   display: none;
 }
 
 @media only screen and (min-width: 1140px) {
-  /* line 173, ../scss/main.scss */
+  /* line 199, ../scss/main.scss */
   nav {
     margin-top: -310px;
   }
-  /* line 175, ../scss/main.scss */
+  /* line 201, ../scss/main.scss */
   nav a {
     margin: 0 0 0 7%;
   }

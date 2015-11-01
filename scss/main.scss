@@ -142,6 +142,32 @@ footer{
   }
 }
 
+// Specials
+.specials{ 
+  font-size: $standardFontSize - 2px;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px;  
+  li{
+    .calDate {
+      display: inline-block;
+      width: 160px;
+      font-weight:800;      
+    }
+    .calDesc{
+      display:block;
+    }
+    margin: 20px 0;
+  }
+  li:first-child{
+    .calDate{
+      //font-family: $headingFont;
+      font-size:$standardFontSize + 4px;
+    }
+  }  
+}
 ///// Now Serving page
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
 
