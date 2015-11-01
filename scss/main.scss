@@ -140,11 +140,12 @@ nav{
 
 //footer
 footer{
+text-align:center;
   .hours{
    padding: 20px 0;
   }
   .icons{
-    float:right;
+    clear:both;
   }
 }
 
@@ -213,6 +214,15 @@ footer{
       margin: 0 0 0 7%;
     }
   }
+  
+  footer{
+    .hours{
+     padding: 20px 0;
+    }
+    .icons{
+      float:right;
+    }
+  }  
 }
 
 
