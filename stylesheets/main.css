@@ -298,7 +298,7 @@ footer .icons {
   }
 
   /* line 256, ../scss/main.scss */
-  .events .calTitle {
+  .events li .calTitle {
     display: inline-block;
     margin-left: 10px;
   }
