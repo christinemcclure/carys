@@ -84,7 +84,9 @@ h2{
   font-size: $standardFontSize + 12px;
   line-height: $standardFontSize + 12px;
 }
-
+h3{
+  font-size: $standardFontSize + 8px;
+}
 img {max-width:100%;}
 .col-right{text-align:right;}
 
@@ -253,7 +255,7 @@ text-align:center;
     }
   }  
   
-  .events li .calTitle{
+  .events  .calTitle{
       display: inline-block;
       margin-left: 10px;
     }  
