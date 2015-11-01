@@ -191,10 +191,8 @@ text-align:center;
       font-size: $standardFontSize + 6px;
     }
     .calTitle{
-      display: inline-block;
+      display: block;
       font-size: $standardFontSize + 4px;
-      margin-left: 10px;
-      
     }
     .calDesc{
       display:block;
@@ -254,6 +252,11 @@ text-align:center;
       float:right;
     }
   }  
+  
+  .events li .calTitle{
+      display: inline-block;
+      margin-left: 10px;
+    }  
 }
 
 
