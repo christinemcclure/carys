@@ -217,12 +217,6 @@ text-align:center;
 }
 
 #beer_menu, #beer_menu a:last-child {
-  font-size: .8em;
-  color:grey; // diminish beermenus link text
-  span{
-    font-size: 1em; 
-    color:green; // regular color text
-  }
   #red_wine th.serving, #red_wine td.serving, #white_wine th.serving, #white_wine td.serving, #wine th.serving, #wine td.serving { // hide vessel for wine
       display: none;
   }
