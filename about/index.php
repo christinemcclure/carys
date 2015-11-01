@@ -12,7 +12,7 @@ include("../includes/functions.php"); ?>
 
       <div class="col-1-1">
         <div class="content">
-          <p>Pete needs some text here.</p>
+          <p>Pete needs to add some stuff here. </p>
         </div>
       </div>
 
