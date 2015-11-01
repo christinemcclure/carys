@@ -92,7 +92,7 @@ function get_and_format_calendar_specials($calendar){
       return "no data retrieved";
     }
     else{
-      $msg.=format_calendar_item($events[0]);
+      $msg.=format_calendar_special($events[0]);
       $current+=86400;
     }
   }
@@ -158,19 +158,19 @@ function get_earliest_event($arrIn){
 
 function format_calendar_event($dataObj){
   $message="";
-  $message .=  "<li><span class=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
+  $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date") . "</span>: ";
+  $message .= "<span class=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
   $desc = get_event_data($dataObj, "description");
   if ($desc){
     $message .=  "<span class=\"calDesc\">" . $desc . "</span>";
   }
-  $message .=  "<span class=\"calDate\">" . get_event_data($dataObj, "date") . "</span";
-  $message .=  "<<span class=\"calTime\">" . get_event_data($dataObj, "start") . " - ";
+  $message .=  "<span class=\"calTime\">" . get_event_data($dataObj, "start") . " - ";
   $message .=  get_event_data($dataObj, "end") . "</span></li>";
   return $message;
 }
 
 
-function format_calendar_item($dataObj){
+function format_calendar_special($dataObj){
   $message="";
   $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date", "l") . "s:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
   $desc = get_event_data($dataObj, "description");
