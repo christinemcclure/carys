@@ -28,6 +28,8 @@ $red: #740F0F;
 $black: #0D0C10;
 // possibly this with purple instead of fuschia
 
+$lineColor: $purple;
+
 //background image ideas:
 // https://css-tricks.com/how-to-resizeable-background-image/
 
@@ -79,7 +81,7 @@ h1{
   font-size: $standardFontSize + 14px;
 }
 h2{
-  font-size: $standardFontSize + 10px;
+  font-size: $standardFontSize + 12px;
   line-height: $standardFontSize + 12px;
 }
 
@@ -144,7 +146,6 @@ footer{
 
 // Specials
 .specials{ 
-  font-size: $standardFontSize - 2px;
     -webkit-margin-before: 0;
     -webkit-margin-after: 0;
     -webkit-margin-start: 0px;
@@ -157,6 +158,7 @@ footer{
       font-weight:800;      
     }
     .calDesc{
+      font-size: $standardFontSize - 2px;
       display:block;
     }
     margin: 20px 0;
@@ -164,7 +166,7 @@ footer{
   li:first-child{
     .calDate{
       //font-family: $headingFont;
-      font-size:$standardFontSize + 4px;
+      font-size:$standardFontSize + 6px;
     }
   }  
 }
