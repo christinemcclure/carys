@@ -16,7 +16,6 @@ include("../includes/functions.php"); ?>
           <h1>Upcoming Events</h1>
           <?php 
             $calendar="caryslounge@gmail.com";
-            echo "<p>". date("l, F j") . "</p>";
             $timeMin=format_calendarAPI_date_snippet(time()-7200); 
             $timeMax=format_calendarAPI_date_snippet(time()+691200);    
             $msg=get_and_format_calendar_events($calendar,3);
