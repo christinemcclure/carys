@@ -209,19 +209,18 @@ text-align:center;
 #beer-sub-nav {
   li{
   cursor:pointer;
+  display:inline-block;
+  padding: 8px 10px;
+  margin:0;
   }
   li.active{
-    font-size:$standardFontSize + 4px;
-    list-style-type: square;
+    font-size:$standardFontSize + 2px;
+    background: red;
   }
  
 }
 
-#beer_menu, #beer_menu a:last-child {
-  .active caption {
-    font-family: $headingFont;
-    font-size: $standardFontSize + 6px;
-  }
+#menu-widget #beer_menu{
   #red_wine th.serving, #red_wine td.serving, #white_wine th.serving, #white_wine td.serving, #wine th.serving, #wine td.serving { // hide vessel for wine
       display: none;
   }
@@ -258,6 +257,8 @@ text-align:center;
       display: inline-block;
       margin-left: 10px;
     }  
+    
+  #beer-sub-nav li { margin: 10px 0 40px 3%;}
 }
 
 
