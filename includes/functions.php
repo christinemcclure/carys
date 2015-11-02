@@ -92,7 +92,12 @@ function get_and_format_calendar_specials($calendar){
       return "no data retrieved";
     }
     else{
-      $msg.=format_calendar_special($events[0]);
+      if ($i==0){
+        $msg.=format_calendar_special($events[0], "showToday");
+      }
+      else{
+        $msg.=format_calendar_special($events[0]);
+      }
       $current+=86400;
     }
   }
@@ -167,9 +172,14 @@ function format_calendar_event($dataObj){
 }
 
 
-function format_calendar_special($dataObj){
+function format_calendar_special($dataObj, $showToday=""){
   $message="";
-  $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date", "l") . "s:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
+  if ($showToday){
+  $message .=  "<li><span class=\"calDate\">TODAY:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
+  }
+  else{
+    $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date", "l") . "s:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
+  }
   $desc = get_event_data($dataObj, "description");
   if ($desc){
     $message .=  "<span class=\"calDesc\">" . $desc . "</span></li>";
