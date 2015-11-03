@@ -156,7 +156,7 @@ header a:hover {
 /* line 129, ../scss/main.scss */
 header p {
   font-size: 20px;
-  margin: 2px;
+  margin: 20px;
 }
 /* line 134, ../scss/main.scss */
 header .col-right {
@@ -278,37 +278,41 @@ footer .icons {
   header .col-right {
     text-align: right;
   }
+  /* line 237, ../scss/main.scss */
+  header p {
+    margin: 2px;
+  }
 
-  /* line 238, ../scss/main.scss */
+  /* line 239, ../scss/main.scss */
   .nav {
     margin: 0;
   }
-  /* line 240, ../scss/main.scss */
+  /* line 241, ../scss/main.scss */
   .nav nav {
     margin-top: -310px;
   }
-  /* line 242, ../scss/main.scss */
+  /* line 243, ../scss/main.scss */
   .nav nav a {
     display: inline-block;
     margin: 0 0 0 7%;
   }
 
-  /* line 250, ../scss/main.scss */
+  /* line 251, ../scss/main.scss */
   footer .hours {
     padding: 20px 0;
   }
-  /* line 253, ../scss/main.scss */
+  /* line 254, ../scss/main.scss */
   footer .icons {
     float: right;
   }
 
-  /* line 258, ../scss/main.scss */
+  /* line 259, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
     margin-left: 10px;
   }
 
-  /* line 263, ../scss/main.scss */
+  /* line 264, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%;
   }
