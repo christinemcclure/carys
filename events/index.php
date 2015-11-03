@@ -14,7 +14,6 @@ include("../includes/functions.php"); ?>
       <div class="col-1-1">
         <div class="content">
           <h1>Upcoming Events</h1>
-          <div class="loading">
           <?php 
             $calendar="caryslounge@gmail.com";
             $timeMin=format_calendarAPI_date_snippet(time()-7200); 
@@ -22,7 +21,6 @@ include("../includes/functions.php"); ?>
             $msg=get_and_format_calendar_events($calendar,5);
             echo $msg;
             ?>
-          </div>
         </div>
       </div>
 
