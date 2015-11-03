@@ -165,9 +165,11 @@ text-align:center;
     -webkit-padding-start: 0px;  
   li{
     .calDate {
-      display: inline-block;
-      width: 160px;
+      display:block;
       font-weight:800;      
+    }
+    .calTitle{
+      display:block;
     }
     .calDesc{
       font-size: $standardFontSize - 2px;
@@ -262,6 +264,22 @@ text-align:center;
     }  
     
   #beer-sub-nav li { margin: 10px 0 40px 3%;}
+  
+  
+  // Specials
+  .specials{ 
+    li{
+      .calDate {
+        display: inline-block;
+        width: 160px;    
+      }
+      .calTitle{display: inline-block;}
+      .calDesc{
+        font-size: $standardFontSize - 2px;
+      }
+    }
+  }  
+  
 }
 
 
