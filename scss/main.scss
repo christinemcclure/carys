@@ -6,12 +6,6 @@ $mainFont: $varela;
 $headingFont: $righteous;
 $standardFontSize: 18px;
 
-// test colors
-.container{background:pink;}
-header{background:gray;}
-#main{background:lightBlue;}
-footer{background:yellow;}
-
 //Kuler photo colors
 //Dark
 $purple: #3D2937;
@@ -141,7 +135,7 @@ nav{
     display:block;
     margin: 0 0 0 30%;
     padding: 8px 14px;
-    background: rgba(255,255,255,.5);
+//    background: rgba(255,255,255,.5);
   }
 }  
 
@@ -220,7 +214,7 @@ text-align:center;
   }
   li.active{
     font-size:$standardFontSize + 2px;
-    background: red;
+//    background: red;
   }
  
 }
@@ -243,7 +237,7 @@ text-align:center;
     margin: 0;
     nav {
       margin-top: -320px;
-      background:yellow;
+//      background:yellow;
       a{
         display:inline-block;
         margin: 0 0 0 7%;
