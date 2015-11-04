@@ -12,8 +12,10 @@ $purple: #3D2937;
 $tan: #71632F;
 $brown: #592C17;
 $dkBrown: #26160C;
+$dkBrownRGB: rgb(38,22,12);
 $dkRed: #731010;
 $red: #C92020;
+
 
 
 //Deep
@@ -43,11 +45,17 @@ $lineColor: $purple;
 
 //General/mobile settings
 html, body {
-  background: $brown;
+  //main colors and fonts
   font-family: $mainFont;
   font-size: $standardFontSize;
   line-height: $standardFontSize + 4px;
-  
+
+  background: $brown;
+  .grid{background: $dkRed;}
+  header .header{background: $dkBrown;} 
+  nav{background: rgba($dkBrownRGB,.5);}
+
+
   blockquote{
     font-size: $standardFontSize + 2px;
     line-height: $standardFontSize + 6px;
