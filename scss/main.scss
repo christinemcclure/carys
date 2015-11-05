@@ -33,11 +33,11 @@ $tableHeaderColor: darken($mainFontColor,20%);
 $tableHeaderBackground: darken($containerColor, 10%);
 $headerColor: $purple;
 $headerFontColor: $orange;
-$headerLinkColor: darken($salmon,20%);
+$headerLinkColor: darken($salmon,10%);
 $footerColor: $purple;
 $footerFontColor: $headerLinkColor;
 $linkColor: darken($red,10%);
-$navLinkColor: $orange;
+$navLinkColor: $headerLinkColor;
 $headingFontColor: lighten($purple,10%);
 
 
@@ -91,7 +91,9 @@ html, body {
     h1 a {font-weight:600;}
   } 
   nav{
-    a {color: $navLinkColor;}
+    a {
+      color: $navLinkColor;
+    }
     background: rgba($headerColor,.7);
   }
   
