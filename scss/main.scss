@@ -37,7 +37,7 @@ $footerColor: $dkGrey;
 $footerFontColor: $grey;
 $linkColor: $wine;
 $navLinkColor: $grey;
-
+$headingFontColor: $wine;
 //Deep
 /*$fuschia: #8E256F;
 $tan: #73602D;
@@ -95,7 +95,10 @@ html, body {
   }
   .body {background: $containerColor;}
   header .header, header .header h1 a, nav {color: $containerColor;}
-  a{ color: $linkColor;}
+  a{ 
+    color: $linkColor;
+    font-weight:600;
+  }
   nav a:hover{background: rgba($headerColor,1); text-decoration:none;}
   header .header{
     background: $headerColor;
@@ -133,9 +136,11 @@ html, body {
 
 h1, h2, h3, h4 {
   font-family: $headingFont;
+  font-weight:200;
+  color: $headingFontColor;
 }
 h1{
-  font-size: $standardFontSize + 14px;
+  font-size: $standardFontSize + 16px;
 }
 h2{
   font-size: $standardFontSize + 12px;
