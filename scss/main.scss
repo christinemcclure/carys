@@ -30,6 +30,7 @@ $mainFontColor: $purple;
 $borderColor: $mainFontColor;
 $tableColor: $mainFontColor;
 $tableHeaderColor: darken($mainFontColor,20%);
+$tableHeaderBackground: darken($containerColor, 10%);
 $headerColor: $purple;
 $headerFontColor: $orange;
 $headerLinkColor: darken($salmon,20%);
@@ -56,9 +57,9 @@ html, body {
     #menu_widget table.beermenu {
       color: $tableColor;
       th {
-        background: darken($containerColor, 10%);
+        background: $tableHeaderBackground;
         color: $tableHeaderColor;
-        border:4px solid darken($containerColor, 10%);
+        border:4px solid $tableHeaderBackground;
         text-transform: none;
         font-weight: 600;
       }
