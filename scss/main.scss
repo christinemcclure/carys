@@ -17,23 +17,26 @@ $dkRed: #731010;
 $red: #C92020;
 $black: #0D0C10;*/
 
-// Venus in Leather: http://www.colourlovers.com/palette/2238878/Venus_in_Leather_RC?widths=0
-$lavender: rgb(177,153,174);
-$tan: rgb(161,157,109);
-$medBrown: rgb(133,118,87);
-$brown: rgb(101,56,50);
-$black: rgb(0,4,0);
+//Lizard Lounge: http://www.colourlovers.com/palette/1908090/Lizard_Lounge?widths=0
+$grey: rgb(181,180,164);
+$green: rgb(138,149,98);
+$dkGrey: rgb(51,51,51);
+$wine: rgb(60,10,41);
+$black: rgb(2,10,12);
 
-$htmlColor: $tan;
-$containerColor: $medBrown;
+$htmlColor: $grey;
+$containerColor: $green;
 $mainFontColor: $black;
 $borderColor: $mainFontColor;
 $tableColor: $mainFontColor;
-$tableHeaderColor: $medBrown;
-$headerColor: $brown;
-$headerColorRGB: $brown;
-$footerColor: $lavender;
-$linkColor: $tan;
+$tableHeaderColor: $wine;
+$headerColor: $wine;
+$headerFontColor: $grey;
+$headerLinkColor: $green;
+$footerColor: $dkGrey;
+$footerFontColor: $grey;
+$linkColor: $wine;
+$navLinkColor: $grey;
 
 //Deep
 /*$fuschia: #8E256F;
@@ -86,14 +89,24 @@ html, body {
     }
   }
   
-  header .header{background: $headerColor;} 
-  nav{background: rgba($headerColorRGB,.7);}
-  .footer {background: $footerColor;}
+  .footer {
+    background: $footerColor;
+    color: $footerFontColor;
+  }
   .body {background: $containerColor;}
   header .header, header .header h1 a, nav {color: $containerColor;}
   a{ color: $linkColor;}
-  nav a:hover{background: rgba($headerColorRGB,1); text-decoration:none;}
-
+  nav a:hover{background: rgba($headerColor,1); text-decoration:none;}
+  header .header{
+    background: $headerColor;
+    a {color: $headerLinkColor;}
+    h1 a, p {color: $headerFontColor;}
+  } 
+  nav{
+    a {color: $navLinkColor;}
+    background: rgba($headerColor,.5);
+  }
+  
   blockquote{
     font-size: $standardFontSize + 2px;
     line-height: $standardFontSize + 6px;
