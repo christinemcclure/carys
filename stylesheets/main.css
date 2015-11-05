@@ -1,3 +1,11 @@
+/*$purple: #3D2937;
+$tan: #71632F;
+$brown: #592C17;
+$dkBrown: #26160C;
+$dkBrownRGB: rgb(38,22,12);
+$dkRed: #731010;
+$red: #C92020;
+$black: #0D0C10;*/
 /*$fuschia: #8E256F;
 $tan: #73602D;
 $brown: #582B17;
@@ -14,100 +22,100 @@ $black: #0D0C10;*/
 }
 
 */
-/* line 55, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 html, body {
   font-family: "Varela", sans-serif;
   font-size: 18px;
   line-height: 22px;
-  background: #592c17; }
-  /* line 62, ../scss/main.scss */
+  background: #a19d6d; }
+  /* line 70, ../scss/main.scss */
   html .grid, body .grid {
-    background: #731010;
-    color: #0d0c10;
-    border: 2px solid #0d0c10; }
-    /* line 66, ../scss/main.scss */
+    background: #857657;
+    color: #000400;
+    border: 2px solid #000400; }
+    /* line 74, ../scss/main.scss */
     html .grid #menu_widget table.beermenu, body .grid #menu_widget table.beermenu {
-      color: #0d0c10; }
-      /* line 68, ../scss/main.scss */
+      color: #000400; }
+      /* line 76, ../scss/main.scss */
       html .grid #menu_widget table.beermenu th, body .grid #menu_widget table.beermenu th {
-        background: #190404;
-        color: #c92020;
-        border: 4px solid #190404;
+        background: #473f2f;
+        color: #857657;
+        border: 4px solid #473f2f;
         text-transform: none; }
-      /* line 74, ../scss/main.scss */
+      /* line 82, ../scss/main.scss */
       html .grid #menu_widget table.beermenu .beer-descriptions td.beer-description, body .grid #menu_widget table.beermenu .beer-descriptions td.beer-description {
         border: none;
-        border-bottom: 1px solid #190404; }
-  /* line 81, ../scss/main.scss */
-  html header .header, body header .header {
-    background: #26160c; }
-  /* line 82, ../scss/main.scss */
-  html nav, body nav {
-    background: rgba(38, 22, 12, 0.7); }
-  /* line 83, ../scss/main.scss */
-  html .footer, body .footer {
-    background: #3d2937; }
-  /* line 84, ../scss/main.scss */
-  html .body, body .body {
-    background: #731010; }
-  /* line 85, ../scss/main.scss */
-  html header .header, html header .header h1 a, html nav, body header .header, body header .header h1 a, body nav {
-    color: #731010; }
-  /* line 86, ../scss/main.scss */
-  html a, body a {
-    color: #c92020; }
-  /* line 87, ../scss/main.scss */
-  html nav a:hover, body nav a:hover {
-    background: #26160c;
-    text-decoration: none; }
+        border-bottom: 1px solid #473f2f; }
   /* line 89, ../scss/main.scss */
+  html header .header, body header .header {
+    background: #653832; }
+  /* line 90, ../scss/main.scss */
+  html nav, body nav {
+    background: rgba(101, 56, 50, 0.7); }
+  /* line 91, ../scss/main.scss */
+  html .footer, body .footer {
+    background: #b199ae; }
+  /* line 92, ../scss/main.scss */
+  html .body, body .body {
+    background: #857657; }
+  /* line 93, ../scss/main.scss */
+  html header .header, html header .header h1 a, html nav, body header .header, body header .header h1 a, body nav {
+    color: #857657; }
+  /* line 94, ../scss/main.scss */
+  html a, body a {
+    color: #a19d6d; }
+  /* line 95, ../scss/main.scss */
+  html nav a:hover, body nav a:hover {
+    background: #653832;
+    text-decoration: none; }
+  /* line 97, ../scss/main.scss */
   html blockquote, body blockquote {
     font-size: 20px;
     line-height: 24px;
     font-style: italic; }
-  /* line 95, ../scss/main.scss */
+  /* line 103, ../scss/main.scss */
   html a, body a {
     text-decoration: none; }
-  /* line 99, ../scss/main.scss */
+  /* line 107, ../scss/main.scss */
   html a:hover, body a:hover {
     text-decoration: underline; }
-  /* line 102, ../scss/main.scss */
+  /* line 110, ../scss/main.scss */
   html ul, body ul {
     list-style: none; }
-    /* line 104, ../scss/main.scss */
+    /* line 112, ../scss/main.scss */
     html ul li, body ul li {
       margin: 10px 0; }
 
-/* line 111, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 .bump-down {
   margin-top: 60px; }
 
-/* line 113, ../scss/main.scss */
+/* line 121, ../scss/main.scss */
 h1, h2, h3, h4 {
   font-family: "Righteous", sans-serif; }
 
-/* line 116, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 h1 {
   font-size: 32px; }
 
-/* line 119, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 h2 {
   font-size: 30px;
   line-height: 30px; }
 
-/* line 123, ../scss/main.scss */
+/* line 131, ../scss/main.scss */
 h3 {
   font-size: 26px; }
 
-/* line 126, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 img {
   max-width: 100%; }
 
-/* line 127, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 .col-right {
   text-align: right; }
 
-/* line 130, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 .nav {
   background-size: contain;
   background-repeat: no-repeat;
@@ -117,192 +125,192 @@ img {
   /* (img-height 1200 / img-width * 343 container-width) */
   margin: 0 0 200px 0; }
 
-/* line 138, ../scss/main.scss */
+/* line 146, ../scss/main.scss */
 #home .nav {
   background-image: url("../images/home.jpg"); }
 
-/* line 141, ../scss/main.scss */
+/* line 149, ../scss/main.scss */
 #about .nav {
   background-image: url("../images/about.jpg"); }
 
-/* line 144, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 #on-tap .nav {
   background-image: url("../images/on-tap.jpg"); }
 
-/* line 147, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 #events .nav {
   background-image: url("../images/events.jpg"); }
 
-/* line 150, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 #pool .nav {
   background-image: url("../images/pool-table.jpg"); }
 
-/* line 153, ../scss/main.scss */
+/* line 161, ../scss/main.scss */
 #bands .nav {
   background-image: url("../images/bands.jpg"); }
 
-/* line 158, ../scss/main.scss */
+/* line 166, ../scss/main.scss */
 header {
   text-align: center; }
-  /* line 159, ../scss/main.scss */
+  /* line 167, ../scss/main.scss */
   header h1 {
     font-size: 78px;
     line-height: 68px; }
-  /* line 163, ../scss/main.scss */
+  /* line 171, ../scss/main.scss */
   header a:hover {
     text-decoration: none; }
-  /* line 164, ../scss/main.scss */
+  /* line 172, ../scss/main.scss */
   header p {
     font-size: 20px;
     margin: 20px; }
-  /* line 169, ../scss/main.scss */
+  /* line 177, ../scss/main.scss */
   header .col-right {
     text-align: center;
     padding: 0 0 10px 0; }
 
-/* line 172, ../scss/main.scss */
+/* line 180, ../scss/main.scss */
 .nav-fix {
   padding: 0;
   margin-top: -2px; }
 
-/* line 176, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 nav {
   margin-top: 0; }
-  /* line 178, ../scss/main.scss */
+  /* line 186, ../scss/main.scss */
   nav a {
     display: block;
     margin: 0 0 0 30%;
     padding: 8px 14px; }
 
-/* line 188, ../scss/main.scss */
+/* line 196, ../scss/main.scss */
 footer {
   text-align: center; }
-  /* line 190, ../scss/main.scss */
+  /* line 198, ../scss/main.scss */
   footer .hours {
     padding: 20px 0; }
-  /* line 193, ../scss/main.scss */
+  /* line 201, ../scss/main.scss */
   footer .icons {
     clear: both; }
 
-/* line 199, ../scss/main.scss */
+/* line 207, ../scss/main.scss */
 .specials {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px; }
-  /* line 205, ../scss/main.scss */
+  /* line 213, ../scss/main.scss */
   .specials li {
     margin: 20px 0; }
-    /* line 206, ../scss/main.scss */
+    /* line 214, ../scss/main.scss */
     .specials li .calDate {
       display: block;
       font-weight: 800; }
-    /* line 210, ../scss/main.scss */
+    /* line 218, ../scss/main.scss */
     .specials li .calTitle {
       display: block; }
-    /* line 213, ../scss/main.scss */
+    /* line 221, ../scss/main.scss */
     .specials li .calDesc {
       font-size: 16px;
       display: block; }
-  /* line 220, ../scss/main.scss */
+  /* line 228, ../scss/main.scss */
   .specials li:first-child .calDate {
     font-size: 24px; }
 
-/* line 228, ../scss/main.scss */
+/* line 236, ../scss/main.scss */
 .events {
   padding: 20px 0 0 0;
   font-size: 20px;
   line-height: 24px; }
-  /* line 232, ../scss/main.scss */
+  /* line 240, ../scss/main.scss */
   .events li {
     margin: 20px 0 40px 0; }
-    /* line 234, ../scss/main.scss */
+    /* line 242, ../scss/main.scss */
     .events li .calDate {
       display: inline-block;
       font-size: 24px; }
-    /* line 238, ../scss/main.scss */
+    /* line 246, ../scss/main.scss */
     .events li .calTitle {
       display: block;
       font-size: 22px; }
-    /* line 242, ../scss/main.scss */
+    /* line 250, ../scss/main.scss */
     .events li .calDesc {
       display: block; }
 
-/* line 249, ../scss/main.scss */
+/* line 257, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none; }
 
-/* line 252, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 #beer-sub-nav {
   margin: 0; }
-  /* line 254, ../scss/main.scss */
+  /* line 262, ../scss/main.scss */
   #beer-sub-nav li {
     cursor: pointer;
     display: inline-block;
     padding: 8px 10px;
     margin: 0; }
-  /* line 260, ../scss/main.scss */
+  /* line 268, ../scss/main.scss */
   #beer-sub-nav li.active {
     font-size: 20px;
-    border-bottom: 2px solid #0d0c10; }
+    border-bottom: 2px solid #000400; }
 
-/* line 268, ../scss/main.scss */
+/* line 276, ../scss/main.scss */
 #menu-widget #beer_menu #red_wine th.serving, #menu-widget #beer_menu #red_wine td.serving, #menu-widget #beer_menu #white_wine th.serving, #menu-widget #beer_menu #white_wine td.serving, #menu-widget #beer_menu #wine th.serving, #menu-widget #beer_menu #wine td.serving {
   display: none; }
 
 @media only screen and (min-width: 1140px) {
-  /* line 275, ../scss/main.scss */
+  /* line 283, ../scss/main.scss */
   header {
     text-align: left; }
-    /* line 276, ../scss/main.scss */
+    /* line 284, ../scss/main.scss */
     header h1 {
       line-height: 18px; }
-    /* line 278, ../scss/main.scss */
+    /* line 286, ../scss/main.scss */
     header .col-right {
       text-align: right; }
-    /* line 279, ../scss/main.scss */
+    /* line 287, ../scss/main.scss */
     header p {
       margin: 2px; }
-    /* line 280, ../scss/main.scss */
+    /* line 288, ../scss/main.scss */
     header #cary {
       margin-left: 40px; }
 
-  /* line 282, ../scss/main.scss */
+  /* line 290, ../scss/main.scss */
   .nav {
     margin: 0; }
-    /* line 284, ../scss/main.scss */
+    /* line 292, ../scss/main.scss */
     .nav nav {
       margin-top: -326px; }
-      /* line 287, ../scss/main.scss */
+      /* line 295, ../scss/main.scss */
       .nav nav a {
         display: inline-block;
         margin: 0 0 0 7%; }
 
-  /* line 295, ../scss/main.scss */
+  /* line 303, ../scss/main.scss */
   footer .hours {
     padding: 20px 0; }
-  /* line 298, ../scss/main.scss */
+  /* line 306, ../scss/main.scss */
   footer .icons {
     float: right;
     padding-top: 10px; }
 
-  /* line 304, ../scss/main.scss */
+  /* line 312, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
     margin-left: 10px; }
 
-  /* line 309, ../scss/main.scss */
+  /* line 317, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%; }
 
-  /* line 315, ../scss/main.scss */
+  /* line 323, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
     width: 160px; }
-  /* line 319, ../scss/main.scss */
+  /* line 327, ../scss/main.scss */
   .specials li .calTitle {
     display: inline-block; }
-  /* line 320, ../scss/main.scss */
+  /* line 328, ../scss/main.scss */
   .specials li .calDesc {
     font-size: 16px; } }

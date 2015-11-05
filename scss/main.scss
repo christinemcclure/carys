@@ -8,23 +8,32 @@ $standardFontSize: 18px;
 
 //Kuler photo colors
 //Dark
-$purple: #3D2937;
+/*$purple: #3D2937;
 $tan: #71632F;
 $brown: #592C17;
 $dkBrown: #26160C;
 $dkBrownRGB: rgb(38,22,12);
 $dkRed: #731010;
 $red: #C92020;
-$black: #0D0C10;
+$black: #0D0C10;*/
 
-$htmlColor: $brown;
-$containerColor: $dkRed;
+// Venus in Leather: http://www.colourlovers.com/palette/2238878/Venus_in_Leather_RC?widths=0
+$lavender: rgb(177,153,174);
+$tan: rgb(161,157,109);
+$medBrown: rgb(133,118,87);
+$brown: rgb(101,56,50);
+$black: rgb(0,4,0);
+
+$htmlColor: $tan;
+$containerColor: $medBrown;
 $mainFontColor: $black;
 $borderColor: $mainFontColor;
 $tableColor: $mainFontColor;
-$headerColor: $dkBrown;
-$headerColorRGB: $dkBrownRGB;
-$footerColor: $purple;
+$tableHeaderColor: $medBrown;
+$headerColor: $brown;
+$headerColorRGB: $brown;
+$footerColor: $lavender;
+$linkColor: $tan;
 
 //Deep
 /*$fuschia: #8E256F;
@@ -34,7 +43,6 @@ $red: #740F0F;
 $black: #0D0C10;*/
 // possibly this with purple instead of fuschia
 
-$lineColor: $purple;
 
 //background image ideas:
 // https://css-tricks.com/how-to-resizeable-background-image/
@@ -67,7 +75,7 @@ html, body {
       color: $tableColor;
       th {
         background: darken($containerColor, 20%);
-        color: $red;
+        color: $tableHeaderColor;
         border:4px solid darken($containerColor, 20%);
         text-transform: none;
       }
@@ -83,7 +91,7 @@ html, body {
   .footer {background: $footerColor;}
   .body {background: $containerColor;}
   header .header, header .header h1 a, nav {color: $containerColor;}
-  a{ color: $red;}
+  a{ color: $linkColor;}
   nav a:hover{background: rgba($headerColorRGB,1); text-decoration:none;}
 
   blockquote{
