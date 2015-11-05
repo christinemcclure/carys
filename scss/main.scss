@@ -52,7 +52,11 @@ html, body {
   line-height: $standardFontSize + 4px;
 
   background: $brown;
-  .grid{background: $dkRed; color:$black;}
+  .grid{
+    background: $dkRed; 
+    color:$black;
+    border: 2px solid $black;
+  }
   header .header{background: $dkBrown;} 
   nav{background: rgba($dkBrownRGB,.7);}
   .footer {background: $purple;}
