@@ -237,7 +237,7 @@ text-align:center;
   }
   li.active{
     font-size:$standardFontSize + 2px;
-//    background: red;
+    border-bottom: 2px solid $black;
   }
  
 }
