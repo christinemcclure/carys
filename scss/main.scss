@@ -15,6 +15,7 @@ $dkBrown: #26160C;
 $dkBrownRGB: rgb(38,22,12);
 $dkRed: #731010;
 $red: #C92020;
+$black: #0D0C10;
 
 
 
@@ -51,7 +52,7 @@ html, body {
   line-height: $standardFontSize + 4px;
 
   background: $brown;
-  .grid{background: $dkRed;}
+  .grid{background: $dkRed; color:$black;}
   header .header{background: $dkBrown;} 
   nav{background: rgba($dkBrownRGB,.7);}
   .footer {background: $purple;}
