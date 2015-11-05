@@ -69,6 +69,7 @@ html, body {
         background: darken($containerColor, 20%);
         color: $red;
         border:4px solid darken($containerColor, 20%);
+        text-transform: none;
       }
       .beer-descriptions td.beer-description{
         border:none;
