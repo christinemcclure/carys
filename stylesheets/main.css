@@ -290,51 +290,55 @@ footer .icons {
   header p {
     margin: 2px;
   }
+  /* line 251, ../scss/main.scss */
+  header #cary {
+    margin-left: 40px;
+  }
 
-  /* line 252, ../scss/main.scss */
+  /* line 253, ../scss/main.scss */
   .nav {
     margin: 0;
   }
-  /* line 254, ../scss/main.scss */
+  /* line 255, ../scss/main.scss */
   .nav nav {
     margin-top: -326px;
   }
-  /* line 257, ../scss/main.scss */
+  /* line 258, ../scss/main.scss */
   .nav nav a {
     display: inline-block;
     margin: 0 0 0 7%;
   }
 
-  /* line 265, ../scss/main.scss */
+  /* line 266, ../scss/main.scss */
   footer .hours {
     padding: 20px 0;
   }
-  /* line 268, ../scss/main.scss */
+  /* line 269, ../scss/main.scss */
   footer .icons {
     float: right;
   }
 
-  /* line 273, ../scss/main.scss */
+  /* line 274, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
     margin-left: 10px;
   }
 
-  /* line 278, ../scss/main.scss */
+  /* line 279, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%;
   }
 
-  /* line 284, ../scss/main.scss */
+  /* line 285, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
     width: 160px;
   }
-  /* line 288, ../scss/main.scss */
+  /* line 289, ../scss/main.scss */
   .specials li .calTitle {
     display: inline-block;
   }
-  /* line 289, ../scss/main.scss */
+  /* line 290, ../scss/main.scss */
   .specials li .calDesc {
     font-size: 16px;
   }
