@@ -65,7 +65,7 @@ html, body {
       font-weight: 600; }
   /* line 93, ../scss/main.scss */
   html nav, body nav {
-    background: rgba(55, 39, 42, 0.5); }
+    background: rgba(55, 39, 42, 0.7); }
     /* line 94, ../scss/main.scss */
     html nav a, body nav a {
       color: #b64902; }
