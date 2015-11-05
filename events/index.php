@@ -12,7 +12,7 @@ include("../includes/functions.php"); ?>
       <?php include "../includes/nav.html"; ?>
 
       <div class="col-1-1">
-        <div class="content">
+        <div class="grid-pad content">
           <h1>Upcoming Events</h1>
           <?php 
             $calendar="caryslounge@gmail.com";

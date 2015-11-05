@@ -11,7 +11,7 @@ include("../includes/functions.php"); ?>
       <?php include "../includes/nav.html"; ?>
 
       <div class="col-1-1">
-        <div class="content">
+        <div class="grid-pad content">
           <p>Pete needs to add some stuff here. </p>
         </div>
       </div>

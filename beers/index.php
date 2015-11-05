@@ -7,7 +7,7 @@
       <?php include "../includes/header.html"; ?>
       <?php include "../includes/nav.html"; ?>
       <div class="col-1-1">
-        <div class="content">
+        <div class="grid-pad content">
           
           <ul class="clear" id="beer-sub-nav">
             <li id="sub_featured">Featured Items</li>

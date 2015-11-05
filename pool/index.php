@@ -11,7 +11,7 @@ include("../includes/functions.php"); ?>
       <?php include "../includes/nav.html"; ?>
 
       <div class="col-1-1">
-        <div class="content">
+        <div class="grid-pad content">
           <h1>Free Pool!</h1>
           <p>Come try out your game on our <a href="http://www.diamondbilliards.com/">Diamond</a>&nbsp;9-foot Pro-Am pool table. It's the best damn table in the city.</p>
           <h2>Pool Leagues</h2>
