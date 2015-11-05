@@ -316,29 +316,30 @@ footer .icons {
   /* line 269, ../scss/main.scss */
   footer .icons {
     float: right;
+    padding-top: 10px;
   }
 
-  /* line 274, ../scss/main.scss */
+  /* line 275, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
     margin-left: 10px;
   }
 
-  /* line 279, ../scss/main.scss */
+  /* line 280, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%;
   }
 
-  /* line 285, ../scss/main.scss */
+  /* line 286, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
     width: 160px;
   }
-  /* line 289, ../scss/main.scss */
+  /* line 290, ../scss/main.scss */
   .specials li .calTitle {
     display: inline-block;
   }
-  /* line 290, ../scss/main.scss */
+  /* line 291, ../scss/main.scss */
   .specials li .calDesc {
     font-size: 16px;
   }
