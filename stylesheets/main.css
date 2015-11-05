@@ -19,64 +19,85 @@ html, body {
   font-family: "Varela", sans-serif;
   font-size: 18px;
   line-height: 22px;
-  background: #592c17; }
-  /* line 54, ../scss/main.scss */
-  html .grid, body .grid {
-    background: #731010; }
-  /* line 55, ../scss/main.scss */
-  html header .header, body header .header {
-    background: #26160c; }
-  /* line 56, ../scss/main.scss */
-  html nav, body nav {
-    background: rgba(38, 22, 12, 0.5); }
-  /* line 59, ../scss/main.scss */
-  html blockquote, body blockquote {
-    font-size: 20px;
-    line-height: 24px;
-    font-style: italic; }
-  /* line 65, ../scss/main.scss */
-  html a, body a {
-    text-decoration: none; }
-  /* line 69, ../scss/main.scss */
-  html a:hover, body a:hover {
-    text-decoration: underline; }
-  /* line 72, ../scss/main.scss */
-  html ul, body ul {
-    list-style: none; }
-    /* line 74, ../scss/main.scss */
-    html ul li, body ul li {
-      margin: 10px 0; }
+  background: #592C17;
+}
+/* line 54, ../scss/main.scss */
+html .grid, body .grid {
+  background: #731010;
+}
+/* line 55, ../scss/main.scss */
+html header .header, body header .header {
+  background: #26160C;
+}
+/* line 56, ../scss/main.scss */
+html nav, body nav {
+  background: rgba(38, 22, 12, 0.5);
+}
+/* line 59, ../scss/main.scss */
+html blockquote, body blockquote {
+  font-size: 20px;
+  line-height: 24px;
+  font-style: italic;
+}
+/* line 65, ../scss/main.scss */
+html a, body a {
+  text-decoration: none;
+}
+/* line 69, ../scss/main.scss */
+html a:hover, body a:hover {
+  text-decoration: underline;
+}
+/* line 72, ../scss/main.scss */
+html ul, body ul {
+  list-style: none;
+}
+/* line 74, ../scss/main.scss */
+html ul li, body ul li {
+  margin: 10px 0;
+}
 
 /* line 81, ../scss/main.scss */
 .bump-down {
-  margin-top: 60px; }
+  margin-top: 60px;
+}
 
 /* line 83, ../scss/main.scss */
 h1, h2, h3, h4 {
-  font-family: "Righteous", sans-serif; }
+  font-family: "Righteous", sans-serif;
+}
 
 /* line 86, ../scss/main.scss */
 h1 {
-  font-size: 32px; }
+  font-size: 32px;
+}
 
 /* line 89, ../scss/main.scss */
 h2 {
   font-size: 30px;
-  line-height: 30px; }
+  line-height: 30px;
+}
 
 /* line 93, ../scss/main.scss */
 h3 {
-  font-size: 26px; }
+  font-size: 26px;
+}
 
 /* line 96, ../scss/main.scss */
 img {
-  max-width: 100%; }
+  max-width: 100%;
+}
 
 /* line 97, ../scss/main.scss */
 .col-right {
-  text-align: right; }
+  text-align: right;
+}
 
-/* line 99, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
+.no-padding {
+  padding: 0;
+}
+
+/* line 100, ../scss/main.scss */
 .nav {
   background-size: contain;
   background-repeat: no-repeat;
@@ -84,181 +105,228 @@ img {
   height: 0;
   padding-top: 28.58%;
   /* (img-height 1200 / img-width * 343 container-width) */
-  margin: 0 0 200px 0; }
+  margin: 0 0 200px 0;
+}
 
-/* line 107, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
 #home .nav {
-  background-image: url("../images/home.jpg"); }
+  background-image: url("../images/home.jpg");
+}
 
-/* line 110, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 #about .nav {
-  background-image: url("../images/about.jpg"); }
+  background-image: url("../images/about.jpg");
+}
 
-/* line 113, ../scss/main.scss */
+/* line 114, ../scss/main.scss */
 #on-tap .nav {
-  background-image: url("../images/on-tap.jpg"); }
+  background-image: url("../images/on-tap.jpg");
+}
 
-/* line 116, ../scss/main.scss */
+/* line 117, ../scss/main.scss */
 #events .nav {
-  background-image: url("../images/events.jpg"); }
+  background-image: url("../images/events.jpg");
+}
 
-/* line 119, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 #pool .nav {
-  background-image: url("../images/pool-table.jpg"); }
+  background-image: url("../images/pool-table.jpg");
+}
 
-/* line 122, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 #bands .nav {
-  background-image: url("../images/bands.jpg"); }
+  background-image: url("../images/bands.jpg");
+}
 
-/* line 127, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 header {
-  text-align: center; }
-  /* line 128, ../scss/main.scss */
-  header h1 {
-    font-size: 78px;
-    line-height: 68px; }
-  /* line 132, ../scss/main.scss */
-  header a:hover {
-    text-decoration: none; }
-  /* line 133, ../scss/main.scss */
-  header p {
-    font-size: 20px;
-    margin: 20px; }
-  /* line 138, ../scss/main.scss */
-  header .col-right {
-    text-align: center;
-    padding: 0 0 10px 0; }
+  text-align: center;
+}
+/* line 129, ../scss/main.scss */
+header h1 {
+  font-size: 78px;
+  line-height: 68px;
+}
+/* line 133, ../scss/main.scss */
+header a:hover {
+  text-decoration: none;
+}
+/* line 134, ../scss/main.scss */
+header p {
+  font-size: 20px;
+  margin: 20px;
+}
+/* line 139, ../scss/main.scss */
+header .col-right {
+  text-align: center;
+  padding: 0 0 10px 0;
+}
 
-/* line 141, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 nav {
-  margin-top: 0; }
-  /* line 143, ../scss/main.scss */
-  nav a {
-    display: block;
-    margin: 0 0 0 30%;
-    padding: 8px 14px; }
+  margin-top: 0;
+}
+/* line 144, ../scss/main.scss */
+nav a {
+  display: block;
+  margin: 0 0 0 30%;
+  padding: 8px 14px;
+}
 
-/* line 153, ../scss/main.scss */
+/* line 154, ../scss/main.scss */
 footer {
-  text-align: center; }
-  /* line 155, ../scss/main.scss */
-  footer .hours {
-    padding: 20px 0; }
-  /* line 158, ../scss/main.scss */
-  footer .icons {
-    clear: both; }
+  text-align: center;
+}
+/* line 156, ../scss/main.scss */
+footer .hours {
+  padding: 20px 0;
+}
+/* line 159, ../scss/main.scss */
+footer .icons {
+  clear: both;
+}
 
-/* line 164, ../scss/main.scss */
+/* line 165, ../scss/main.scss */
 .specials {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   -webkit-margin-start: 0px;
   -webkit-margin-end: 0px;
-  -webkit-padding-start: 0px; }
-  /* line 170, ../scss/main.scss */
-  .specials li {
-    margin: 20px 0; }
-    /* line 171, ../scss/main.scss */
-    .specials li .calDate {
-      display: block;
-      font-weight: 800; }
-    /* line 175, ../scss/main.scss */
-    .specials li .calTitle {
-      display: block; }
-    /* line 178, ../scss/main.scss */
-    .specials li .calDesc {
-      font-size: 16px;
-      display: block; }
-  /* line 185, ../scss/main.scss */
-  .specials li:first-child .calDate {
-    font-size: 24px; }
+  -webkit-padding-start: 0px;
+}
+/* line 171, ../scss/main.scss */
+.specials li {
+  margin: 20px 0;
+}
+/* line 172, ../scss/main.scss */
+.specials li .calDate {
+  display: block;
+  font-weight: 800;
+}
+/* line 176, ../scss/main.scss */
+.specials li .calTitle {
+  display: block;
+}
+/* line 179, ../scss/main.scss */
+.specials li .calDesc {
+  font-size: 16px;
+  display: block;
+}
+/* line 186, ../scss/main.scss */
+.specials li:first-child .calDate {
+  font-size: 24px;
+}
 
-/* line 193, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 .events {
   padding: 20px 0 0 0;
   font-size: 20px;
-  line-height: 24px; }
-  /* line 197, ../scss/main.scss */
-  .events li {
-    margin: 20px 0 40px 0; }
-    /* line 199, ../scss/main.scss */
-    .events li .calDate {
-      display: inline-block;
-      font-size: 24px; }
-    /* line 203, ../scss/main.scss */
-    .events li .calTitle {
-      display: block;
-      font-size: 22px; }
-    /* line 207, ../scss/main.scss */
-    .events li .calDesc {
-      display: block; }
+  line-height: 24px;
+}
+/* line 198, ../scss/main.scss */
+.events li {
+  margin: 20px 0 40px 0;
+}
+/* line 200, ../scss/main.scss */
+.events li .calDate {
+  display: inline-block;
+  font-size: 24px;
+}
+/* line 204, ../scss/main.scss */
+.events li .calTitle {
+  display: block;
+  font-size: 22px;
+}
+/* line 208, ../scss/main.scss */
+.events li .calDesc {
+  display: block;
+}
 
-/* line 214, ../scss/main.scss */
+/* line 215, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
-  display: none; }
+  display: none;
+}
 
-/* line 218, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 10px;
-  margin: 0; }
-/* line 224, ../scss/main.scss */
+  margin: 0;
+}
+/* line 225, ../scss/main.scss */
 #beer-sub-nav li.active {
-  font-size: 20px; }
+  font-size: 20px;
+}
 
-/* line 232, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 #menu-widget #beer_menu #red_wine th.serving, #menu-widget #beer_menu #red_wine td.serving, #menu-widget #beer_menu #white_wine th.serving, #menu-widget #beer_menu #white_wine td.serving, #menu-widget #beer_menu #wine th.serving, #menu-widget #beer_menu #wine td.serving {
-  display: none; }
+  display: none;
+}
 
 @media only screen and (min-width: 1140px) {
-  /* line 239, ../scss/main.scss */
+  /* line 240, ../scss/main.scss */
   header {
-    text-align: left; }
-    /* line 240, ../scss/main.scss */
-    header h1 {
-      line-height: 18px; }
-    /* line 242, ../scss/main.scss */
-    header .col-right {
-      text-align: right; }
-    /* line 243, ../scss/main.scss */
-    header p {
-      margin: 2px; }
+    text-align: left;
+  }
+  /* line 241, ../scss/main.scss */
+  header h1 {
+    line-height: 18px;
+  }
+  /* line 243, ../scss/main.scss */
+  header .col-right {
+    text-align: right;
+  }
+  /* line 244, ../scss/main.scss */
+  header p {
+    margin: 2px;
+  }
 
-  /* line 245, ../scss/main.scss */
+  /* line 246, ../scss/main.scss */
   .nav {
-    margin: 0; }
-    /* line 247, ../scss/main.scss */
-    .nav nav {
-      margin-top: -320px; }
-      /* line 250, ../scss/main.scss */
-      .nav nav a {
-        display: inline-block;
-        margin: 0 0 0 7%; }
+    margin: 0;
+  }
+  /* line 248, ../scss/main.scss */
+  .nav nav {
+    margin-top: -320px;
+  }
+  /* line 251, ../scss/main.scss */
+  .nav nav a {
+    display: inline-block;
+    margin: 0 0 0 7%;
+  }
 
-  /* line 258, ../scss/main.scss */
+  /* line 259, ../scss/main.scss */
   footer .hours {
-    padding: 20px 0; }
-  /* line 261, ../scss/main.scss */
+    padding: 20px 0;
+  }
+  /* line 262, ../scss/main.scss */
   footer .icons {
-    float: right; }
+    float: right;
+  }
 
-  /* line 266, ../scss/main.scss */
+  /* line 267, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
-    margin-left: 10px; }
+    margin-left: 10px;
+  }
 
-  /* line 271, ../scss/main.scss */
+  /* line 272, ../scss/main.scss */
   #beer-sub-nav li {
-    margin: 10px 0 40px 3%; }
+    margin: 10px 0 40px 3%;
+  }
 
-  /* line 277, ../scss/main.scss */
+  /* line 278, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
-    width: 160px; }
-  /* line 281, ../scss/main.scss */
-  .specials li .calTitle {
-    display: inline-block; }
+    width: 160px;
+  }
   /* line 282, ../scss/main.scss */
+  .specials li .calTitle {
+    display: inline-block;
+  }
+  /* line 283, ../scss/main.scss */
   .specials li .calDesc {
-    font-size: 16px; } }
+    font-size: 16px;
+  }
+}
