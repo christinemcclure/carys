@@ -48,7 +48,7 @@ html header .header, html header .header h1 a, html nav, body header .header, bo
   color: #731010;
 }
 /* line 65, ../scss/main.scss */
-html header .header p a, html nav a, body header .header p a, body nav a {
+html a, body a {
   color: #C92020;
 }
 /* line 66, ../scss/main.scss */

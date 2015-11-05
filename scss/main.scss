@@ -62,7 +62,7 @@ html, body {
   .footer {background: $purple;}
   .body {background: $dkRed;}
   header .header, header .header h1 a, nav {color: $dkRed;}
-  header .header p a, nav a{ color: $red;}
+  a{ color: $red;}
   nav a:hover{background: rgba($dkBrownRGB,1); text-decoration:none;}
 
   blockquote{
