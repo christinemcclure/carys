@@ -51,10 +51,11 @@ html, body {
   line-height: $standardFontSize + 4px;
 
   background: $brown;
-  .grid{background: $dkBrown;}
+  .grid{background: $dkRed;}
   header .header{background: $dkBrown;} 
   nav{background: rgba($dkBrownRGB,.5);}
   .footer {background: $purple;}
+  .body {background: $dkRed;}
 
 
   blockquote{
@@ -96,7 +97,7 @@ h3{
 }
 img {max-width:100%;}
 .col-right{text-align:right;}
-.no-padding{padding:0;}
+
 
 .nav{ // have background image resize with screen
   background-size: contain;
@@ -140,6 +141,10 @@ header {
   .col-right{text-align:center;  padding: 0 0 10px 0;}
 }
 
+.nav-fix{
+  padding:0;
+  margin-top:-2px;
+}
 nav{ 
   margin-top:0;
   a {
