@@ -17,27 +17,27 @@ $dkRed: #731010;
 $red: #C92020;
 $black: #0D0C10;*/
 
-//Lizard Lounge: http://www.colourlovers.com/palette/1908090/Lizard_Lounge?widths=0
-$grey: rgb(181,180,164);
-$green: rgb(138,149,98);
-$dkGrey: rgb(51,51,51);
-$wine: rgb(60,10,41);
-$black: rgb(2,10,12);
+// Pears Soap: http://www.colourlovers.com/palette/1709569/Pears_Soap_RC
+$salmon: rgb(219,182,163);
+$tan: rgb(198,124,61);
+$orange: rgb(182,73,2);
+$red: rgb(127,42,11);
+$purple: rgb(55,39,42);
 
-$htmlColor: $grey;
-$containerColor: $green;
-$mainFontColor: $black;
+$htmlColor: $salmon;
+$containerColor: $tan;
+$mainFontColor: darken($purple, 30%);
 $borderColor: $mainFontColor;
 $tableColor: $mainFontColor;
-$tableHeaderColor: $wine;
-$headerColor: $wine;
-$headerFontColor: $grey;
-$headerLinkColor: $green;
-$footerColor: $dkGrey;
-$footerFontColor: $grey;
-$linkColor: $wine;
-$navLinkColor: $grey;
-$headingFontColor: $dkGrey;
+$tableHeaderColor: $mainFontColor;
+$headerColor: $purple;
+$headerFontColor: $orange;
+$headerLinkColor: darken($salmon,20%);
+$footerColor: $purple;
+$footerFontColor: $headerLinkColor;
+$linkColor: darken($red,10%);
+$navLinkColor: $orange;
+$headingFontColor: $purple;
 
 
 //General/mobile settings
@@ -80,8 +80,12 @@ html, body {
   nav a:hover{background: rgba($headerColor,1); text-decoration:none;}
   header .header{
     background: $headerColor;
-    a {color: $headerLinkColor;}
+    a {
+      color: $headerLinkColor;
+      font-weight:200;
+    }
     h1 a, p {color: $headerFontColor;}
+    h1 a {font-weight:600;}
   } 
   nav{
     a {color: $navLinkColor;}
@@ -263,7 +267,7 @@ text-align:center;
   }
   li.active{
     font-size:$standardFontSize + 2px;
-    border-bottom: 2px solid $black;
+    border-bottom: 2px solid $mainFontColor;
   }
  
 }
