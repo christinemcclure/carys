@@ -8,7 +8,7 @@
       <?php include "includes/header.html"; ?>
       <?php include "includes/nav.html"; ?>
         <div class="col-7-12">
-          <div class="content">
+          <div class="grid-pad content">
             <p>Cary's Lounge is your friendly neighborhood tap catering to all your drinking needs since 1972. No thirst is too big or too small for us here at Cary's. In addition to the fine selection of beers, wines, and spirits, Cary's features free pool, free wi-fi, and a bad-ass selection on the jukebox.</p>          
             <blockquote>
               Smack in the middle of Indo/Pak territory, this tiny German-style hideaway has been plugging away since ’72[...] Bartenders flip the TV channels back and forth between basketball games and The Simpsons, but if that doesn’t interest you, there’s free pool and a stash of frisky regulars to keep you occupied. &mdash; <a href="http://www.timeout.com/chicago/bars/carys-lounge">TimeOut Chicago</a>
