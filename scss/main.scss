@@ -271,8 +271,8 @@ text-align:center;
   margin:0;
   }
   li.active{
-    font-size:$standardFontSize + 2px;
-    border-bottom: 2px solid $mainFontColor;
+    font-size:$standardFontSize + 4px;
+    font-family: $headingFont;
   }
  
 }

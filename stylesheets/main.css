@@ -314,8 +314,8 @@ footer .icons {
 }
 /* line 273, ../scss/main.scss */
 #beer-sub-nav li.active {
-  font-size: 20px;
-  border-bottom: 2px solid #37272a;
+  font-size: 22px;
+  font-family: "Righteous", sans-serif;
 }
 
 /* line 281, ../scss/main.scss */
