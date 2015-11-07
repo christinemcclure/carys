@@ -287,6 +287,24 @@ text-align:center;
   }
 }
 
+@media only screen and (max-width: 1139px) {
+  html body .grid{
+    header .header{
+      background: $containerColor;
+      a {
+        color: $linkColor;
+      }
+      h1 a, p {color: $mainFontColor;}
+      h1 a {font-weight:600;}
+    } 
+    nav {
+      a:hover{
+        background: none;
+        color: $mainFontColor;
+      }
+    }
+  }
+}
 
 @media only screen and (min-width: 1140px) {
   header{

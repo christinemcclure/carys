@@ -328,73 +328,96 @@ footer .icons {
   display: none;
 }
 
-@media only screen and (min-width: 1140px) {
+@media only screen and (max-width: 1139px) {
   /* line 292, ../scss/main.scss */
+  html body .grid header .header {
+    background: #c67c3d;
+  }
+  /* line 294, ../scss/main.scss */
+  html body .grid header .header a {
+    color: #632109;
+  }
+  /* line 297, ../scss/main.scss */
+  html body .grid header .header h1 a, html body .grid header .header p {
+    color: #37272a;
+  }
+  /* line 298, ../scss/main.scss */
+  html body .grid header .header h1 a {
+    font-weight: 600;
+  }
+  /* line 301, ../scss/main.scss */
+  html body .grid nav a:hover {
+    background: none;
+    color: #37272a;
+  }
+}
+@media only screen and (min-width: 1140px) {
+  /* line 310, ../scss/main.scss */
   header {
     text-align: left;
   }
-  /* line 293, ../scss/main.scss */
+  /* line 311, ../scss/main.scss */
   header h1 {
     line-height: 18px;
   }
-  /* line 295, ../scss/main.scss */
+  /* line 313, ../scss/main.scss */
   header .col-right {
     text-align: right;
   }
-  /* line 296, ../scss/main.scss */
+  /* line 314, ../scss/main.scss */
   header p {
     margin: 2px;
   }
-  /* line 297, ../scss/main.scss */
+  /* line 315, ../scss/main.scss */
   header #cary {
     margin-left: 40px;
   }
 
-  /* line 299, ../scss/main.scss */
+  /* line 317, ../scss/main.scss */
   .nav {
     margin: 0;
   }
-  /* line 301, ../scss/main.scss */
+  /* line 319, ../scss/main.scss */
   .nav nav {
     margin-top: -326px;
   }
-  /* line 304, ../scss/main.scss */
+  /* line 322, ../scss/main.scss */
   .nav nav a {
     display: inline-block;
     margin: 0 0 0 7%;
   }
 
-  /* line 312, ../scss/main.scss */
+  /* line 330, ../scss/main.scss */
   footer .hours {
     padding: 20px 0;
   }
-  /* line 315, ../scss/main.scss */
+  /* line 333, ../scss/main.scss */
   footer .icons {
     float: right;
     padding-top: 10px;
   }
 
-  /* line 321, ../scss/main.scss */
+  /* line 339, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
     margin-left: 10px;
   }
 
-  /* line 326, ../scss/main.scss */
+  /* line 344, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%;
   }
 
-  /* line 332, ../scss/main.scss */
+  /* line 350, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
     width: 160px;
   }
-  /* line 336, ../scss/main.scss */
+  /* line 354, ../scss/main.scss */
   .specials li .calTitle {
     display: inline-block;
   }
-  /* line 337, ../scss/main.scss */
+  /* line 355, ../scss/main.scss */
   .specials li .calDesc {
     font-size: 16px;
   }
