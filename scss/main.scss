@@ -252,6 +252,10 @@ text-align:center;
       font-weight: normal;
       color: $headingFontColor;
     }
+    .calDate{
+      color: $footerColor;
+      font-size: $standardFontSize + 6px;
+    }
     .calDesc{
       display:block;
     }
