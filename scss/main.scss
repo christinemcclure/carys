@@ -245,13 +245,12 @@ text-align:center;
   line-height:$standardFontSize + 6px;
   li {
     margin: 20px 0 40px 0;
-    .calDate{
+    .calDate, .calTitle{
       display:inline-block;
-      font-size: $standardFontSize + 6px;
-    }
-    .calTitle{
-      display: block;
-      font-size: $standardFontSize + 4px;
+      font-size: $standardFontSize + 10px;
+      font-family: $headingFont;
+      font-weight: normal;
+      color: $headingFontColor;
     }
     .calDesc{
       display:block;
