@@ -120,13 +120,10 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
       return "no data retrieved";
     }
     else{
-      for ($i=0; $i<$numEntries; $i++){
-        $event=get_earliest_event($events);
-        if ($event){
-          unset($events[$earliestArrayElementNumber]);
-          $msg.=format_calendar_event($event);
-        }
+      foreach ($events as $event){
+        $sorted[get_event_data($event,"unixStartTime")]=$event;//use start time as key value
       }
+      ksort($sorted);//sort by start time
     }
   }
   else {
