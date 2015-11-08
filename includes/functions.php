@@ -124,6 +124,13 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
         $sorted[get_event_data($event,"unixStartTime")]=$event;//use start time as key value
       }
       ksort($sorted);//sort by start time
+      $j=0;
+      foreach ($sorted as $startTime){
+        if ($j<$numEntries){
+          $msg.=format_calendar_event($startTime);
+          $j++;
+        }
+      }
     }
   }
   else {
