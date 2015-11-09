@@ -285,7 +285,9 @@ text-align:center;
   }
 }
 @media only screen and (max-width: 400px){
-	/* Force table to not be like tables anymore */
+	/* Force table to not be like tables anymore 
+  https://css-tricks.com/responsive-data-tables */
+  
 	 #menu_widget{
     table.beermenu{
       display: block; 

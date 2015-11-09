@@ -324,123 +324,124 @@ footer .icons {
 }
 
 @media only screen and (max-width: 400px) {
-  /* Force table to not be like tables anymore */
-  /* line 290, ../scss/main.scss */
+  	/* Force table to not be like tables anymore 
+    https://css-tricks.com/responsive-data-tables */
+  /* line 292, ../scss/main.scss */
   #menu_widget table.beermenu {
     display: block;
     /* Hide table headers (but not display: none;, for accessibility) */
   }
-  /* line 293, ../scss/main.scss */
+  /* line 295, ../scss/main.scss */
   #menu_widget table.beermenu thead, #menu_widget table.beermenu tbody, #menu_widget table.beermenu th, #menu_widget table.beermenu td, #menu_widget table.beermenu tr, #menu_widget table.beermenu caption {
     display: block;
   }
-  /* line 297, ../scss/main.scss */
+  /* line 299, ../scss/main.scss */
   #menu_widget table.beermenu thead th {
     font-size: 14px;
     display: inline;
     float: left;
     width: 25%;
   }
-  /* line 304, ../scss/main.scss */
+  /* line 306, ../scss/main.scss */
   #menu_widget table.beermenu td:first-child {
     clear: both;
   }
-  /* line 307, ../scss/main.scss */
+  /* line 309, ../scss/main.scss */
   #menu_widget table.beermenu span.strong {
     text-transform: uppercase;
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 1139px) {
-  /* line 318, ../scss/main.scss */
+  /* line 320, ../scss/main.scss */
   html body .grid header .header {
     background: #c67c3d;
   }
-  /* line 320, ../scss/main.scss */
+  /* line 322, ../scss/main.scss */
   html body .grid header .header a {
     color: #632109;
   }
-  /* line 323, ../scss/main.scss */
+  /* line 325, ../scss/main.scss */
   html body .grid header .header h1 a, html body .grid header .header p {
     color: #37272a;
   }
-  /* line 324, ../scss/main.scss */
+  /* line 326, ../scss/main.scss */
   html body .grid header .header h1 a {
     font-weight: 600;
   }
-  /* line 327, ../scss/main.scss */
+  /* line 329, ../scss/main.scss */
   html body .grid nav a:hover {
     background: none;
     color: #37272a;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 336, ../scss/main.scss */
+  /* line 338, ../scss/main.scss */
   header {
     text-align: left;
   }
-  /* line 337, ../scss/main.scss */
+  /* line 339, ../scss/main.scss */
   header h1 {
     line-height: 18px;
   }
-  /* line 339, ../scss/main.scss */
+  /* line 341, ../scss/main.scss */
   header .col-right {
     text-align: right;
   }
-  /* line 340, ../scss/main.scss */
+  /* line 342, ../scss/main.scss */
   header p {
     margin: 2px;
   }
-  /* line 341, ../scss/main.scss */
+  /* line 343, ../scss/main.scss */
   header #cary {
     margin-left: 40px;
   }
 
-  /* line 343, ../scss/main.scss */
+  /* line 345, ../scss/main.scss */
   .nav {
     margin: 0;
   }
-  /* line 345, ../scss/main.scss */
+  /* line 347, ../scss/main.scss */
   .nav nav {
     margin-top: -326px;
   }
-  /* line 348, ../scss/main.scss */
+  /* line 350, ../scss/main.scss */
   .nav nav a {
     display: inline-block;
     margin: 0 0 0 7%;
   }
 
-  /* line 356, ../scss/main.scss */
+  /* line 358, ../scss/main.scss */
   footer .hours {
     padding: 20px 0;
   }
-  /* line 359, ../scss/main.scss */
+  /* line 361, ../scss/main.scss */
   footer .icons {
     float: right;
     padding-top: 10px;
   }
 
-  /* line 365, ../scss/main.scss */
+  /* line 367, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
     margin-left: 10px;
   }
 
-  /* line 370, ../scss/main.scss */
+  /* line 372, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%;
   }
 
-  /* line 376, ../scss/main.scss */
+  /* line 378, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
     width: 160px;
   }
-  /* line 380, ../scss/main.scss */
+  /* line 382, ../scss/main.scss */
   .specials li .calTitle {
     display: inline-block;
   }
-  /* line 381, ../scss/main.scss */
+  /* line 383, ../scss/main.scss */
   .specials li .calDesc {
     font-size: 16px;
   }
