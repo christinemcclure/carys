@@ -286,11 +286,31 @@ text-align:center;
 }
 @media only screen and (max-width: 400px){
 	/* Force table to not be like tables anymore */
-	.beermenu {
-    table, thead, tbody, th, td, tr { 
-		display: block; 
+	 #menu_widget{
+    table.beermenu{
+      display: block; 
+           /* Hide table headers (but not display: none;, for accessibility) */  
+      thead, tbody, th, td, tr, caption { 
+        display: block; 
+      }
+      thead {
+        th{
+          font-size: $standardFontSize - 4px;
+          display: inline;
+          float:left;
+          width:25%;
+        }
+      }
+      td:first-child{
+        clear:both;
+      }
+      span.strong{
+        text-transform: uppercase;
+         font-size: $standardFontSize + 2px;
+      }
     }
-	}  
+
+	} // end widget 
 }
 
 @media only screen and (max-width: 1139px) {
