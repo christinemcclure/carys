@@ -128,13 +128,15 @@ h1, h2, h3, h4 {
 }
 h1{
   font-size: $standardFontSize + 16px;
+  line-height: $standardFontSize + 14px;
 }
 h2{
   font-size: $standardFontSize + 12px;
-  line-height: $standardFontSize + 12px;
+  line-height: $standardFontSize + 10px;
 }
 h3{
   font-size: $standardFontSize + 8px;
+  line-height: $standardFontSize + 6px;
 }
 img {max-width:100%;}
 .col-right{text-align:right;}
