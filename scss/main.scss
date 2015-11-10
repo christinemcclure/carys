@@ -36,6 +36,7 @@ $headerFontColor: $orange;
 $headerLinkColor: darken($salmon,10%);
 $footerColor: $purple;
 $footerFontColor: $headerLinkColor;
+$footerLinkColor: $orange;
 $linkColor: darken($red,6%);
 $navLinkColor: $headerLinkColor;
 $headingFontColor: lighten($purple,10%);
@@ -76,6 +77,9 @@ html, body {
   .footer {
     background: $footerColor;
     color: $footerFontColor;
+    font-size: $standardFontSize - 2px;
+    font-weight: 100;
+    a {color: $footerLinkColor;}
   }
   .body {background: $containerColor;}
   header .header, header .header h1 a, nav {color: $containerColor;}
@@ -368,11 +372,12 @@ text-align:center;
   
   footer{
     .hours{
-     padding: 20px 0;
+     text-align: left;  
+     padding: 20px;
     }
     .icons{
       float:right;
-      padding-top:10px;
+      padding-top:20px;
     }
   }  
   
