@@ -456,16 +456,26 @@ footer .icons {
     margin: 10px 0 40px 3%;
   }
 
-  /* line 395, ../scss/main.scss */
+  /* line 390, ../scss/main.scss */
+  body .grid #menu_widget {
+    width: 100%;
+    margin: 0 0 0 20px;
+  }
+  /* line 393, ../scss/main.scss */
+  body .grid #menu_widget .active table.beermenu {
+    width: 1000px;
+  }
+
+  /* line 401, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
     width: 160px;
   }
-  /* line 399, ../scss/main.scss */
+  /* line 405, ../scss/main.scss */
   .specials li .calTitle {
     display: inline-block;
   }
-  /* line 400, ../scss/main.scss */
+  /* line 406, ../scss/main.scss */
   .specials li .calDesc {
     font-size: 16px;
   }

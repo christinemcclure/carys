@@ -387,7 +387,13 @@ text-align:center;
     }  
     
   #beer-sub-nav li { margin: 10px 0 40px 3%;}
-  
+  body .grid #menu_widget {
+    width: 100%;
+    margin: 0 0 0 20px;
+    .active table.beermenu{
+      width: 1000px;
+    }
+  }
   
   // Specials
   .specials{ 
