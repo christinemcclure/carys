@@ -287,7 +287,14 @@ text-align:center;
 @media only screen and (max-width: 400px){
 	/* Force table to not be like tables anymore 
   https://css-tricks.com/responsive-data-tables */
-  
+  #beer-sub-nav{
+    li {
+      display: block;
+      width: 80%;
+      margin: 10px 10%;
+    }
+    li:last-child{margin-bottom:40px;}
+  }
 	 #menu_widget{
     table.beermenu{
       display: block; 
