@@ -60,7 +60,10 @@ html, body {
     #menu_widget {
       margin: 0 auto;
       table.beermenu {
-        caption{color:$headingFontColor; font-size:$standardFontSize + 8px;}
+        caption{
+          font-size: $standardFontSize + 16px;
+          font-weight:200;
+        }
         color: $tableColor;
         th {
           background: $tableHeaderBackground;
@@ -135,7 +138,7 @@ html, body {
 
 .bump-down{margin-top: 60px;}
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, #menu_widget table.beermenu caption {
   font-family: $headingFont;
   font-weight:200;
   color: $headingFontColor;
@@ -290,7 +293,7 @@ text-align:center;
   }
   li.active{
     font-size:$standardFontSize + 4px;
-    font-family: $headingFont;
+    color: $headingFontColor;
   }
  
 }
