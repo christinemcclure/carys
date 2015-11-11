@@ -2,6 +2,7 @@
 $fontSize:1em;
 $varela: 'Varela', sans-serif;
 $righteous: 'Righteous', sans-serif;
+$montserrat: 'Montserrat', san-serif;
 $mainFont: $varela;
 $headingFont: $righteous;
 $standardFontSize: 18px;
@@ -38,6 +39,7 @@ $footerColor: $purple;
 $footerFontColor: $headerLinkColor;
 $footerLinkColor: $orange;
 $linkColor: darken($red,6%);
+$linkFont: $montserrat;
 $navLinkColor: $headerLinkColor;
 $headingFontColor: lighten($purple,10%);
 
@@ -72,6 +74,10 @@ html, body {
         }
         .strong{font-size: $standardFontSize + 2px;}
       }
+    }
+    p a{
+      font-family: $linkFont;
+      font-weight:700;
     }
   }
   
