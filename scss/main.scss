@@ -60,6 +60,7 @@ html, body {
     #menu_widget {
       margin: 0 auto;
       table.beermenu {
+        caption{color:$headingFontColor; font-size:$standardFontSize + 8px;}
         color: $tableColor;
         th {
           background: $tableHeaderBackground;

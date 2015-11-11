@@ -28,7 +28,12 @@ html .grid #menu_widget, body .grid #menu_widget {
 html .grid #menu_widget table.beermenu, body .grid #menu_widget table.beermenu {
   color: #37272a;
 }
-/* line 64, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
+html .grid #menu_widget table.beermenu caption, body .grid #menu_widget table.beermenu caption {
+  color: #553c41;
+  font-size: 26px;
+}
+/* line 65, ../scss/main.scss */
 html .grid #menu_widget table.beermenu th, body .grid #menu_widget table.beermenu th {
   background: #a1632f;
   color: black;
@@ -36,142 +41,142 @@ html .grid #menu_widget table.beermenu th, body .grid #menu_widget table.beermen
   text-transform: none;
   font-weight: 600;
 }
-/* line 71, ../scss/main.scss */
+/* line 72, ../scss/main.scss */
 html .grid #menu_widget table.beermenu .beer-descriptions td.beer-description, body .grid #menu_widget table.beermenu .beer-descriptions td.beer-description {
   border: none;
   border-bottom: 1px solid #794b24;
 }
-/* line 75, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 html .grid #menu_widget table.beermenu .strong, body .grid #menu_widget table.beermenu .strong {
   font-size: 20px;
 }
-/* line 80, ../scss/main.scss */
+/* line 81, ../scss/main.scss */
 html .footer, body .footer {
   background: #37272a;
   color: #cd997e;
   font-size: 18px;
   font-weight: 100;
 }
-/* line 85, ../scss/main.scss */
+/* line 86, ../scss/main.scss */
 html .footer p, body .footer p {
   margin: 0;
 }
-/* line 86, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 html .footer a, body .footer a {
   color: #b64902;
 }
-/* line 87, ../scss/main.scss */
+/* line 88, ../scss/main.scss */
 html .footer .credits, body .footer .credits {
   font-size: 16px;
 }
-/* line 89, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 html .body, body .body {
   background: #c67c3d;
 }
-/* line 90, ../scss/main.scss */
+/* line 91, ../scss/main.scss */
 html header .header, html header .header h1 a, html nav, body header .header, body header .header h1 a, body nav {
   color: #c67c3d;
 }
-/* line 91, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 html a, body a {
   font-family: "Montserrat", san-serif;
   font-weight: 700;
   color: #632109;
 }
-/* line 96, ../scss/main.scss */
+/* line 97, ../scss/main.scss */
 html nav a:hover, body nav a:hover {
   background: #37272a;
   text-decoration: none;
 }
-/* line 97, ../scss/main.scss */
+/* line 98, ../scss/main.scss */
 html header .header, body header .header {
   background: #37272a;
 }
-/* line 99, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 html header .header a, body header .header a {
   color: #cd997e;
   font-weight: 200;
 }
-/* line 103, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 html header .header h1 a, html header .header p, body header .header h1 a, body header .header p {
   color: #b64902;
 }
-/* line 104, ../scss/main.scss */
+/* line 105, ../scss/main.scss */
 html header .header h1 a, body header .header h1 a {
   font-weight: 600;
 }
-/* line 106, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 html nav, body nav {
   background: rgba(55, 39, 42, 0.7);
 }
-/* line 107, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
 html nav a, body nav a {
   color: #cd997e;
 }
-/* line 113, ../scss/main.scss */
+/* line 114, ../scss/main.scss */
 html blockquote, body blockquote {
   font-size: 20px;
   line-height: 24px;
   font-style: italic;
 }
-/* line 119, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 html a, body a {
   text-decoration: none;
 }
-/* line 123, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 html a:hover, body a:hover {
   text-decoration: underline;
 }
-/* line 126, ../scss/main.scss */
+/* line 127, ../scss/main.scss */
 html ul, body ul {
   list-style: none;
 }
-/* line 128, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 html ul li, body ul li {
   margin: 10px 0;
 }
 
-/* line 135, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .bump-down {
   margin-top: 60px;
 }
 
-/* line 137, ../scss/main.scss */
+/* line 138, ../scss/main.scss */
 h1, h2, h3, h4 {
   font-family: "Righteous", sans-serif;
   font-weight: 200;
   color: #553c41;
 }
 
-/* line 142, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 h1 {
   font-size: 34px;
   line-height: 32px;
 }
 
-/* line 146, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 h2 {
   font-size: 30px;
   line-height: 28px;
 }
 
-/* line 150, ../scss/main.scss */
+/* line 151, ../scss/main.scss */
 h3 {
   font-size: 26px;
   line-height: 24px;
 }
 
-/* line 154, ../scss/main.scss */
+/* line 155, ../scss/main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 155, ../scss/main.scss */
+/* line 156, ../scss/main.scss */
 .col-right {
   text-align: right;
 }
 
-/* line 158, ../scss/main.scss */
+/* line 159, ../scss/main.scss */
 .nav {
   background-color: #37272a;
   background-size: contain;
@@ -183,86 +188,86 @@ img {
   margin: 0 0 200px 0;
 }
 
-/* line 167, ../scss/main.scss */
+/* line 168, ../scss/main.scss */
 #home .nav {
   background-image: url("../images/pool-and-game.jpg");
 }
 
-/* line 171, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 #on-tap .nav {
   background-image: url("../images/taps.jpg");
 }
 
-/* line 174, ../scss/main.scss */
+/* line 175, ../scss/main.scss */
 #events .nav {
   background-image: url("../images/patio.jpg");
 }
 
-/* line 177, ../scss/main.scss */
+/* line 178, ../scss/main.scss */
 #pool .nav {
   background-image: url("../images/pool-table.jpg");
 }
 
-/* line 180, ../scss/main.scss */
+/* line 181, ../scss/main.scss */
 #bands .nav {
   background-image: url("../images/bar.jpg");
 }
 
-/* line 185, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 header {
   text-align: center;
 }
-/* line 186, ../scss/main.scss */
+/* line 187, ../scss/main.scss */
 header h1 {
   font-size: 78px;
   line-height: 68px;
 }
-/* line 190, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 header a:hover {
   text-decoration: none;
 }
-/* line 191, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 header p {
   font-size: 20px;
   margin: 20px;
 }
-/* line 196, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 header .col-right {
   text-align: center;
   padding: 0 0 10px 0;
 }
 
-/* line 199, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .nav-fix {
   padding: 0;
   margin: -2px 0 0 0;
 }
 
-/* line 203, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 nav {
   margin-top: 0;
 }
-/* line 205, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 nav a {
   display: block;
   margin: 0 0 0 30%;
   padding: 8px 14px;
 }
 
-/* line 215, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 footer {
   text-align: center;
 }
-/* line 217, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 footer .hours {
   padding: 20px 0;
 }
-/* line 220, ../scss/main.scss */
+/* line 221, ../scss/main.scss */
 footer .icons {
   clear: both;
 }
 
-/* line 226, ../scss/main.scss */
+/* line 227, ../scss/main.scss */
 .specials {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -270,40 +275,40 @@ footer .icons {
   -webkit-margin-end: 0px;
   -webkit-padding-start: 0px;
 }
-/* line 232, ../scss/main.scss */
+/* line 233, ../scss/main.scss */
 .specials li {
   margin: 20px 0;
 }
-/* line 233, ../scss/main.scss */
+/* line 234, ../scss/main.scss */
 .specials li .calDate {
   display: block;
   font-weight: 800;
 }
-/* line 237, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .specials li .calTitle {
   display: block;
 }
-/* line 240, ../scss/main.scss */
+/* line 241, ../scss/main.scss */
 .specials li .calDesc {
   font-size: 16px;
   display: block;
 }
-/* line 247, ../scss/main.scss */
+/* line 248, ../scss/main.scss */
 .specials li:first-child .calDate {
   font-size: 24px;
 }
 
-/* line 255, ../scss/main.scss */
+/* line 256, ../scss/main.scss */
 .events {
   padding: 20px 0 0 0;
   font-size: 20px;
   line-height: 24px;
 }
-/* line 259, ../scss/main.scss */
+/* line 260, ../scss/main.scss */
 .events li {
   margin: 20px 0 40px 0;
 }
-/* line 261, ../scss/main.scss */
+/* line 262, ../scss/main.scss */
 .events li .calDate, .events li .calTitle {
   display: inline-block;
   font-size: 28px;
@@ -311,39 +316,39 @@ footer .icons {
   font-weight: normal;
   color: #553c41;
 }
-/* line 268, ../scss/main.scss */
+/* line 269, ../scss/main.scss */
 .events li .calDate {
   color: #37272a;
   font-size: 24px;
 }
-/* line 272, ../scss/main.scss */
+/* line 273, ../scss/main.scss */
 .events li .calDesc {
   display: block;
 }
 
-/* line 279, ../scss/main.scss */
+/* line 280, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 282, ../scss/main.scss */
+/* line 283, ../scss/main.scss */
 #beer-sub-nav {
   margin: 0;
 }
-/* line 284, ../scss/main.scss */
+/* line 285, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 10px;
   margin: 0;
 }
-/* line 290, ../scss/main.scss */
+/* line 291, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 22px;
   font-family: "Righteous", sans-serif;
 }
 
-/* line 298, ../scss/main.scss */
+/* line 299, ../scss/main.scss */
 #menu-widget #beer_menu #red_wine th.serving, #menu-widget #beer_menu #red_wine td.serving, #menu-widget #beer_menu #white_wine th.serving, #menu-widget #beer_menu #white_wine td.serving, #menu-widget #beer_menu #wine th.serving, #menu-widget #beer_menu #wine td.serving {
   display: none;
 }
@@ -351,144 +356,144 @@ footer .icons {
 @media only screen and (max-width: 400px) {
   	/* Force table to not be like tables anymore 
     https://css-tricks.com/responsive-data-tables */
-  /* line 306, ../scss/main.scss */
+  /* line 307, ../scss/main.scss */
   #beer-sub-nav li {
     display: block;
     width: 80%;
     margin: 10px 10%;
   }
-  /* line 311, ../scss/main.scss */
+  /* line 312, ../scss/main.scss */
   #beer-sub-nav li:last-child {
     margin-bottom: 40px;
   }
 
-  /* line 314, ../scss/main.scss */
+  /* line 315, ../scss/main.scss */
   #menu_widget table.beermenu {
     display: block;
     /* Hide table headers (but not display: none;, for accessibility) */
   }
-  /* line 317, ../scss/main.scss */
+  /* line 318, ../scss/main.scss */
   #menu_widget table.beermenu thead, #menu_widget table.beermenu tbody, #menu_widget table.beermenu th, #menu_widget table.beermenu td, #menu_widget table.beermenu tr, #menu_widget table.beermenu caption {
     display: block;
   }
-  /* line 321, ../scss/main.scss */
+  /* line 322, ../scss/main.scss */
   #menu_widget table.beermenu thead th {
     font-size: 14px;
     display: inline;
     float: left;
     width: 25%;
   }
-  /* line 328, ../scss/main.scss */
+  /* line 329, ../scss/main.scss */
   #menu_widget table.beermenu td:first-child {
     clear: both;
   }
-  /* line 331, ../scss/main.scss */
+  /* line 332, ../scss/main.scss */
   #menu_widget table.beermenu span.strong {
     text-transform: uppercase;
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 1139px) {
-  /* line 342, ../scss/main.scss */
+  /* line 343, ../scss/main.scss */
   html body .grid header .header {
     background: #c67c3d;
   }
-  /* line 344, ../scss/main.scss */
+  /* line 345, ../scss/main.scss */
   html body .grid header .header a {
     color: #632109;
   }
-  /* line 347, ../scss/main.scss */
+  /* line 348, ../scss/main.scss */
   html body .grid header .header h1 a, html body .grid header .header p {
     color: #37272a;
   }
-  /* line 348, ../scss/main.scss */
+  /* line 349, ../scss/main.scss */
   html body .grid header .header h1 a {
     font-weight: 600;
   }
-  /* line 351, ../scss/main.scss */
+  /* line 352, ../scss/main.scss */
   html body .grid nav a:hover {
     background: none;
     color: #37272a;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 360, ../scss/main.scss */
+  /* line 361, ../scss/main.scss */
   header {
     text-align: left;
   }
-  /* line 361, ../scss/main.scss */
+  /* line 362, ../scss/main.scss */
   header h1 {
     line-height: 18px;
   }
-  /* line 363, ../scss/main.scss */
+  /* line 364, ../scss/main.scss */
   header .col-right {
     text-align: right;
   }
-  /* line 364, ../scss/main.scss */
+  /* line 365, ../scss/main.scss */
   header p {
     margin: 2px;
   }
-  /* line 365, ../scss/main.scss */
+  /* line 366, ../scss/main.scss */
   header #cary {
     margin-left: 40px;
   }
 
-  /* line 367, ../scss/main.scss */
+  /* line 368, ../scss/main.scss */
   .nav {
     margin: 0;
   }
-  /* line 369, ../scss/main.scss */
+  /* line 370, ../scss/main.scss */
   .nav nav {
     margin-top: -326px;
   }
-  /* line 372, ../scss/main.scss */
+  /* line 373, ../scss/main.scss */
   .nav nav a {
     display: inline-block;
     margin: 0 0 0 7%;
   }
 
-  /* line 380, ../scss/main.scss */
+  /* line 381, ../scss/main.scss */
   footer .hours {
     text-align: left;
     padding: 20px;
   }
-  /* line 384, ../scss/main.scss */
+  /* line 385, ../scss/main.scss */
   footer .icons {
     float: right;
     padding-top: 20px;
   }
 
-  /* line 390, ../scss/main.scss */
+  /* line 391, ../scss/main.scss */
   .events li .calTitle {
     display: inline-block;
     margin-left: 10px;
   }
 
-  /* line 395, ../scss/main.scss */
+  /* line 396, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%;
   }
 
-  /* line 396, ../scss/main.scss */
+  /* line 397, ../scss/main.scss */
   body .grid #menu_widget {
     width: 100%;
     margin: 0 0 0 20px;
   }
-  /* line 399, ../scss/main.scss */
+  /* line 400, ../scss/main.scss */
   body .grid #menu_widget .active table.beermenu {
     width: 1000px;
   }
 
-  /* line 407, ../scss/main.scss */
+  /* line 408, ../scss/main.scss */
   .specials li .calDate {
     display: inline-block;
     width: 160px;
   }
-  /* line 411, ../scss/main.scss */
+  /* line 412, ../scss/main.scss */
   .specials li .calTitle {
     display: inline-block;
   }
-  /* line 412, ../scss/main.scss */
+  /* line 413, ../scss/main.scss */
   .specials li .calDesc {
     font-size: 16px;
   }
