@@ -257,21 +257,21 @@ text-align:center;
 
 // events
 .events{
-  padding: 20px 0 0 0;
-  font-size: $standardFontSize + 2px;
-  line-height:$standardFontSize + 6px;
+  padding: 10px 0 0 0;
+  font-size: $standardFontSize;
+  line-height:$standardFontSize + 4px;
   li {
     margin: 20px 0 40px 0;
     .calDate, .calTitle{
       display:inline-block;
-      font-size: $standardFontSize + 10px;
+      font-size: $standardFontSize + 8px;
       font-family: $headingFont;
       font-weight: normal;
       color: $headingFontColor;
     }
     .calDate{
       color: $footerColor;
-      font-size: $standardFontSize + 6px;
+      font-size: $standardFontSize + 4px;
     }
     .calDesc{
       display:block;

@@ -300,9 +300,9 @@ footer .icons {
 
 /* line 259, ../scss/main.scss */
 .events {
-  padding: 20px 0 0 0;
-  font-size: 20px;
-  line-height: 24px;
+  padding: 10px 0 0 0;
+  font-size: 18px;
+  line-height: 22px;
 }
 /* line 263, ../scss/main.scss */
 .events li {
@@ -311,7 +311,7 @@ footer .icons {
 /* line 265, ../scss/main.scss */
 .events li .calDate, .events li .calTitle {
   display: inline-block;
-  font-size: 28px;
+  font-size: 26px;
   font-family: "Righteous", sans-serif;
   font-weight: normal;
   color: #553c41;
@@ -319,7 +319,7 @@ footer .icons {
 /* line 272, ../scss/main.scss */
 .events li .calDate {
   color: #37272a;
-  font-size: 24px;
+  font-size: 22px;
 }
 /* line 276, ../scss/main.scss */
 .events li .calDesc {
