@@ -75,10 +75,6 @@ html, body {
         .strong{font-size: $standardFontSize + 2px;}
       }
     }
-    p a{
-      font-family: $linkFont;
-      font-weight:700;
-    }
   }
   
   .footer {
@@ -93,8 +89,9 @@ html, body {
   .body {background: $containerColor;}
   header .header, header .header h1 a, nav {color: $containerColor;}
   a{ 
+    font-family: $linkFont;
+    font-weight:700;
     color: $linkColor;
-    font-weight:600;
   }
   nav a:hover{background: rgba($headerColor,1); text-decoration:none;}
   header .header{
