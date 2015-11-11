@@ -78,9 +78,11 @@ html, body {
   .footer {
     background: $footerColor;
     color: $footerFontColor;
-    font-size: $standardFontSize - 2px;
+    font-size: $standardFontSize;
     font-weight: 100;
+    p{margin:0;}
     a {color: $footerLinkColor;}
+    .credits{font-size: $standardFontSize - 2px;}
   }
   .body {background: $containerColor;}
   header .header, header .header h1 a, nav {color: $containerColor;}
