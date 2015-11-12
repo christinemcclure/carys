@@ -133,7 +133,7 @@ header h1 {
   line-height: 68px;
 }
 /* line 127, ../scss/main.scss */
-header a:hover {
+header h1 a:hover {
   text-decoration: none;
 }
 /* line 128, ../scss/main.scss */
