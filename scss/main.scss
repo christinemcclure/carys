@@ -1,4 +1,4 @@
-//variables
+//VARIABLES
 $fontSize:1em;
 $varela: 'Varela', sans-serif;
 $righteous: 'Righteous', sans-serif;
@@ -7,18 +7,7 @@ $mainFont: $varela;
 $headingFont: $righteous;
 $standardFontSize: 18px;
 
-//Kuler photo colors
-//Dark
-/*$purple: #3D2937;
-$tan: #71632F;
-$brown: #592C17;
-$dkBrown: #26160C;
-$dkBrownRGB: rgb(38,22,12);
-$dkRed: #731010;
-$red: #C92020;
-$black: #0D0C10;*/
-
-// Pears Soap: http://www.colourlovers.com/palette/1709569/Pears_Soap_RC
+// COLOR SCHEME Pears Soap: http://www.colourlovers.com/palette/1709569/Pears_Soap_RC
 $salmon: rgb(219,182,163);
 $tan: rgb(198,124,61);
 $orange: rgb(182,73,2);
@@ -44,7 +33,7 @@ $navLinkColor: $headerLinkColor;
 $headingFontColor: lighten($purple,10%);
 
 
-//General/mobile settings
+//General and mobile settings
 html, body {
   //main colors and fonts
   font-family: $mainFont;
