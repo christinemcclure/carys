@@ -64,20 +64,6 @@ html, body {
     .credits{font-size: $standardFontSize - 2px;}
   }
   
-  header .header, header .header h1 a, nav {color: $containerColor;}
-
-  
-  header .header{
-    background: $headerColor;
-    a {
-      color: $headerLinkColor;
-      font-weight:200;
-    }
-    h1 a, p {color: $headerFontColor;}
-    h1 a {font-weight:600;}
-  } 
-
-  
   blockquote{
     font-size: $standardFontSize + 2px;
     line-height: $standardFontSize + 6px;
@@ -123,6 +109,16 @@ img {max-width:100%;}
 .col-right{text-align:right;}
 
 //HEADER
+  header .header, header .header h1 a, nav {color: $containerColor;}
+  header .header{
+    background: $headerColor;
+    a {
+      color: $headerLinkColor;
+      font-weight:200;
+    }
+    h1 a, p {color: $headerFontColor;}
+    h1 a {font-weight:900;}
+  } 
 header {
   h1{
     font-size: $standardFontSize + 60px;
