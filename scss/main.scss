@@ -1,11 +1,11 @@
 //VARIABLES
-$fontSize:1em;
+$font-size:1em;
 $varela: 'Varela', sans-serif;
 $righteous: 'Righteous', sans-serif;
 $montserrat: 'Montserrat', san-serif;
-$mainFont: $varela;
-$headingFont: $righteous;
-$standardFontSize: 18px;
+$main-font: $varela;
+$heading-font: $righteous;
+$standard-font-size: 18px;
 
 // COLOR SCHEME Pears Soap: http://www.colourlovers.com/palette/1709569/Pears_Soap_RC
 $salmon: rgb(219,182,163);
@@ -14,49 +14,49 @@ $orange: rgb(182,73,2);
 $red: rgb(127,42,11);
 $purple: rgb(55,39,42);
 
-$htmlColor: $salmon;
-$containerColor: $tan;
-$mainFontColor: $purple;
-$borderColor: $mainFontColor;
-$tableColor: $mainFontColor;
-$tableHeaderColor: darken($mainFontColor,20%);
-$tableHeaderBackground: darken($containerColor, 10%);
-$headerColor: $purple;
-$headerFontColor: $orange;
-$headerLinkColor: darken($salmon,10%);
-$footerColor: $purple;
-$footerFontColor: $headerLinkColor;
-$footerLinkColor: $orange;
-$linkColor: darken($red,6%);
-$linkFont: $montserrat;
-$navLinkColor: $headerLinkColor;
-$headingFontColor: lighten($purple,10%);
+$html-color: $salmon;
+$container-color: $tan;
+$main-font-color: $purple;
+$border-color: $main-font-color;
+$table-color: $main-font-color;
+$table-header-color: darken($main-font-color,20%);
+$table-header-background: darken($container-color, 10%);
+$header-color: $purple;
+$header-font-color: $orange;
+$header-link-color: darken($salmon,10%);
+$footer-color: $purple;
+$footer-font-color: $header-link-color;
+$footer-link-color: $orange;
+$link-color: darken($red,6%);
+$link-font: $montserrat;
+$nav-link-color: $header-link-color;
+$heading-font-color: lighten($purple,10%);
 
 
 //General and mobile settings
 html, body {
   //main colors and fonts
-  font-family: $mainFont;
-  font-size: $standardFontSize;
-  line-height: $standardFontSize + 4px;
+  font-family: $main-font;
+  font-size: $standard-font-size;
+  line-height: $standard-font-size + 4px;
   font-weight: 600;
   
-  background: $htmlColor;
+  background: $html-color;
   .grid{
-    background: $containerColor; 
-    color:$mainFontColor;
-    border: 2px solid $borderColor;
+    background: $container-color; 
+    color:$main-font-color;
+    border: 2px solid $border-color;
   }
   
     a{ 
-      font-family: $linkFont;
+      font-family: $link-font;
       font-weight:700;
-      color: $linkColor;
+      color: $link-color;
     }  
   
   blockquote{
-    font-size: $standardFontSize + 2px;
-    line-height: $standardFontSize + 6px;
+    font-size: $standard-font-size + 2px;
+    line-height: $standard-font-size + 6px;
     font-style: italic;
   }
   
@@ -78,44 +78,44 @@ html, body {
 .bump-down{margin-top: 60px;}
 
 h1, h2, h3, h4, #menu_widget table.beermenu caption {
-  font-family: $headingFont;
+  font-family: $heading-font;
   font-weight:200;
-  color: $headingFontColor;
+  color: $heading-font-color;
 }
 h1{
-  font-size: $standardFontSize + 16px;
-  line-height: $standardFontSize + 14px;
+  font-size: $standard-font-size + 16px;
+  line-height: $standard-font-size + 14px;
 }
 h2{
-  font-size: $standardFontSize + 12px;
-  line-height: $standardFontSize + 10px;
+  font-size: $standard-font-size + 12px;
+  line-height: $standard-font-size + 10px;
 }
 h3{
-  font-size: $standardFontSize + 8px;
-  line-height: $standardFontSize + 6px;
+  font-size: $standard-font-size + 8px;
+  line-height: $standard-font-size + 6px;
 }
 img {max-width:100%;}
 .col-right{text-align:right;}
 
 //HEADER
-  header .header, header .header h1 a, nav {color: $containerColor;}
+  header .header, header .header h1 a, nav {color: $container-color;}
   header .header{
-    background: $headerColor;
+    background: $header-color;
     a {
-      color: $headerLinkColor;
+      color: $header-link-color;
       font-weight:200;
     }
-    h1 a, p {color: $headerFontColor;}
+    h1 a, p {color: $header-font-color;}
     h1 a {font-weight:900;}
   } 
 header {
   h1{
-    font-size: $standardFontSize + 60px;
-    line-height: $standardFontSize + 50px;
+    font-size: $standard-font-size + 60px;
+    line-height: $standard-font-size + 50px;
   }
   h1 a:hover{text-decoration:none;}
   p {
-    font-size: $standardFontSize + 2px;
+    font-size: $standard-font-size + 2px;
     margin:20px;
   }
   text-align:center;
@@ -125,17 +125,17 @@ header {
 //NAVIGATION  
 nav{ 
   margin-top:0;
-  background: rgba($headerColor,.7);
+  background: rgba($header-color,.7);
   a {
     display:block;
     margin: 0 0 0 30%;
     padding: 8px 14px;
-    color: $navLinkColor;
+    color: $nav-link-color;
   }
-  a:hover{background: rgba($headerColor,1); text-decoration:none;} 
+  a:hover{background: rgba($header-color,1); text-decoration:none;} 
 }
   .nav{ // have background image resize with screen
-    background-color: $mainFontColor;    
+    background-color: $main-font-color;    
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
@@ -174,13 +174,13 @@ text-align:center;
     clear:both;
   }
   .footer {
-    background: $footerColor;
-    color: $footerFontColor;
-    font-size: $standardFontSize;
+    background: $footer-color;
+    color: $footer-font-color;
+    font-size: $standard-font-size;
     font-weight: 100;
     p{margin:0;}
-    a {color: $footerLinkColor; font-weight: 100;}
-    .credits{font-size: $standardFontSize - 2px;}
+    a {color: $footer-link-color; font-weight: 100;}
+    .credits{font-size: $standard-font-size - 2px;}
   }
 }
 
@@ -200,15 +200,15 @@ text-align:center;
       display:block;
     }
     .calDesc{
-      font-size: $standardFontSize - 2px;
+      font-size: $standard-font-size - 2px;
       display:block;
     }
     margin: 20px 0;
   }
   li:first-child{
     .calDate{
-      //font-family: $headingFont;
-      font-size:$standardFontSize + 6px;
+      //font-family: $heading-font;
+      font-size:$standard-font-size + 6px;
     }
   }  
 }
@@ -216,20 +216,20 @@ text-align:center;
 // events
 .events{
   padding: 10px 0 0 0;
-  font-size: $standardFontSize;
-  line-height:$standardFontSize + 4px;
+  font-size: $standard-font-size;
+  line-height:$standard-font-size + 4px;
   li {
     margin: 20px 0 40px 0;
     .calDate, .calTitle{
       display:inline-block;
-      font-size: $standardFontSize + 8px;
-      font-family: $headingFont;
+      font-size: $standard-font-size + 8px;
+      font-family: $heading-font;
       font-weight: normal;
-      color: $headingFontColor;
+      color: $heading-font-color;
     }
     .calDate{
-      color: $footerColor;
-      font-size: $standardFontSize + 4px;
+      color: $footer-color;
+      font-size: $standard-font-size + 4px;
     }
     .calDesc{
       display:block;
@@ -243,22 +243,22 @@ text-align:center;
     margin: 0 auto;
     table.beermenu {
       caption{
-        font-size: $standardFontSize + 16px;
+        font-size: $standard-font-size + 16px;
         font-weight:200;
       }
-      color: $tableColor;
+      color: $table-color;
       th {
-        background: $tableHeaderBackground;
-        color: $tableHeaderColor;
-        border:4px solid $tableHeaderBackground;
+        background: $table-header-background;
+        color: $table-header-color;
+        border:4px solid $table-header-background;
         text-transform: none;
         font-weight: 600;
       }
       .beer-descriptions td.beer-description{
         border:none;
-        border-bottom: 1px solid darken($containerColor, 20%);
+        border-bottom: 1px solid darken($container-color, 20%);
       }
-      .strong{font-size: $standardFontSize + 2px;}
+      .strong{font-size: $standard-font-size + 2px;}
     }
   }
 
@@ -269,11 +269,11 @@ text-align:center;
   display:inline-block;
   padding: 8px 10px;
   margin:0;
-  font-size:$standardFontSize -2px;
+  font-size:$standard-font-size -2px;
   }
   li.active{
-    font-size:$standardFontSize + 4px;
-    color: $headingFontColor;
+    font-size:$standard-font-size + 4px;
+    color: $heading-font-color;
   }
  
 }
@@ -307,7 +307,7 @@ text-align:center;
       }
       thead {
         th{
-          font-size: $standardFontSize - 4px;
+          font-size: $standard-font-size - 4px;
           display: inline;
           float:left;
           width:25%;
@@ -318,7 +318,7 @@ text-align:center;
       }
       span.strong{
         text-transform: uppercase;
-         font-size: $standardFontSize + 2px;
+         font-size: $standard-font-size + 2px;
       }
     }
 
@@ -328,17 +328,17 @@ text-align:center;
 @media only screen and (max-width: 1139px) {
   html body .grid{
     header .header{
-      background: $containerColor;
+      background: $container-color;
       a {
-        color: $linkColor;
+        color: $link-color;
       }
-      h1 a, p {color: $mainFontColor;}
+      h1 a, p {color: $main-font-color;}
       h1 a {font-weight:600;}
     } 
     nav {
       a:hover{
         background: none;
-        color: $mainFontColor;
+        color: $main-font-color;
       }
     }
   }
@@ -346,7 +346,7 @@ text-align:center;
 
 @media only screen and (min-width: 1140px) {
   header{
-    h1 {line-height: $standardFontSize;}
+    h1 {line-height: $standard-font-size;}
     text-align:left;
     .col-right{text-align:right;}
     p {margin:2px;}
@@ -398,7 +398,7 @@ text-align:center;
       }
       .calTitle{display: inline-block;}
       .calDesc{
-        font-size: $standardFontSize - 2px;
+        font-size: $standard-font-size - 2px;
       }
     }
   }  
