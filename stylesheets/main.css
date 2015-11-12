@@ -143,6 +143,30 @@ img {
 }
 
 /* line 142, ../scss/main.scss */
+header {
+  text-align: center;
+}
+/* line 143, ../scss/main.scss */
+header h1 {
+  font-size: 78px;
+  line-height: 68px;
+}
+/* line 147, ../scss/main.scss */
+header a:hover {
+  text-decoration: none;
+}
+/* line 148, ../scss/main.scss */
+header p {
+  font-size: 20px;
+  margin: 20px;
+}
+/* line 153, ../scss/main.scss */
+header .col-right {
+  text-align: center;
+  padding: 0 0 10px 0;
+}
+
+/* line 157, ../scss/main.scss */
 .nav {
   background-color: #37272a;
   background-size: contain;
@@ -154,53 +178,29 @@ img {
   margin: 0 0 200px 0;
 }
 
-/* line 151, ../scss/main.scss */
+/* line 166, ../scss/main.scss */
 #home .nav {
   background-image: url("../images/pool-and-game.jpg");
 }
 
-/* line 155, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 #on-tap .nav {
   background-image: url("../images/taps.jpg");
 }
 
-/* line 158, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 #events .nav {
   background-image: url("../images/patio.jpg");
 }
 
-/* line 161, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 #pool .nav {
   background-image: url("../images/pool-table.jpg");
 }
 
-/* line 164, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 #bands .nav {
   background-image: url("../images/bar.jpg");
-}
-
-/* line 169, ../scss/main.scss */
-header {
-  text-align: center;
-}
-/* line 170, ../scss/main.scss */
-header h1 {
-  font-size: 78px;
-  line-height: 68px;
-}
-/* line 174, ../scss/main.scss */
-header a:hover {
-  text-decoration: none;
-}
-/* line 175, ../scss/main.scss */
-header p {
-  font-size: 20px;
-  margin: 20px;
-}
-/* line 180, ../scss/main.scss */
-header .col-right {
-  text-align: center;
-  padding: 0 0 10px 0;
 }
 
 /* line 183, ../scss/main.scss */

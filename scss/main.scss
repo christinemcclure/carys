@@ -138,7 +138,22 @@ h3{
 img {max-width:100%;}
 .col-right{text-align:right;}
 
+//header
+header {
+  h1{
+    font-size: $standardFontSize + 60px;
+    line-height: $standardFontSize + 50px;
+  }
+  a:hover{text-decoration:none;}
+  p {
+    font-size: $standardFontSize + 2px;
+    margin:20px;
+  }
+  text-align:center;
+  .col-right{text-align:center;  padding: 0 0 10px 0;}
+}
 
+//NAVIGATION
 .nav{ // have background image resize with screen
   background-color: $mainFontColor;    
   background-size: contain;
@@ -163,21 +178,6 @@ img {max-width:100%;}
 }
 #bands .nav{
     background-image: url('../images/bar.jpg');  
-}
-
-//header
-header {
-  h1{
-    font-size: $standardFontSize + 60px;
-    line-height: $standardFontSize + 50px;
-  }
-  a:hover{text-decoration:none;}
-  p {
-    font-size: $standardFontSize + 2px;
-    margin:20px;
-  }
-  text-align:center;
-  .col-right{text-align:center;  padding: 0 0 10px 0;}
 }
 
 .nav-fix{
