@@ -196,7 +196,7 @@ text-align:center;
       display:block;
       font-weight:800;      
     }
-    .calTitle{
+    .cal-title{
       display:block;
     }
     .calDesc{
@@ -220,7 +220,7 @@ text-align:center;
   line-height:$standard-font-size + 4px;
   li {
     margin: 20px 0 40px 0;
-    .cal-date, .calTitle{
+    .cal-date, .cal-title{
       display:inline-block;
       font-size: $standard-font-size + 8px;
       font-family: $heading-font;
@@ -375,7 +375,7 @@ text-align:center;
     }
   }  
   
-  .events li .calTitle{
+  .events li .cal-title{
       display: inline-block;
       margin-left: 10px;
     }  
@@ -396,7 +396,7 @@ text-align:center;
         display: inline-block;
         width: 160px;    
       }
-      .calTitle{display: inline-block;}
+      .cal-title{display: inline-block;}
       .calDesc{
         font-size: $standard-font-size - 2px;
       }
