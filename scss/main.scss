@@ -79,8 +79,15 @@ html, body {
         .strong{font-size: $standardFontSize + 2px;}
       }
     }
+      
   }
   
+    a{ 
+      font-family: $linkFont;
+      font-weight:700;
+      color: $linkColor;
+    }  
+    
   .footer {
     background: $footerColor;
     color: $footerFontColor;
@@ -92,11 +99,7 @@ html, body {
   }
   
   header .header, header .header h1 a, nav {color: $containerColor;}
-  a{ 
-    font-family: $linkFont;
-    font-weight:700;
-    color: $linkColor;
-  }
+
   nav a:hover{background: rgba($headerColor,1); text-decoration:none;}
   header .header{
     background: $headerColor;
