@@ -172,7 +172,7 @@ function format_calendar_event($dataObj){
   $message .=  "<li><span class=\"cal-date\">" . get_event_data($dataObj, "date") . ":</span> ";
   $message .= "<span class=\"cal-title\">" . get_event_data($dataObj, "title") . "</span>";
   $desc = get_event_data($dataObj, "description");
-  $message .=  "<span class=\"calDesc\">" . $desc . "</span>" . "<span class=\"calTime\">" . get_event_data($dataObj, "start") . " - ";
+  $message .=  "<span class=\"cal-desc\">" . $desc . "</span>" . "<span class=\"calTime\">" . get_event_data($dataObj, "start") . " - ";
   $message .=  get_event_data($dataObj, "end") . "</span></li>";
   return $message;
 }
@@ -188,7 +188,7 @@ function format_calendar_special($dataObj, $showToday=""){
   }
   $desc = get_event_data($dataObj, "description");
   if ($desc){
-    $message .=  "<span class=\"calDesc\">" . $desc . "</span></li>";
+    $message .=  "<span class=\"cal-desc\">" . $desc . "</span></li>";
   }
   else {
     $message .= "</li>";

@@ -199,7 +199,7 @@ text-align:center;
     .cal-title{
       display:block;
     }
-    .calDesc{
+    .cal-desc{
       font-size: $standard-font-size - 2px;
       display:block;
     }
@@ -231,7 +231,7 @@ text-align:center;
       color: $footer-color;
       font-size: $standard-font-size + 4px;
     }
-    .calDesc{
+    .cal-desc{
       display:block;
     }
   }
@@ -397,7 +397,7 @@ text-align:center;
         width: 160px;    
       }
       .cal-title{display: inline-block;}
-      .calDesc{
+      .cal-desc{
         font-size: $standard-font-size - 2px;
       }
     }

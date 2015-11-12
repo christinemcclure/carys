@@ -244,7 +244,7 @@ footer .footer .credits {
   display: block;
 }
 /* line 202, ../scss/main.scss */
-.specials li .calDesc {
+.specials li .cal-desc {
   font-size: 16px;
   display: block;
 }
@@ -277,7 +277,7 @@ footer .footer .credits {
   font-size: 22px;
 }
 /* line 234, ../scss/main.scss */
-.events li .calDesc {
+.events li .cal-desc {
   display: block;
 }
 
@@ -481,7 +481,7 @@ footer .footer .credits {
     display: inline-block;
   }
   /* line 400, ../scss/main.scss */
-  .specials li .calDesc {
+  .specials li .cal-desc {
     font-size: 16px;
   }
 }
