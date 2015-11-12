@@ -69,10 +69,6 @@ html .footer a, body .footer a {
 html .footer .credits, body .footer .credits {
   font-size: 16px;
 }
-/* line 93, ../scss/main.scss */
-html .body, body .body {
-  background: #c67c3d;
-}
 /* line 94, ../scss/main.scss */
 html header .header, html header .header h1 a, html nav, body header .header, body header .header h1 a, body nav {
   color: #c67c3d;
