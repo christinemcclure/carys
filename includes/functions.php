@@ -10,21 +10,23 @@ function get_googleAPI_key(){
 // can't set environment variable on live site, so get working directory and figure it out
 // add windows computers later
   $cwd= getcwd();
-  if($debug) echo getcwd();
-  
-  if (strpos($cwd,"caryslng")!==false) { //online
-    if (strpos($cwd,"dev")!==false)
-     $path="/home/caryslng/public_html/dev/";
-    else
-     $path="/home/caryslng/public_html/"; // live site
-  }  
-  elseif (strpos($cwd,"carys")!==false) //my Macbook
-    $path="/Users/christine/Sites/carys/";
-
-  else{
-    $path="C:\\Users\\christine\\Desktop\\carys\\"; // RHO 
+  if($debug){
+    echo getcwd();
   }
-  
+  if (strpos($cwd,"caryslng")!==false) { //online
+    if (strpos($cwd,"dev")!==false){
+     $path="/home/caryslng/public_html/dev/";
+    }
+    else{
+     $path="/home/caryslng/public_html/"; // live site
+    }
+  }
+  elseif(strpos($cwd,"Desktop")!==false){
+    $path="C:\\Users\\christine\\Desktop\\carys\\";
+  }
+  else{ //my Macbook
+    $path="/Users/christine/Sites/carys/";
+   }
   $key="";
   $file=$path."includes/GoogleAPIkey.txt"; //can't access registry on RHO computer
   if (file_exists($file)){
@@ -167,7 +169,7 @@ function get_earliest_event($arrIn){
 
 function format_calendar_event($dataObj){
   $message="";
-  $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date") . ":</span> ";
+  $message .=  "<li><span class=\"cal-date\">" . get_event_data($dataObj, "date") . ":</span> ";
   $message .= "<span class=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
   $desc = get_event_data($dataObj, "description");
   $message .=  "<span class=\"calDesc\">" . $desc . "</span>" . "<span class=\"calTime\">" . get_event_data($dataObj, "start") . " - ";
@@ -179,10 +181,10 @@ function format_calendar_event($dataObj){
 function format_calendar_special($dataObj, $showToday=""){
   $message="";
   if ($showToday){
-  $message .=  "<li><span class=\"calDate\">TODAY:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
+  $message .=  "<li><span class=\"cal-date\">TODAY:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
   }
   else{
-    $message .=  "<li><span class=\"calDate\">" . get_event_data($dataObj, "date", "l") . "s:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
+    $message .=  "<li><span class=\"cal-date\">" . get_event_data($dataObj, "date", "l") . "s:</span><span=\"calTitle\">" . get_event_data($dataObj, "title") . "</span>";
   }
   $desc = get_event_data($dataObj, "description");
   if ($desc){

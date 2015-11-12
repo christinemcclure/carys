@@ -192,7 +192,7 @@ text-align:center;
     -webkit-margin-end: 0px;
     -webkit-padding-start: 0px;  
   li{
-    .calDate {
+    .cal-date {
       display:block;
       font-weight:800;      
     }
@@ -206,7 +206,7 @@ text-align:center;
     margin: 20px 0;
   }
   li:first-child{
-    .calDate{
+    .cal-date{
       //font-family: $heading-font;
       font-size:$standard-font-size + 6px;
     }
@@ -220,14 +220,14 @@ text-align:center;
   line-height:$standard-font-size + 4px;
   li {
     margin: 20px 0 40px 0;
-    .calDate, .calTitle{
+    .cal-date, .calTitle{
       display:inline-block;
       font-size: $standard-font-size + 8px;
       font-family: $heading-font;
       font-weight: normal;
       color: $heading-font-color;
     }
-    .calDate{
+    .cal-date{
       color: $footer-color;
       font-size: $standard-font-size + 4px;
     }
@@ -392,7 +392,7 @@ text-align:center;
   // Specials
   .specials{ 
     li{
-      .calDate {
+      .cal-date {
         display: inline-block;
         width: 160px;    
       }

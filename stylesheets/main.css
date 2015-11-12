@@ -235,7 +235,7 @@ footer .footer .credits {
   margin: 20px 0;
 }
 /* line 195, ../scss/main.scss */
-.specials li .calDate {
+.specials li .cal-date {
   display: block;
   font-weight: 800;
 }
@@ -249,7 +249,7 @@ footer .footer .credits {
   display: block;
 }
 /* line 209, ../scss/main.scss */
-.specials li:first-child .calDate {
+.specials li:first-child .cal-date {
   font-size: 24px;
 }
 
@@ -264,7 +264,7 @@ footer .footer .credits {
   margin: 20px 0 40px 0;
 }
 /* line 223, ../scss/main.scss */
-.events li .calDate, .events li .calTitle {
+.events li .cal-date, .events li .calTitle {
   display: inline-block;
   font-size: 26px;
   font-family: "Righteous", sans-serif;
@@ -272,7 +272,7 @@ footer .footer .credits {
   color: #553c41;
 }
 /* line 230, ../scss/main.scss */
-.events li .calDate {
+.events li .cal-date {
   color: #37272a;
   font-size: 22px;
 }
@@ -472,7 +472,7 @@ footer .footer .credits {
   }
 
   /* line 395, ../scss/main.scss */
-  .specials li .calDate {
+  .specials li .cal-date {
     display: inline-block;
     width: 160px;
   }
