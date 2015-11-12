@@ -53,16 +53,6 @@ html, body {
       font-weight:700;
       color: $linkColor;
     }  
-    
-  .footer {
-    background: $footerColor;
-    color: $footerFontColor;
-    font-size: $standardFontSize;
-    font-weight: 100;
-    p{margin:0;}
-    a {color: $footerLinkColor;}
-    .credits{font-size: $standardFontSize - 2px;}
-  }
   
   blockquote{
     font-size: $standardFontSize + 2px;
@@ -84,7 +74,6 @@ html, body {
     }
   }
 }
-
 
 .bump-down{margin-top: 60px;}
 
@@ -175,7 +164,7 @@ nav{
     background-image: url('../images/bar.jpg');  
 }
 
-//footer
+//FOOTER
 footer{
 text-align:center;
   .hours{
@@ -183,6 +172,15 @@ text-align:center;
   }
   .icons{
     clear:both;
+  }
+  .footer {
+    background: $footerColor;
+    color: $footerFontColor;
+    font-size: $standardFontSize;
+    font-weight: 100;
+    p{margin:0;}
+    a {color: $footerLinkColor; font-weight: 100;}
+    .credits{font-size: $standardFontSize - 2px;}
   }
 }
 
