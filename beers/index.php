@@ -18,10 +18,16 @@
             <li id="sub_wine">Wines on Tap</li>
           </ul>
           
+          
           <div id="menu_widget">
             <div id="onTap">
             </div>
           </div>
+        </div>
+      </div>
+      <div class="col-1-1">
+        <div class="grid-pad content bump-left">
+          <p>You can also follow us on <a href="https://www.beermenus.com/places/2827-cary-s-lounge">BeerMenus.com</a> and <a href="http://www.findmytap.com/">Find My Tap</a>. </p>
         </div>
       </div>
 
