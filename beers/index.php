@@ -10,7 +10,6 @@
         <div class="grid-pad content">
           
           <ul class="clear" id="beer-sub-nav">
-            <li id="sub_featured">Featured Items</li>
             <li id="sub_on_tap">Beers On Tap</li>
             <li id="sub_bottles">Bottled Beers</li>
             <li id="sub_cans">Canned Beers</li>
@@ -45,7 +44,7 @@
           highlightOneBeerType(thisItem);
         });
         
-        highlightOneBeerType("featured");
+        highlightOneBeerType("on_tap");
         
       });
   </script>
