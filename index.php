@@ -10,7 +10,7 @@
         <div class="col-7-12">
           <div class="grid-pad content">
             <p>Cary's Lounge is your friendly neighborhood tap catering to all your drinking needs since 1972. No thirst is too big or too small for us here at Cary's! </p>
-            In addition to the great selection of beers (16 on draft!), fine wines on tap, and excellent cocktails, Cary's features free pool on our 9 foot Diamond table, free play for you and your teams on our <a href="http://killerqueenarcade.com/">Killer Queen</a> arcade game, and a badass selection on the jukebox. Plus, you can enjoy your drink on our wonderful outdoor patio! You’re gonna love it!
+            In addition to the great selection of beers (16 on draft!), fine wines on tap, and excellent cocktails, Cary's features free pool on our 9 foot Diamond table and free play for you and your teams on our <a href="http://killerqueenarcade.com/">Killer Queen</a> arcade game. Plus, you can enjoy your drink on our wonderful outdoor patio! You’re gonna love it!
           </div>
         </div>  
         <div class="col-5-12">
