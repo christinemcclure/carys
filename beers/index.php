@@ -14,7 +14,7 @@
             <li id="sub_bottles">Bottled Beers</li>
             <li id="sub_cans">Canned Beers</li>
             <li id="sub_cider">Ciders</li>
-            <li id="sub_wine">Wines on Tap</li>
+            <li id="sub_wine">Wine On Tap</li>
           </ul>
           
           
