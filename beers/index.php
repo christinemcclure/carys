@@ -10,7 +10,7 @@
         <div class="grid-pad content">
           
           <ul class="clear" id="beer-sub-nav">
-            <li id="sub_on_tap">Beers On Tap</li>
+            <li id="sub_on_tap">On Tap</li>
             <li id="sub_bottles">Bottled Beers</li>
             <li id="sub_cans">Canned Beers</li>
             <li id="sub_cider">Ciders</li>
