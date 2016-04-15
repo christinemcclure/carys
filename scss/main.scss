@@ -242,6 +242,10 @@ text-align:center;
 }
 
 ///// Beers (what's on tap) page
+.special{ // un-asked for display
+  display:none;
+}
+
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
   .grid #menu_widget {
     margin: 0 auto;
