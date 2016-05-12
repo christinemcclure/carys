@@ -17,25 +17,21 @@
         <li id="sub_wine">Wine On Tap</li>
         </ul>
         <h1>On Tap</h1>
-        <p>Name</p>
-        <p>ABV</p>
-        <p>Served In</p>
-        <p>Price</p>
         <h2>Allagash White</h2>
-        <p>5.0</p>
-        <p>16oz Draft</p>
-        <p>$6</p>
+        <p>ABV: 5.0</p>
+        <p>Served in: 16oz Draft</p>
+        <p>Price: $6</p>
         <p>Brewed with a generous portion of wheat and spiced with coriander and Cura&ccedil;ao orange peel, this beer is fruity, refreshing and slightly cloudy in appearance.</p>
         <h2>Ballast Point Grapefruit Sculpin</h2>
-        <p>7.0</p>
-        <p>16oz Draft</p>
-        <p>$6</p>
+        <p>ABV: 7.0</p>
+        <p>Served in: 16oz Draft</p>
+        <p>Price: $6</p>
         <p>Sculpin&rsquo;s unique flavor added with the tart freshness of grapefruit, perfectly complements this IPA&rsquo;s citrusy hop character.</p>
 
         </div>
       </div>
       <div class="col-1-1">
-        <div class="grid-pad content>
+        <div class="grid-pad content">
           <p>You can also follow us on <a href="https://www.beermenus.com/places/2827-cary-s-lounge">BeerMenus.com</a> and <a href="http://www.findmytap.com/">Find My Tap</a>. </p>
         </div>
       </div>
