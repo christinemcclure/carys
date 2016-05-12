@@ -78,7 +78,7 @@ html, body {
 .bump-down{margin-top: 60px;}
 .bump-left{margin-left:30px;}
 
-h1, h2, h3, h4, #menu_widget table.beermenu caption {
+h1, h2, h3, h4 {
   font-family: $heading-font;
   font-weight:200;
   color: $heading-font-color;
@@ -241,34 +241,6 @@ text-align:center;
   }
 }
 
-///// Beers (what's on tap) page
-.special{ // un-asked for display
-  display:none;
-}
-
-.hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
-  .grid #menu_widget {
-    margin: 0 auto;
-    table.beermenu {
-      caption{
-        font-size: $standard-font-size + 16px;
-        font-weight:200;
-      }
-      color: $table-color;
-      th {
-        background: $table-header-background;
-        color: $table-header-color;
-        border:4px solid $table-header-background;
-        text-transform: none;
-        font-weight: 600;
-      }
-      .beer-descriptions td.beer-description{
-        border:none;
-        border-bottom: 1px solid darken($container-color, 20%);
-      }
-      .strong{font-size: $standard-font-size + 2px;}
-    }
-  }
 
 #beer-sub-nav {
   margin: 0;
@@ -286,11 +258,7 @@ text-align:center;
  
 }
 
-#menu-widget #beer_menu{
-  #red_wine th.serving, #red_wine td.serving, #white_wine th.serving, #white_wine td.serving, #wine th.serving, #wine td.serving { // hide vessel for wine
-      display: none;
-  }
-}
+
 
 
 //// MEDIA QUERIES
@@ -306,31 +274,6 @@ text-align:center;
     }
     li:last-child{margin-bottom:40px;}
   }
-	 #menu_widget{
-    table.beermenu{
-      display: block; 
-           /* Hide table headers (but not display: none;, for accessibility) */  
-      thead, tbody, th, td, tr, caption { 
-        display: block; 
-      }
-      thead {
-        th{
-          font-size: $standard-font-size - 4px;
-          display: inline;
-          float:left;
-          width:25%;
-        }
-      }
-      td:first-child{
-        clear:both;
-      }
-      span.strong{
-        text-transform: uppercase;
-         font-size: $standard-font-size + 2px;
-      }
-    }
-
-	} // end widget 
 }
 
 @media only screen and (max-width: 1139px) {
@@ -389,13 +332,6 @@ text-align:center;
     }  
     
   #beer-sub-nav li { margin: 10px 0 40px 3%;}
-  body .grid #menu_widget {
-    width: 100%;
-    margin: 0 0 0 20px;
-    .active table.beermenu{
-      width: 1000px;
-    }
-  }
   
   // Specials
   .specials{ 
