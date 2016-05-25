@@ -20,6 +20,18 @@
       <?php include "../includes/footer.html"; ?>
 
     </div>    
-    
+   <script>
+      $( document ).ready(function() {
+        
+        $("#beer-sub-nav li").click(function (event) {
+          var thisItem=event.target.id.substring(4);// strip sub_ from item ID
+          console.log(thisItem);
+          highlightOneBeerType(thisItem);
+        });
+        
+        highlightOneBeerType("on_tap");
+        
+      });
+  </script>    
   </body>
 </html>
