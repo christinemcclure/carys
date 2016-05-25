@@ -5,19 +5,16 @@ $(document).ready(function() {
 
       for (var i in items) {
         if (items[i].indexOf(showType) > -1){
-           $("#beer_menu > #"+items[i]).addClass('active');
-           $("#beer_menu > #"+items[i]).removeClass('hide');
+           $("#drinks #"+items[i]).addClass('active');
+           $("#drinks #"+items[i]).removeClass('hide');
         }
         else{
-           $("#beer_menu > #"+items[i]).removeClass('active');
-          $("#beer_menu > #"+items[i]).addClass('hide');
+           $("#drinks #"+items[i]).removeClass('active');
+          $("#drinks #"+items[i]).addClass('hide');
         }
       }
       $("#beer-sub-nav").children().removeClass("active");//don't need to cycle through. just for highlighting menu item
       $("#sub_"+showType).addClass("active");
-
-      var captionText = $("li#sub_"+showType).html();
-      $("#beer_menu table caption").html(captionText);
       
     }
 
