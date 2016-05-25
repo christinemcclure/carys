@@ -8,26 +8,7 @@
       <?php include "../includes/nav.html"; ?>
       <div class="col-1-1">
         <div class="grid-pad content">
-          
-        <ul id="beer-sub-nav" class="clear">
-        <li id="sub_on_tap" class="active">On Tap</li>
-        <li id="sub_bottles">Bottled Beers</li>
-        <li id="sub_cans">Canned Beers</li>
-        <li id="sub_cider">Ciders</li>
-        <li id="sub_wine">Wine On Tap</li>
-        </ul>
-        <h1>On Tap</h1>
-        <h2>Allagash White</h2>
-        <p>ABV: 5.0</p>
-        <p>Served in: 16oz Draft</p>
-        <p>Price: $6</p>
-        <p>Brewed with a generous portion of wheat and spiced with coriander and Cura&ccedil;ao orange peel, this beer is fruity, refreshing and slightly cloudy in appearance.</p>
-        <h2>Ballast Point Grapefruit Sculpin</h2>
-        <p>ABV: 7.0</p>
-        <p>Served in: 16oz Draft</p>
-        <p>Price: $6</p>
-        <p>Sculpin&rsquo;s unique flavor added with the tart freshness of grapefruit, perfectly complements this IPA&rsquo;s citrusy hop character.</p>
-
+          <?php include "drinks.html" ?>
         </div>
       </div>
       <div class="col-1-1">
