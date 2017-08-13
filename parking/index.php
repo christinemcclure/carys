@@ -1,7 +1,7 @@
 <?php 
 include("../includes/head.html"); 
 include("../includes/functions.php"); ?>
-<title>Cary's Lounge - Pool</title>
+<title>Cary's Lounge - Parking</title>
 </head>  
   <body id="parking">
     <div class="grid">
