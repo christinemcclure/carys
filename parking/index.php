@@ -3,7 +3,7 @@ include("../includes/head.html");
 include("../includes/functions.php"); ?>
 <title>Cary's Lounge - Pool</title>
 </head>  
-  <body id="pool">
+  <body id="parking">
     <div class="grid">
       
       <?php include "../includes/header.html"; ?>
