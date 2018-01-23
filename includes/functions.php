@@ -13,12 +13,12 @@ function get_googleAPI_key(){
   if($debug){
     echo getcwd();
   }
-  if (strpos($cwd,"caryslng")!==false) { //online
+  if (strpos($cwd,"caryslou")!==false) { //online
     if (strpos($cwd,"dev")!==false){
-     $path="/home/caryslng/public_html/dev/";
+     $path="/home/caryslou/public_html/carysdev/";
     }
     else{
-     $path="/home/caryslng/public_html/"; // live site
+     $path="/home/caryslou/public_html/caryslounge.com/"; // live site
     }
   }
   elseif(strpos($cwd,"Desktop")!==false){
