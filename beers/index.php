@@ -26,7 +26,7 @@
       </div>
       <div class="col-1-1">
         <div class="grid-pad content bump-left">
-          <p>You can also follow us on <a href="https://www.beermenus.com/places/2827-cary-s-lounge">BeerMenus.com</a> and <a href="http://www.findmytap.com/">Find My Tap</a>. </p>
+          <p>You can also follow us on <a href="http://www.findmytap.com/">Find My Tap</a>. </p>
         </div>
       </div>
 
@@ -45,7 +45,7 @@
         });
         
         highlightOneBeerType("on_tap");
-        $('.powered-by-beermenus').hide;
+
       });
   </script>
   </body>
