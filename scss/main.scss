@@ -249,7 +249,7 @@ text-align:center;
   display:none;
 }
 
-.hide, .updated-at, .serving-types, #feedly-mini, p.powered-by-beermenus {display:none;} //generic hide plus unwanted beermenus items
+.hide, .updated-at, .serving-types, #feedly-mini, #beer_menu .powered-by-beermenus {display:none;} //generic hide plus unwanted beermenus items
   .grid #menu_widget {
     margin: 0 auto;
     table.beermenu {
