@@ -298,7 +298,7 @@ footer .footer .credits {
 }
 
 /* line 252, ../scss/main.scss */
-.hide, .updated-at, .serving-types, #feedly-mini, #beer_menu .powered-by-beermenus {
+.hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 

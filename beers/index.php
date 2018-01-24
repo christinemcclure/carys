@@ -45,7 +45,7 @@
         });
         
         highlightOneBeerType("on_tap");
-        
+        $('.powered-by-beermenus').hide;
       });
   </script>
   </body>
