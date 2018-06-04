@@ -45,7 +45,7 @@
           highlightOneBeerType(thisItem);
         });
         
-        highlightOneBeerType("on_tap");
+        highlightOneBeerType("featured");
 
       });
   </script>
