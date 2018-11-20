@@ -23,10 +23,13 @@ $(document).ready(function() {
       if (showType!=="wine"){
        $("span#white_wine").hide();
        $("span#red_wine").hide();
+       $("span#rose_wine").hide();
       }
       else{
        $("span#white_wine").show();
        $("span#white_wine table caption").html("Whites");
+       $("span#rose_wine").show();
+       $("span#rose_wine table caption").html("Ros&#xe9;s");
        $("span#red_wine").show();        
        $("span#red_wine table caption").html("Reds");
       }
