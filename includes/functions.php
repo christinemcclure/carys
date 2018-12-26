@@ -1,12 +1,12 @@
 <?php
 date_default_timezone_set('America/Chicago');
-$debugGlobal=false;
+$debugGlobal=true;
 $APIformat="Y-m-d";
 $earliestArrayElementNumber="";
 
 //load developer key
 function get_googleAPI_key(){ 
-  $debug=false;
+  $debug=true;
 // can't set environment variable on live site, so get working directory and figure it out
 // add windows computers later
   $cwd= getcwd();
@@ -42,7 +42,7 @@ function get_googleAPI_key(){
 }
 
 function retrieve_calendar_data($url){
-  $debugLocal=false;
+  $debugLocal=true;
   $jsonFile = file_get_contents($url);
   if (!$jsonFile) {
       trigger_error('NO DATA returned from url.', E_USER_NOTICE);
@@ -66,7 +66,7 @@ function format_calendarAPI_date_snippet($dateIn){
 }
 
 function format_GoogleAPI_calendar_url($calendar, $timeMin, $timeMax){
-  $localDebug=false;
+  $localDebug=true;
   $key = get_googleAPI_key();
   if ($key!=-1){
     $url='https://www.googleapis.com/calendar/v3/calendars/' . $calendar . 
@@ -108,7 +108,7 @@ function get_and_format_calendar_specials($calendar){
 
 
 function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $timeMax=0){
-  $debugLocal=false;
+  $debugLocal=true;
   $msg="";
   global $earliestArrayElementNumber;
   if ( ($timeMin==0)| ($timeMax==0) ){ //get events 60 days out if blank
@@ -144,7 +144,7 @@ function get_and_format_calendar_events($calendar, $numEntries, $timeMin=0, $tim
 function get_earliest_event($arrIn){
   $earliest="";
   global $earliestArrayElementNumber;
-  $localDebug=false;
+  $localDebug=true;
   $check = 9999999999;
   for ($i=0; $i<count($arrIn); $i++){
     if (isset($arrIn[$i])){ // avoid php notice error
