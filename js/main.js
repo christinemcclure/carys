@@ -1,7 +1,7 @@
 $(document).ready(function() {
   (function($){
     highlightOneBeerType=function(showType) {
-      var items = new Array ("featured", "on_tap", "bottles", "cans", "cider", "wine", "on_deck"); // ids from beermenus.com     
+      var items = new Array ("on_tap", "bottles", "cans", "cider", "wine", "on_deck"); // ids from beermenus.com     
 
       for (var i in items) {
         if (items[i].indexOf(showType) > -1){
@@ -32,6 +32,14 @@ $(document).ready(function() {
        $("span#rose_wine table caption").html("Ros&#xe9;s");
        $("span#red_wine").show();        
        $("span#red_wine table caption").html("Reds");
+      }
+      
+      if (showType==="on_tap"){
+        $("span#featured").show();
+         $("table.featured-section caption").html("Featured");
+      }
+      else{
+        $("span#featured").hide();
       }
       
     }
