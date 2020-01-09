@@ -1,6 +1,7 @@
 $(document).ready(function() {
   (function($){
     highlightOneBeerType=function(showType) {
+      console.log(showType);
       var items = new Array ("on_tap", "bottles", "cans", "cider", "wine", "on_deck"); // ids from beermenus.com     
 
       for (var i in items) {
@@ -34,7 +35,7 @@ $(document).ready(function() {
        $("span#red_wine table caption").html("Reds");
       }
       
-      if (showType==="on_tap"){
+      if (showType==="ZZZon_tap"){
         $("span#featured").show();
          $("table.featured-section caption").html("Featured");
       }
