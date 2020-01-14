@@ -20,8 +20,6 @@
           
           
           <div id="menu_widget">
-            <div id="featured">
-            </div>
           </div>
         </div>
       </div>
