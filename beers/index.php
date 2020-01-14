@@ -16,6 +16,7 @@
             <li id="sub_cans">Canned Beers</li>
             <li id="sub_cider">Ciders</li>
             <li id="sub_wine">Wine On Tap</li>
+            <li id="sub_cocktails">Cocktails</li>
           </ul>
           
           
@@ -43,7 +44,7 @@
           highlightOneBeerType(thisItem);
         });
         
-        highlightOneBeerType("featured");
+        highlightOneBeerType("on_tap");
 
       });
   </script>
