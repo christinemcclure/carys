@@ -24,14 +24,6 @@ $(document).ready(function() {
        $("span#white_wine").hide();
        $("span#red_wine").hide();
        $("span#rose_wine").hide();
-          if (showType==="cocktails"){
-              $("th.abv").text(" ");
-              $("th.serving").text(" ");
-          }
-          else {
-              $("th.abv").text("ABV");
-              $("th.serving").text("Served In");              
-          }
       }
       else{
        $("span#white_wine").show();
@@ -42,8 +34,15 @@ $(document).ready(function() {
        $("span#red_wine table caption").html("Reds");
       }
 
-      
-      
+      if (showType==="cocktails"){
+          $("th.abv").text(" ");
+          $("th.serving").text(" ");
+      }
+      else {
+          $("th.abv").text("ABV");
+          $("th.serving").text("Served In");              
+      }      
+
     }
 
    })($);
