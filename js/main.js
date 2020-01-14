@@ -32,6 +32,8 @@ $(document).ready(function() {
        $("span#rose_wine table caption").html("Ros&#xe9;s");
        $("span#red_wine").show();        
        $("span#red_wine table caption").html("Reds");
+        $("th.abv").text("ABV");
+        $("th.serving").text("Served In");   
       }
 
       if (showType==="cocktails"){
