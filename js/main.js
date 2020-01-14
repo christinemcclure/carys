@@ -34,6 +34,15 @@ $(document).ready(function() {
        $("span#red_wine").show();        
        $("span#red_wine table caption").html("Reds");
       }
+        
+        if (showType==="cocktails"){
+            $("table.beermenu th.abv").text(" ");
+            $("table.beermenu th.serving").text(" ");
+        }
+        else {
+            $("table.beermenu th.abv").text("ABV");
+            $("table.beermenu th.serving").text("Served In");
+        }
       
     }
 
