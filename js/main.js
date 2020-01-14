@@ -1,8 +1,7 @@
 $(document).ready(function() {
   (function($){
     highlightOneBeerType=function(showType) {
-      console.log(showType);
-      var items = new Array ("on_tap", "bottles", "cans", "cider", "wine", "on_deck"); // ids from beermenus.com     
+      var items = new Array ("featured", "on_tap", "bottles", "cans", "cider", "wine"); // ids from beermenus.com     
 
       for (var i in items) {
         if (items[i].indexOf(showType) > -1){
@@ -35,13 +34,6 @@ $(document).ready(function() {
        $("span#red_wine table caption").html("Reds");
       }
       
-      if (showType==="ZZZon_tap"){
-        $("span#featured").show();
-         $("table.featured-section caption").html("Featured");
-      }
-      else{
-        $("span#featured").hide();
-      }
       
     }
 
