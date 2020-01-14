@@ -44,7 +44,7 @@
           highlightOneBeerType(thisItem);
         });
         
-        highlightOneBeerType("cocktails");
+        highlightOneBeerType("featured");
 
       });
   </script>
