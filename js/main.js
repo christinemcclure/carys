@@ -34,13 +34,13 @@ $(document).ready(function() {
        $("span#red_wine table caption").html("Reds");
       }
       
-      if (showType==="on_tap"){
-        $("span#featured").show();
-         $("table.featured-section caption").html("Featured");
-      }
-      else{
-        $("span#featured").hide();
-      }
+//      if (showType==="on_tap"){
+//        $("span#featured").show();
+//         $("table.featured-section caption").html("Featured");
+//      }
+//      else{
+//        $("span#featured").hide();
+//      }
       
     }
 
