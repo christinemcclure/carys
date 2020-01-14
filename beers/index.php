@@ -10,17 +10,17 @@
         <div class="grid-pad content">
           
           <ul class="clear" id="beer-sub-nav">
+            <li id="sub_featured">Featured</li>
             <li id="sub_on_tap">On Tap</li>
             <li id="sub_bottles">Bottled Beers</li>
             <li id="sub_cans">Canned Beers</li>
             <li id="sub_cider">Ciders</li>
             <li id="sub_wine">Wine On Tap</li>
+            <li id="sub_cocktails">Cocktails</li>
           </ul>
           
           
           <div id="menu_widget">
-            <div id="featured">
-            </div>
           </div>
         </div>
       </div>
