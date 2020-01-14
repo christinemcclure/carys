@@ -31,19 +31,10 @@ $(document).ready(function() {
        $("span#rose_wine").show();
        $("span#rose_wine table caption").html("Ros&#xe9;s");
        $("span#red_wine").show();        
-       $("span#red_wine table caption").html("Reds");
-        $("th.abv").text("ABV");
-        $("th.serving").text("Served In");   
+       $("span#red_wine table caption").html("Reds"); 
       }
 
-      if (showType==="cocktails"){
-          $("th.abv").text(" ");
-          $("th.serving").text(" ");
-      }
-      else {
-          $("th.abv").text("ABV");
-          $("th.serving").text("Served In");              
-      }      
+   
 
     }
 
