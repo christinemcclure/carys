@@ -191,34 +191,6 @@ text-align:center;
   }
 }
 
-// Specials
-.specials{ 
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;  
-  li{
-    .cal-date {
-      display:block;
-      font-weight:800;      
-    }
-    .cal-title{
-      display:block;
-    }
-    .cal-desc{
-      font-size: $standard-font-size - 2px;
-      display:block;
-    }
-    margin: 20px 0;
-  }
-  li:first-child{
-    .cal-date{
-      //font-family: $heading-font;
-      font-size:$standard-font-size + 6px;
-    }
-  }  
-}
 
 // events
 .events{
@@ -244,10 +216,7 @@ text-align:center;
   }
 }
 
-///// Beers (what's on tap) page
-.special{ // un-asked for display
-  display:none;
-}
+
 
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
   .grid #menu_widget {
@@ -395,20 +364,6 @@ text-align:center;
       width: 1000px;
     }
   }
-  
-  // Specials
-  .specials{ 
-    li{
-      .cal-date {
-        display: inline-block;
-        width: 160px;    
-      }
-      .cal-title{display: inline-block;}
-      .cal-desc{
-        font-size: $standard-font-size - 2px;
-      }
-    }
-  }  
   
 }
 
