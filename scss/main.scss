@@ -301,6 +301,12 @@ text-align:center;
     }
 
 	} // end widget 
+    #beer_menu #cocktails .cocktails-section{
+        th.abv, th.serving{
+            background:$table-header-background;
+            border-color:$table-header-background;
+        }
+    }
 }
 
 @media only screen and (max-width: 1139px) {
