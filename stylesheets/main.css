@@ -304,7 +304,7 @@ footer .footer .credits {
 
 /* line 247, ../scss/main.scss */
 #beer-sub-nav {
-  margin: 0;
+  margin: 0 0 20px 0;
 }
 /* line 249, ../scss/main.scss */
 #beer-sub-nav li {
