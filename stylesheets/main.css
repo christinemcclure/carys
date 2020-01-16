@@ -42,117 +42,122 @@ html ul li, body ul li {
 }
 
 /* line 78, ../scss/main.scss */
+#beer_menu .special {
+  display: none;
+}
+
+/* line 80, ../scss/main.scss */
 .bump-down {
   margin-top: 60px;
 }
 
-/* line 79, ../scss/main.scss */
+/* line 81, ../scss/main.scss */
 .bump-left {
   margin-left: 20px;
 }
 
-/* line 81, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 h1, h2, h3, h4, #menu_widget table.beermenu caption {
   font-family: "Righteous", sans-serif;
   font-weight: 200;
   color: #553c41;
 }
 
-/* line 86, ../scss/main.scss */
+/* line 88, ../scss/main.scss */
 h1 {
   font-size: 34px;
   line-height: 32px;
 }
 
-/* line 90, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 h2 {
   font-size: 30px;
   line-height: 28px;
 }
 
-/* line 94, ../scss/main.scss */
+/* line 96, ../scss/main.scss */
 h3 {
   font-size: 26px;
   line-height: 24px;
 }
 
-/* line 98, ../scss/main.scss */
+/* line 100, ../scss/main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 99, ../scss/main.scss */
+/* line 101, ../scss/main.scss */
 .col-right {
   text-align: right;
 }
 
-/* line 102, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 header .header, header .header h1 a, nav {
   color: #c67c3d;
 }
 
-/* line 103, ../scss/main.scss */
+/* line 105, ../scss/main.scss */
 header .header {
   background: #37272a;
 }
-/* line 105, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 header .header a {
   color: #cd997e;
   font-weight: 200;
 }
-/* line 109, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 header .header h1 a, header .header p {
   color: #b64902;
 }
-/* line 110, ../scss/main.scss */
+/* line 112, ../scss/main.scss */
 header .header h1 a {
   font-family: "Righteous", sans-serif;
   font-weight: 900;
 }
 
-/* line 115, ../scss/main.scss */
+/* line 117, ../scss/main.scss */
 header {
   text-align: center;
 }
-/* line 116, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 header h1 {
   font-size: 78px;
   line-height: 68px;
 }
-/* line 120, ../scss/main.scss */
+/* line 122, ../scss/main.scss */
 header h1 a:hover {
   text-decoration: none;
 }
-/* line 121, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 header p {
   font-size: 20px;
   margin: 20px;
 }
-/* line 126, ../scss/main.scss */
+/* line 128, ../scss/main.scss */
 header .col-right {
   text-align: center;
   padding: 0 0 10px 0;
 }
 
-/* line 130, ../scss/main.scss */
+/* line 132, ../scss/main.scss */
 nav {
   margin-top: 0;
   background: rgba(55, 39, 42, 0.7);
 }
-/* line 133, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 nav a {
   display: block;
   margin: 0 0 0 30%;
   padding: 8px 14px;
   color: #cd997e;
 }
-/* line 139, ../scss/main.scss */
+/* line 141, ../scss/main.scss */
 nav a:hover {
   background: #37272a;
   text-decoration: none;
 }
 
-/* line 141, ../scss/main.scss */
+/* line 143, ../scss/main.scss */
 .nav {
   background-color: #37272a;
   background-size: contain;
@@ -164,86 +169,86 @@ nav a:hover {
   margin: 0 0 200px 0;
 }
 
-/* line 150, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 .nav-fix {
   padding: 0;
   margin: -2px 0 0 0;
 }
 
-/* line 155, ../scss/main.scss */
+/* line 157, ../scss/main.scss */
 #home .nav {
   background-image: url("../images/bar-and-patio-door.jpg");
 }
 
-/* line 158, ../scss/main.scss */
+/* line 160, ../scss/main.scss */
 #on-tap .nav {
   background-image: url("../images/taps.jpg");
 }
 
-/* line 161, ../scss/main.scss */
+/* line 163, ../scss/main.scss */
 #events .nav {
   background-image: url("../images/patio.jpg");
 }
 
-/* line 164, ../scss/main.scss */
+/* line 166, ../scss/main.scss */
 #pool .nav {
   background-image: url("../images/pool-table.jpg");
 }
 
-/* line 167, ../scss/main.scss */
+/* line 169, ../scss/main.scss */
 #bands .nav {
   background-image: url("../images/bar.jpg");
 }
 
-/* line 170, ../scss/main.scss */
+/* line 172, ../scss/main.scss */
 #parking .nav {
   background-image: url("../images/parking.jpg");
 }
 
-/* line 175, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 footer {
   text-align: center;
 }
-/* line 177, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 footer .hours {
   padding: 20px 0;
 }
-/* line 180, ../scss/main.scss */
+/* line 182, ../scss/main.scss */
 footer .icons {
   clear: both;
 }
-/* line 183, ../scss/main.scss */
+/* line 185, ../scss/main.scss */
 footer .footer {
   background: #37272a;
   color: #cd997e;
   font-size: 18px;
   font-weight: 100;
 }
-/* line 188, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 footer .footer p {
   margin: 0;
 }
-/* line 189, ../scss/main.scss */
+/* line 191, ../scss/main.scss */
 footer .footer a {
   color: #b64902;
   font-weight: 100;
 }
-/* line 190, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 footer .footer .credits {
   font-size: 16px;
 }
 
-/* line 196, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .events {
   padding: 10px 0 0 0;
   font-size: 18px;
   line-height: 22px;
 }
-/* line 200, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 .events li {
   margin: 20px 0 40px 0;
 }
-/* line 202, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 .events li .cal-date, .events li .cal-title {
   display: inline-block;
   font-size: 26px;
@@ -251,35 +256,35 @@ footer .footer .credits {
   font-weight: normal;
   color: #553c41;
 }
-/* line 209, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 .events li .cal-date {
   color: #37272a;
   font-size: 22px;
 }
-/* line 213, ../scss/main.scss */
+/* line 215, ../scss/main.scss */
 .events li .cal-desc {
   display: block;
 }
 
-/* line 221, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .hide, .updated-at, .serving-types, #feedly-mini {
   display: none;
 }
 
-/* line 222, ../scss/main.scss */
+/* line 224, ../scss/main.scss */
 .grid #menu_widget {
   margin: 0 auto;
 }
-/* line 224, ../scss/main.scss */
+/* line 226, ../scss/main.scss */
 .grid #menu_widget table.beermenu {
   color: #37272a;
 }
-/* line 225, ../scss/main.scss */
+/* line 227, ../scss/main.scss */
 .grid #menu_widget table.beermenu caption {
   font-size: 34px;
   font-weight: 200;
 }
-/* line 230, ../scss/main.scss */
+/* line 232, ../scss/main.scss */
 .grid #menu_widget table.beermenu th {
   background: #a1632f;
   color: black;
@@ -287,21 +292,21 @@ footer .footer .credits {
   text-transform: none;
   font-weight: 600;
 }
-/* line 237, ../scss/main.scss */
+/* line 239, ../scss/main.scss */
 .grid #menu_widget table.beermenu .beer-descriptions td.beer-description {
   border: none;
   border-bottom: 1px solid #794b24;
 }
-/* line 241, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .grid #menu_widget table.beermenu .strong {
   font-size: 20px;
 }
 
-/* line 245, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 #beer-sub-nav {
   margin: 0;
 }
-/* line 247, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 #beer-sub-nav li {
   cursor: pointer;
   display: inline-block;
@@ -309,7 +314,7 @@ footer .footer .credits {
   margin: 0;
   font-size: 18px -2px;
 }
-/* line 254, ../scss/main.scss */
+/* line 256, ../scss/main.scss */
 #beer-sub-nav li.active {
   font-size: 22px;
   color: #553c41;
@@ -318,130 +323,130 @@ footer .footer .credits {
 @media only screen and (max-width: 400px) {
   	/* Force table to not be like tables anymore 
     https://css-tricks.com/responsive-data-tables */
-  /* line 270, ../scss/main.scss */
+  /* line 272, ../scss/main.scss */
   #beer-sub-nav li {
     display: block;
     width: 80%;
     margin: 10px 10%;
   }
-  /* line 275, ../scss/main.scss */
+  /* line 277, ../scss/main.scss */
   #beer-sub-nav li:last-child {
     margin-bottom: 40px;
   }
 
-  /* line 278, ../scss/main.scss */
+  /* line 280, ../scss/main.scss */
   #menu_widget table.beermenu {
     display: block;
     /* Hide table headers (but not display: none;, for accessibility) */
   }
-  /* line 281, ../scss/main.scss */
+  /* line 283, ../scss/main.scss */
   #menu_widget table.beermenu thead, #menu_widget table.beermenu tbody, #menu_widget table.beermenu th, #menu_widget table.beermenu td, #menu_widget table.beermenu tr, #menu_widget table.beermenu caption {
     display: block;
   }
-  /* line 285, ../scss/main.scss */
+  /* line 287, ../scss/main.scss */
   #menu_widget table.beermenu thead th {
     font-size: 14px;
     display: inline;
     float: left;
     width: 25%;
   }
-  /* line 292, ../scss/main.scss */
+  /* line 294, ../scss/main.scss */
   #menu_widget table.beermenu td:first-child {
     clear: both;
   }
-  /* line 295, ../scss/main.scss */
+  /* line 297, ../scss/main.scss */
   #menu_widget table.beermenu span.strong {
     text-transform: uppercase;
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 1139px) {
-  /* line 306, ../scss/main.scss */
+  /* line 308, ../scss/main.scss */
   html body .grid header .header {
     background: #c67c3d;
   }
-  /* line 308, ../scss/main.scss */
+  /* line 310, ../scss/main.scss */
   html body .grid header .header a {
     color: #632109;
   }
-  /* line 311, ../scss/main.scss */
+  /* line 313, ../scss/main.scss */
   html body .grid header .header h1 a, html body .grid header .header p {
     color: #37272a;
   }
-  /* line 312, ../scss/main.scss */
+  /* line 314, ../scss/main.scss */
   html body .grid header .header h1 a {
     font-weight: 600;
   }
-  /* line 315, ../scss/main.scss */
+  /* line 317, ../scss/main.scss */
   html body .grid nav a:hover {
     background: none;
     color: #37272a;
   }
 }
 @media only screen and (min-width: 1140px) {
-  /* line 324, ../scss/main.scss */
+  /* line 326, ../scss/main.scss */
   header {
     text-align: left;
   }
-  /* line 325, ../scss/main.scss */
+  /* line 327, ../scss/main.scss */
   header h1 {
     line-height: 18px;
   }
-  /* line 327, ../scss/main.scss */
+  /* line 329, ../scss/main.scss */
   header .col-right {
     text-align: right;
   }
-  /* line 328, ../scss/main.scss */
+  /* line 330, ../scss/main.scss */
   header p {
     margin: 2px;
   }
-  /* line 329, ../scss/main.scss */
+  /* line 331, ../scss/main.scss */
   header #cary {
     margin-left: 40px;
   }
 
-  /* line 331, ../scss/main.scss */
+  /* line 333, ../scss/main.scss */
   .nav {
     margin: 0;
   }
-  /* line 333, ../scss/main.scss */
+  /* line 335, ../scss/main.scss */
   .nav nav {
     margin-top: -326px;
   }
-  /* line 336, ../scss/main.scss */
+  /* line 338, ../scss/main.scss */
   .nav nav a {
     display: inline-block;
     margin: 0 0 0 7%;
   }
 
-  /* line 344, ../scss/main.scss */
+  /* line 346, ../scss/main.scss */
   footer .hours {
     text-align: left;
     padding: 20px;
   }
-  /* line 348, ../scss/main.scss */
+  /* line 350, ../scss/main.scss */
   footer .icons {
     float: right;
     padding-top: 20px;
   }
 
-  /* line 354, ../scss/main.scss */
+  /* line 356, ../scss/main.scss */
   .events li .cal-title {
     display: inline-block;
     margin-left: 10px;
   }
 
-  /* line 359, ../scss/main.scss */
+  /* line 361, ../scss/main.scss */
   #beer-sub-nav li {
     margin: 10px 0 40px 3%;
   }
 
-  /* line 360, ../scss/main.scss */
+  /* line 362, ../scss/main.scss */
   body .grid #menu_widget {
     width: 100%;
     margin: 0 0 0 20px;
   }
-  /* line 363, ../scss/main.scss */
+  /* line 365, ../scss/main.scss */
   body .grid #menu_widget .active table.beermenu {
     width: 1000px;
   }
