@@ -79,6 +79,7 @@ ul.specials{
   li{
     margin: 0 0 30px 0;
   }
+  .cal-date{} 
 }
 
 #beer_menu .special {display:none;}
@@ -217,7 +218,6 @@ text-align:center;
     .cal-date{
       color: $footer-color;
       font-size: $standard-font-size + 4px;
-      margin: 0 8px 0 0;
     }
     .cal-desc{
       display:block;

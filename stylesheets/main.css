@@ -46,123 +46,123 @@ ul.specials li {
   margin: 0 0 30px 0;
 }
 
-/* line 84, ../scss/main.scss */
+/* line 85, ../scss/main.scss */
 #beer_menu .special {
   display: none;
 }
 
-/* line 86, ../scss/main.scss */
+/* line 87, ../scss/main.scss */
 .bump-down {
   margin-top: 60px;
 }
 
-/* line 87, ../scss/main.scss */
+/* line 88, ../scss/main.scss */
 .bump-left {
   margin-left: 20px;
 }
 
-/* line 89, ../scss/main.scss */
+/* line 90, ../scss/main.scss */
 h1, h2, h3, h4, #menu_widget table.beermenu caption {
   font-family: "Righteous", sans-serif;
   font-weight: 200;
   color: #553c41;
 }
 
-/* line 94, ../scss/main.scss */
+/* line 95, ../scss/main.scss */
 h1 {
   font-size: 34px;
   line-height: 32px;
 }
 
-/* line 98, ../scss/main.scss */
+/* line 99, ../scss/main.scss */
 h2 {
   font-size: 30px;
   line-height: 28px;
 }
 
-/* line 102, ../scss/main.scss */
+/* line 103, ../scss/main.scss */
 h3 {
   font-size: 26px;
   line-height: 24px;
 }
 
-/* line 106, ../scss/main.scss */
+/* line 107, ../scss/main.scss */
 img {
   max-width: 100%;
 }
 
-/* line 107, ../scss/main.scss */
+/* line 108, ../scss/main.scss */
 .col-right {
   text-align: right;
 }
 
-/* line 110, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 header .header, header .header h1 a, nav {
   color: #c67c3d;
 }
 
-/* line 111, ../scss/main.scss */
+/* line 112, ../scss/main.scss */
 header .header {
   background: #37272a;
 }
-/* line 113, ../scss/main.scss */
+/* line 114, ../scss/main.scss */
 header .header a {
   color: #cd997e;
   font-weight: 200;
 }
-/* line 117, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 header .header h1 a, header .header p {
   color: #b64902;
 }
-/* line 118, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
 header .header h1 a {
   font-family: "Righteous", sans-serif;
   font-weight: 900;
 }
 
-/* line 123, ../scss/main.scss */
+/* line 124, ../scss/main.scss */
 header {
   text-align: center;
 }
-/* line 124, ../scss/main.scss */
+/* line 125, ../scss/main.scss */
 header h1 {
   font-size: 78px;
   line-height: 68px;
 }
-/* line 128, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 header h1 a:hover {
   text-decoration: none;
 }
-/* line 129, ../scss/main.scss */
+/* line 130, ../scss/main.scss */
 header p {
   font-size: 20px;
   margin: 20px;
 }
-/* line 134, ../scss/main.scss */
+/* line 135, ../scss/main.scss */
 header .col-right {
   text-align: center;
   padding: 0 0 10px 0;
 }
 
-/* line 138, ../scss/main.scss */
+/* line 139, ../scss/main.scss */
 nav {
   margin-top: 0;
   background: rgba(55, 39, 42, 0.7);
 }
-/* line 141, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 nav a {
   display: block;
   margin: 0 0 0 30%;
   padding: 8px 14px;
   color: #cd997e;
 }
-/* line 147, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 nav a:hover {
   background: #37272a;
   text-decoration: none;
 }
 
-/* line 149, ../scss/main.scss */
+/* line 150, ../scss/main.scss */
 .nav {
   background-color: #37272a;
   background-size: contain;
@@ -174,86 +174,86 @@ nav a:hover {
   margin: 0 0 200px 0;
 }
 
-/* line 158, ../scss/main.scss */
+/* line 159, ../scss/main.scss */
 .nav-fix {
   padding: 0;
   margin: -2px 0 0 0;
 }
 
-/* line 163, ../scss/main.scss */
+/* line 164, ../scss/main.scss */
 #home .nav {
   background-image: url("../images/bar-and-patio-door.jpg");
 }
 
-/* line 166, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
 #on-tap .nav {
   background-image: url("../images/taps.jpg");
 }
 
-/* line 169, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 #events .nav {
   background-image: url("../images/patio.jpg");
 }
 
-/* line 172, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 #pool .nav {
   background-image: url("../images/pool-table.jpg");
 }
 
-/* line 175, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 #bands .nav {
   background-image: url("../images/bar.jpg");
 }
 
-/* line 178, ../scss/main.scss */
+/* line 179, ../scss/main.scss */
 #parking .nav {
   background-image: url("../images/parking.jpg");
 }
 
-/* line 183, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 footer {
   text-align: center;
 }
-/* line 185, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 footer .hours {
   padding: 20px 0;
 }
-/* line 188, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 footer .icons {
   clear: both;
 }
-/* line 191, ../scss/main.scss */
+/* line 192, ../scss/main.scss */
 footer .footer {
   background: #37272a;
   color: #cd997e;
   font-size: 18px;
   font-weight: 100;
 }
-/* line 196, ../scss/main.scss */
+/* line 197, ../scss/main.scss */
 footer .footer p {
   margin: 0;
 }
-/* line 197, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 footer .footer a {
   color: #b64902;
   font-weight: 100;
 }
-/* line 198, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 footer .footer .credits {
   font-size: 16px;
 }
 
-/* line 204, ../scss/main.scss */
+/* line 205, ../scss/main.scss */
 .events {
   padding: 10px 0 0 0;
   font-size: 18px;
   line-height: 22px;
 }
-/* line 208, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .events li {
   margin: 20px 0 40px 0;
 }
-/* line 210, ../scss/main.scss */
+/* line 211, ../scss/main.scss */
 .events li .cal-date, .events li .cal-title {
   display: inline-block;
   font-size: 26px;
@@ -261,11 +261,10 @@ footer .footer .credits {
   font-weight: normal;
   color: #553c41;
 }
-/* line 217, ../scss/main.scss */
+/* line 218, ../scss/main.scss */
 .events li .cal-date {
   color: #37272a;
   font-size: 22px;
-  margin: 0 8px 0 0;
 }
 /* line 222, ../scss/main.scss */
 .events li .cal-desc {
