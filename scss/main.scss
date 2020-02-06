@@ -70,8 +70,14 @@ html, body {
   ul{ 
     list-style: none;
     li {
-      margin: 10px 0;
+      margin: 0 0 30px 0;
     }
+  }
+}
+
+ul.specials{
+  li{
+    margin: 0 0 
   }
 }
 
