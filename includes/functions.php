@@ -181,10 +181,10 @@ function format_calendar_event($dataObj){
 function format_calendar_special($dataObj, $showToday=""){
   $message="";
   if ($showToday){
-  $message .=  "<li><span class=\"cal-date\">TODAY:</span><span class=\"cal-title\">" . get_event_data($dataObj, "title") . "</span>";
+  $message .=  "<li><span class=\"cal-date\">TODAY:</span><span class=\"cal-title\">" . get_event_data($dataObj, "title") . "</span><br>";
   }
   else{
-    $message .=  "<li><span class=\"cal-date\">" . get_event_data($dataObj, "date", "l") . "s:</span><span=\"cal-title\">" . get_event_data($dataObj, "title") . "</span>";
+    $message .=  "<li><span class=\"cal-date\">" . get_event_data($dataObj, "date", "l") . "s:</span><span class=\"cal-title\">" . get_event_data($dataObj, "title") . "</span><br>";
   }
   $desc = get_event_data($dataObj, "description");
   if ($desc){
