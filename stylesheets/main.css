@@ -470,3 +470,7 @@ footer .footer .credits {
     width: 1000px;
   }
 }
+/* line 391, ../scss/main.scss */
+header #notice {
+  padding: 6px 10px;
+}
