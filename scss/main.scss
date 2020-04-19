@@ -70,13 +70,31 @@ html, body {
   ul{ 
     list-style: none;
     li {
-      margin: 10px 0;
+      margin: 0 0 30px 0;
     }
   }
 }
 
+ul.specials{
+  li{
+    margin: 0 0 30px 0;
+  }
+  .cal-date{
+    margin: 0 8px 0 0;
+  } 
+  .cal-title{
+      margin: 0 8px 0 0;
+    }
+}
+
+#beer_menu .special {display:none;}
+
 .bump-down{margin-top: 60px;}
+<<<<<<< HEAD
 .bump-left{margin-left: 20px;}
+=======
+.bump-left{margin-left:20px;}
+>>>>>>> 60a15975194b01fd768117337b33aa5b5482dc6c
 
 h1, h2, h3, h4, #menu_widget table.beermenu caption {
   font-family: $heading-font;
@@ -191,34 +209,6 @@ text-align:center;
   }
 }
 
-// Specials
-.specials{ 
-    -webkit-margin-before: 0;
-    -webkit-margin-after: 0;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 0px;  
-  li{
-    .cal-date {
-      display:block;
-      font-weight:800;      
-    }
-    .cal-title{
-      display:block;
-    }
-    .cal-desc{
-      font-size: $standard-font-size - 2px;
-      display:block;
-    }
-    margin: 20px 0;
-  }
-  li:first-child{
-    .cal-date{
-      //font-family: $heading-font;
-      font-size:$standard-font-size + 6px;
-    }
-  }  
-}
 
 // events
 .events{
@@ -244,10 +234,7 @@ text-align:center;
   }
 }
 
-///// Beers (what's on tap) page
-.special{ // un-asked for display
-  display:none;
-}
+
 
 .hide, .updated-at, .serving-types, #feedly-mini {display:none;} //generic hide plus unwanted beermenus items
   .grid #menu_widget {
@@ -274,7 +261,7 @@ text-align:center;
   }
 
 #beer-sub-nav {
-  margin: 0;
+  margin: 0 0 20px 0;
   li{
   cursor:pointer;
   display:inline-block;
@@ -289,11 +276,7 @@ text-align:center;
  
 }
 
-#menu-widget #beer_menu{
-  #red_wine th.serving, #red_wine td.serving, #white_wine th.serving, #white_wine td.serving, #wine th.serving, #wine td.serving { // hide vessel for wine
-      display: none;
-  }
-}
+
 
 
 //// MEDIA QUERIES
@@ -334,6 +317,12 @@ text-align:center;
     }
 
 	} // end widget 
+    #beer_menu #cocktails .cocktails-section{
+        th.abv, th.serving{
+            background:$table-header-background;
+            border-color:$table-header-background;
+        }
+    }
 }
 
 @media only screen and (max-width: 1139px) {
@@ -400,20 +389,7 @@ text-align:center;
     }
   }
   
-  // Specials
-  .specials{ 
-    li{
-      .cal-date {
-        display: inline-block;
-        width: 160px;    
-      }
-      .cal-title{display: inline-block;}
-      .cal-desc{
-        font-size: $standard-font-size - 2px;
-      }
-    }
-  }  
-  
 }
 
 
+header #notice{padding: 6px 10px;}

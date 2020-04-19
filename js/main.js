@@ -1,7 +1,12 @@
 $(document).ready(function() {
   (function($){
     highlightOneBeerType=function(showType) {
+<<<<<<< HEAD
       var items = new Array ("featured", "on_tap", "bottles", "cans", "cider", "wine", "cocktails"); // ids from beermenus.com     
+=======
+      console.log(showType);
+      var items = new Array ("featured", "on_tap", "bottles", "cans", "cider", "wine", "on_deck", "cocktails"); // ids from beermenus.com     
+>>>>>>> 60a15975194b01fd768117337b33aa5b5482dc6c
 
       for (var i in items) {
         if (items[i].indexOf(showType) > -1){
@@ -33,9 +38,22 @@ $(document).ready(function() {
        $("span#red_wine").show();        
        $("span#red_wine table caption").html("Reds"); 
       }
+<<<<<<< HEAD
 
    
 
+=======
+        
+        if (showType==="cocktails"){
+            $("table.beermenu th.abv").text(" ");
+            $("table.beermenu th.serving").text(" ");
+        }
+        else {
+            $("table.beermenu th.abv").text("ABV");
+            $("table.beermenu th.serving").text("Served In");
+        }
+      
+>>>>>>> 60a15975194b01fd768117337b33aa5b5482dc6c
     }
 
    })($);
