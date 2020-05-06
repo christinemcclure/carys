@@ -43,7 +43,8 @@ $(document).ready(function() {
             $("table.beermenu th.abv").text("ABV");
             $("table.beermenu th.serving").text("Served In");
         }
-      
+        $("#hard_seltzers_and_kombuchas").addClass("hide"); // beermenus keeps adding new classes that we have to hide
+        
     }
 
    })($);
