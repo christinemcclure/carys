@@ -111,7 +111,13 @@ h3{
   font-size: $standard-font-size + 8px;
   line-height: $standard-font-size + 6px;
 }
-img {max-width:100%;}
+img {
+    max-width:100%;
+}
+
+img.swag {width: 50%; float:left;}
+
+
 .col-right{text-align:right;}
 
 //HEADER
