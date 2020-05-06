@@ -1,9 +1,8 @@
 $(document).ready(function() {
   (function($){
     highlightOneBeerType=function(showType) {
-
+      console.log(showType);
       var items = new Array ("featured", "on_tap", "bottles", "cans", "cider", "wine", "on_deck", "cocktails"); // ids from beermenus.com     
-
 
       for (var i in items) {
         if (items[i].indexOf(showType) > -1){
@@ -33,10 +32,9 @@ $(document).ready(function() {
        $("span#rose_wine").show();
        $("span#rose_wine table caption").html("Ros&#xe9;s");
        $("span#red_wine").show();        
-       $("span#red_wine table caption").html("Reds"); 
-
-
-
+       $("span#red_wine table caption").html("Reds");
+      }
+        
         if (showType==="cocktails"){
             $("table.beermenu th.abv").text(" ");
             $("table.beermenu th.serving").text(" ");
@@ -45,10 +43,8 @@ $(document).ready(function() {
             $("table.beermenu th.abv").text("ABV");
             $("table.beermenu th.serving").text("Served In");
         }
-
         $("#hard_seltzers_and_kombuchas").addClass("hide"); // beermenus keeps adding new classes that we have to hide
-
-      
+        
     }
 
    })($);
