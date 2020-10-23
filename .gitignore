@@ -4,3 +4,4 @@
 /nbproject/*
 *API*.txt
 dev/*
+**/*.code-workspace
