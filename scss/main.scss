@@ -40,12 +40,16 @@ html, body {
   font-size: $standard-font-size;
   line-height: $standard-font-size + 4px;
   font-weight: 600;
-  
   background: $html-color;
+
   .grid{
     background: $container-color; 
     color:$main-font-color;
     border: 2px solid $border-color;
+
+    header, header .header{
+      background: $header-color;
+    }
   }
   
     a{ 
