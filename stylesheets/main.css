@@ -295,5 +295,7 @@ footer {
     margin: 0 0 0 20px; }
     body .grid #menu_widget .active table.beermenu {
       width: 1000px; } }
+html body .grid #force-background {
+  background: #37272a; }
 
 /*# sourceMappingURL=main.css.map */
