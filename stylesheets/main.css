@@ -8,8 +8,6 @@ html, body {
     background: #c67c3d;
     color: #37272a;
     border: 2px solid #37272a; }
-    html .grid #force-backgroud, html .grid #force-background .header, body .grid #force-backgroud, body .grid #force-background .header {
-      background: #37272a; }
   html a, body a {
     font-family: "Montserrat", san-serif;
     font-weight: 700;
