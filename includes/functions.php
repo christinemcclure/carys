@@ -4,31 +4,21 @@ $debugGlobal=false;
 $APIformat="Y-m-d";
 $earliestArrayElementNumber="";
 
+
+
 //load developer key
 function get_googleAPI_key(){ 
   $debug=false;
 // can't set environment variable on live site, so get working directory and figure it out
 // add windows computers later
-  $cwd= getcwd();
+  $path=$_SERVER['DOCUMENT_ROOT'];
   if($debug){
-    echo getcwd();
+    echo $path;
   }
-  if (strpos($cwd,"caryslou")!==false) { //online
-    if (strpos($cwd,"dev")!==false){
-     $path="/home/caryslou/public_html/carysdev/";
-    }
-    else{
-     $path="/home/caryslou/public_html/caryslounge.com/"; // live site
-    }
-  }
-  elseif(strpos($cwd,"Desktop")!==false){
-    $path="C:\\Users\\christine\\Desktop\\carys\\";
-  }
-  else{ //my Macbook
-    $path="/Users/christine/Sites/carys/";
-   }
+
   $key="";
-  $file=$path."includes/GoogleAPIkey.txt"; //can't access registry on RHO computer
+  $file=$path."/includes/GoogleAPIkey.txt"; //can't access registry on RHO computer
+  
   if (file_exists($file)){
    $key = file_get_contents($file);  
   }
