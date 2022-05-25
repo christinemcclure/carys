@@ -8,27 +8,30 @@ $earliestArrayElementNumber="";
 
 //load developer key
 function get_googleAPI_key(){ 
-  $debug=false;
-// can't set environment variable on live site, so get working directory and figure it out
-// add windows computers later
-  $path=$_SERVER['DOCUMENT_ROOT'];
-  if($debug){
-    echo $path;
-  }
 
-  $key="";
-  $file=$path."/includes/GoogleAPIkey.txt"; //can't access registry on RHO computer
+// Now just returning key -- file reading not working. Restrict all access to the includes directory at the server level 
+
+//   $debug=false;
+// // can't set environment variable on live site, so get working directory and figure it out
+// // add windows computers later
+//   $path=$_SERVER['DOCUMENT_ROOT'];
+//   if($debug){
+//     echo $path;
+//   }
+
+//   $key="";
+//   $file=$path."/includes/GoogleAPIkey.txt"; //can't access registry on RHO computer
   
-  if (file_exists($file)){
-   $key = file_get_contents($file);  
-  }
-  if(($key==NULL)||($key=="")){
-    //trigger_error('Google API key not found', E_USER_NOTICE);
-    return -1;
-  }
-  else{
-    return $key;
-  }
+//   if (file_exists($file)){
+//    $key = file_get_contents($file);  
+//   }
+//   if(($key==NULL)||($key=="")){
+//     //trigger_error('Google API key not found', E_USER_NOTICE);
+//     return -1;
+//   }
+//   else{
+//     return $key;
+//   }
 }
 
 function retrieve_calendar_data($url){
