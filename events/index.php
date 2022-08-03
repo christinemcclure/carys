@@ -2,6 +2,9 @@
 include("../includes/head.html"); 
 include("../includes/functions.php"); ?>
 <title>Cary's Lounge - Events</title>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
 </head>  
   <body id="events">
     
